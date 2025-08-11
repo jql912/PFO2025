@@ -1,0 +1,70 @@
+
+--- Job Opgave 1.gms Start 08/11/25 14:03:21 50.3.0 5a352073 DEX-DEG x86 64bit/macOS
+--- Applying:
+    /Library/Frameworks/GAMS.framework/Versions/50/Resources/gmsprmun.txt
+--- GAMS Parameters defined
+    Input "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms"
+    PageSize 0
+    ScrDir "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/225d/"
+    SysDir /Library/Frameworks/GAMS.framework/Versions/50/Resources/
+    LogOption 3
+    AppendLog 1
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Course License                                 G250404+0003Ac-GEN
+          University of Copenhagen                                  DCE4232
+          225d/gamslice.dat
+          node:10959501 mem:16 cores:6 ipport:53659 v:2                    
+          Course license for use within the course and related course work
+          The expiration date of time-limited license is Oct 01, 2025
+System information: 6 physical cores and 16 Gb physical memory detected
+GAMS 50.3.0   Copyright (C) 1987-2025 GAMS Development. All rights reserved
+--- Starting compilation
+--- Opgave 1.gms(25) 2 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/weekly_returns_2013_2025.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/weekly_returns_2013_2025.gdx
+--- Opgave 1.gms(41) 30 Mb
+--- Starting execution: elapsed 0:00:00.062
+--- Opgave 1.gms(36) 68 Mb
+--- GDX File (execute_unload) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/returns.gdx
+--- Opgave 1.gms(38) 68 Mb
+Unrecognized option: PAR=
+gdxdump: Write GDX file in ASCII
+GDXDUMP          50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS
+
+Usage:
+gdxdump <filename> <options>
+<options>
+   -V or -Version        Write version info of input file only
+   Output=<filename>     Write output to file
+   Symb=<identifier>     Select a single identifier
+   UelTable=<identifier> Include all unique elements
+   Delim=[period, comma, tab, blank, semicolon]
+                         Specify a dimension delimiter
+   DecimalSep=[period, comma]
+                         Specify a decimal separator
+   NoHeader              Suppress writing of the headers
+   NoData                Write headers only; no data
+   CSVAllFields          When writing CSV write all variable/equation fields
+   CSVSetText            When writing CSV write set element text
+   Symbols               Get a list of all symbols
+   DomainInfo            Get a list of all symbols showing domain information
+   SymbolsAsSet          Get a list of all symbols as data for a set
+   SymbolsAsSetDI        Get a list of all symbols as data for a set includes domain information
+   SetText               Show the list of set text (aka associated text)
+   Format=[normal, gamsbas, csv]
+   dFormat=[normal, hexponential, hexBytes]
+   CDim=[Y, N]           Use last dimension as column headers
+                         (for CSV format only; default=N)
+   FilterDef=[Y, N]      Filter default values; default=Y
+   EpsOut=<string>       String to be used when writing the value for EPS;               default=EPS
+   NaOut=<string>        String to be used when writing the value for Not Available;     default=NA
+   PinfOut=<string>      String to be used when writing the value for Positive Infinity; default=+Inf
+   MinfOut=<string>      String to be used when writing the value for Negative Infinity; default=-Inf
+   UndfOut=<string>      String to be used when writing the value for Undefined;         default=Undf
+   ZeroOut=<string>      String to be used when writing the value for Zero;              default=0
+   Header=<string>       New header for CSV output format
+*** Status: Normal completion
+--- Job Opgave 1.gms Stop 08/11/25 14:03:21 elapsed 0:00:00.374

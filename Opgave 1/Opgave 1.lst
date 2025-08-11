@@ -1,0 +1,75 @@
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/11/25 14:03:21 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+   1  SET
+   2      AssetName
+   3      Date
+   4      Asset
+   5  ;
+   6   
+   7  ALIAS(AssetName, i);
+   8  ALIAS(Date, t);
+   9   
+  10  PARAMETER
+  11      AssetReturn(t, Asset, i)
+  12      Returns(t, i)
+  13      DateIndex(t)
+  14      AvgRet3(i)
+  15      VarianceAnnualReturn3(i)
+  16      StdDevAnnualReturn3(i)
+  17      AvgRet5(i)
+  18      VarianceAnnualReturn5(i)
+  19      StdDevAnnualReturn5(i)
+  20      AvgRet10(i)
+  21      VarianceAnnualReturn10(i)
+  22      StdDevAnnualReturn10(i);
+  23  ;
+  24   
+GDXIN   /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/weekly_returns_2013_2025.gdx
+--- LOAD  Date = 3:Date
+--- LOAD  Asset = 1:Asset
+--- LOAD  AssetName = 2:AssetName
+--- LOAD  AssetReturn = 4:AssetReturn
+  28   
+  29  Returns(t,i) = SUM(Asset, AssetReturn(t,Asset,i));
+  30   
+  31  SET YearIndex10 /2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024/;
+  32  SET YearIndex5 /2020, 2021, 2022, 2023, 2024/;
+  33  SET YearIndex3 /2022, 2023, 2024/;
+  34   
+  35   
+  36  execute_unload 'returns.gdx', Returns;
+  37   
+  38  execute 'gdxdump returns.gdx par=Returns output=returns.csv';
+  39   
+  40   
+EXIT /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/11/25 14:03:21 Page 2
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Include File Summary
+
+
+   SEQ   GLOBAL TYPE      PARENT   LOCAL  FILENAME
+
+     1        1 INPUT          0       0  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
+     2       25 GDXIN          1      25  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/weekly_returns_2013_2025.gdx
+     3       41 EXIT           1      41  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
+
+
+COMPILATION TIME     =        0.055 SECONDS     30 MB  50.3.0 5a352073 DEX-DEG
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/11/25 14:03:21 Page 3
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+E x e c u t i o n
+
+
+USER: Course License                                 G250404+0003Ac-GEN
+      University of Copenhagen                                  DCE4232
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
+Output     /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.lst
