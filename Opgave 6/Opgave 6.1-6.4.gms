@@ -12,7 +12,7 @@ $LOAD i, q, Return = Return_bs_3
 $GDXIN
 
 
-*********** DEFINE WHAT IS NEEDED FOR DOWNSIDE REGRET MODEL *********
+*********** DEFINE WHAT IS NEEDED FOR CVAR MODEL *********
 
 SCALARS
     alpha      

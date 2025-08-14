@@ -5,7 +5,7 @@ library(lubridate)
 library(writexl)
 library(xtable)
 
-Return <- read_excel("~/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 5/Weekly_returns_5.5.xlsx", col_types = c("date", "numeric", "numeric", "numeric")) %>%
+Return <- read_excel("~/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 6/Weekly_returns_6.5.xlsx", col_types = c("date", "numeric", "numeric", "numeric")) %>%
   mutate(Year = year(Date)) %>%
   pivot_longer(
     cols = starts_with("Week"),
