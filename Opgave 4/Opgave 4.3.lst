@@ -1,0 +1,217 @@
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/13/25 11:39:11 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+   1  ********** Load return data for 2020-2025 *********
+   2   
+   3  Sets
+   4      AssetName           "Name of the asset"
+   5      Date                "Observation dates"
+   6      Asset               "ISIN codes" /
+   7          DK0016109614,
+   8          DK0060822468,
+   9          LU0376446257,
+  10          LU0376447149,
+  11          LU0055631609,
+  12          LU0788108826,
+  13          LU0724618789,
+  14          LU0252968424,
+  15          LU0827889303,
+  16          LU0827889139,
+  17          LU0368252358,
+  18          LU0320298689,
+  19          LU1893597564,
+  20          DK0060791564,
+  21          DK0016303936,
+  22          DK0060791218,
+  23          DK0060244242,
+  24          DK0060786564,
+  25          LU0249702647,
+  26          DK0060787109,
+  27          DK0060789667,
+  28          DK0016205685,
+  29          DK0016023229,
+  30          DK0060178275,
+  31          DK0016205255,
+  32          IE00B6R52036,
+  33          DK0060185726,
+  34          DK0060005098,
+  35          DK0060005254,
+  36          DK0060012466,
+  37          DK0061542719,
+  38          DK0016202740,
+  39          DK0016306798,
+  40          DK0061543600,
+  41          DK0060014678,
+  42          DK0061544921,
+  43          DK0060158160,
+  44          DK0060356392,
+  45          DK0060761492,
+  46          DK0061553245,
+  47          DK0061150984
+  48      /
+  49  ;
+  50   
+  51  ALIAS(AssetName, i, j);
+  52  ALIAS(Date, t);
+  53   
+  54  PARAMETER
+  55      AssetReturn(t, Asset, i)
+  56      Return(t, i)
+  57  ;
+  58   
+GDXIN   /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/weekly_returns_2013_2025.gdx
+--- LOAD  Date = 3:Date
+--- LOAD  AssetName = 2:AssetName
+--- LOAD  AssetReturn = 4:AssetReturn
+  62   
+  63   
+  64  SET
+  65      Last6YDates(t)
+  66  ;
+  67   
+  68  Last6YDates(t) = yes$(ord(t)>364)
+  69   
+  70  PARAMETER
+  71      Last6YRet(t,Asset,i)
+  72  ;
+  73   
+  74  Last6YRet(t,Asset,i) = AssetReturn(t,Asset,i)$(Last6YDates(t));
+  75   
+  76   
+  77  Return(t,i) = SUM(Asset, Last6YRet(t,Asset,i));
+  78   
+  79  display Return
+  80   
+  81   
+  82   
+  83   
+  84  ******** LOAD PORTFOLIOS, TOTAL RETURN AND MULTIPLY BY WEIGHTS *********
+  85   
+  86  *Load weights
+  87  parameters
+  88      x_min_sd(AssetName)
+  89      x_max_ret(AssetName)
+  90  ;
+  91   
+GDXIN   /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Data_4.3.gdx
+--- LOAD  x_min_sd = 2:x_min_sd
+--- LOAD  x_max_ret = 3:x_max_ret
+  95   
+  96  display x_min_sd, x_max_ret
+  97   
+  98   
+  99  *total returns
+ 100  PARAMETER TotalReturn(i)  "Total return over all t for asset i";
+ 101   
+ 102  TotalReturn(i) = prod(t, 1 + Return(t,i)) - 1;
+ 103   
+ 104   
+ 105  *cumulative returns
+ 106  PARAMETERS
+ 107      CumReturn(t,i)
+ 108      CumReturn_min_sd(t)
+ 109      CumReturn_max_ret(t)
+ 110      TotalReturn_min_sd
+ 111      TotalReturn_max_ret
+ 112  ;
+ 113   
+ 114  *for each asset
+ 115  CumReturn(t,i) = 0;
+ 116   
+ 117  scalar factor;
+ 118  LOOP(i,
+ 119      factor = 1;
+ 120      LOOP(t$(Last6YDates(t)),
+ 121          factor = factor * (1 + Return(t,i));
+ 122          CumReturn(t,i) = factor;
+ 123      );
+ 124  );
+ 125   
+ 126   
+ 127  *for the two portfolios
+ 128  CumReturn_min_sd(t) = sum(i, CumReturn(t,i) * x_min_sd(i));
+ 129  CumReturn_max_ret(t) = sum(i, CumReturn(t,i) * x_max_ret(i));
+ 130   
+ 131  display CumReturn_min_sd, CumReturn_max_ret;
+ 132   
+ 133  TotalReturn_min_sd = sum(i,TotalReturn(i)*x_min_sd(i));
+ 134  TotalReturn_max_ret = sum(i,TotalReturn(i)*x_max_ret(i));
+ 135   
+ 136  display TotalReturn_min_sd,TotalReturn_max_ret
+ 137   
+ 138   
+ 139   
+ 140  ***** EXPORTER *******
+ 141   
+ 142  *--- Export CumReturn to CSV ---
+ 143  FILE CumReturnFile /"CumReturn.csv"/;
+ 144   
+ 145  * Optional: set page control, width if needed
+ 146  CumReturnFile.pc = 5;
+ 147  CumReturnFile.pw = 1048;
+ 148   
+ 149  PUT CumReturnFile;
+ 150   
+ 151  * Write header
+ 152  PUT "Date","CumReturn_min_sd","CumReturn_max_ret" /;
+ 153   
+ 154  * Loop over dates
+ 155  LOOP(t$(Last6YDates(t)),
+ 156      PUT t.tl:12:0, CumReturn_min_sd(t):12:6, CumReturn_max_ret(t):12:6/;
+ 157  );
+ 158   
+ 159  * Close file
+ 160  PUTCLOSE;
+ 161   
+ 162   
+ 163   
+ 164   
+ 165   
+ 166  ******** WEEKLY RETURNS FOR PORTFOLIOS **********
+ 167   
+ 168  Parameters
+ 169      Return_min_sd(t)
+ 170      Return_max_ret(t)
+ 171      test
+ 172  ;
+ 173   
+ 174  Return_min_sd(t) = sum(i, (1+Return(t,i)$(Last6YDates(t))) * x_min_sd(i));
+ 175  Return_max_ret(t) = sum(i, (1+Return(t,i)$(Last6YDates(t))) * x_max_ret(i));
+ 176   
+ 177  display Return_min_sd, Return_max_ret, test;
+****                                            $141
+**** 141  Symbol declared but no values have been assigned. Check for missing
+****         data definition, assignment, data loading or implicit assignment
+****         via a solve statement. Suppress with $onImplicitAssign.
+****         A wild shot: You may have spurious commas in the explanatory
+****         text of a declaration. Check symbol reference list.
+
+**** 1 ERROR(S)   0 WARNING(S)
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/13/25 11:39:11 Page 2
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Include File Summary
+
+
+   SEQ   GLOBAL TYPE      PARENT   LOCAL  FILENAME
+
+     1        1 INPUT          0       0  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Opgave 4.3.gms
+     2       59 GDXIN          1      59  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/weekly_returns_2013_2025.gdx
+     3       92 GDXIN          1      92  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Data_4.3.gdx
+
+
+COMPILATION TIME     =        0.047 SECONDS      5 MB  50.3.0 5a352073 DEX-DEG
+
+
+USER: Course License                                 G250404+0003Ac-GEN
+      University of Copenhagen                                  DCE4232
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Opgave 4.3.gms
+Output     /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Opgave 4.3.lst
+
+**** USER ERROR(S) ENCOUNTERED

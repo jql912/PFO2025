@@ -1,0 +1,72 @@
+B 3 C o m p i l a t i o n
+B 120 Include File Summary
+B 133 Equation Listing    SOLVE MinCVaR_givenRet Using LP From line 85
+D 136 BudgetDef
+D 141 ReturnDef
+D 146 ReturnCond
+D 151 LossDef
+D 162 VarDevDef
+D 173 CVarDef
+B 179 Column Listing      SOLVE MinCVaR_givenRet Using LP From line 85
+E 182 x
+E 198 VaRDev
+E 217 Loss
+E 236 VaR
+E 1243 CVar
+E 1250 Exp_Return
+B 1259 Range Statistics    SOLVE MinCVaR_givenRet Using LP From line 85
+B 1270 Model Statistics    SOLVE MinCVaR_givenRet Using LP From line 85
+B 1283 Solution Report     SOLVE MinCVaR_givenRet Using LP From line 85
+F 1318 BudgetDef
+F 1319 ReturnDef
+F 1320 ReturnCond
+F 1322 LossDef
+F 2327 VarDevDef
+F 3334 CVarDef
+G 3336 x
+G 4066 VaRDev
+G 5071 Loss
+G 6078 VaR
+G 6079 CVar
+G 6080 Exp_Return
+B 6088 E x e c u t i o n
+I 6090 VaR
+I 6091 Bench_CVaR_4w
+I 6092 CVar
+I 6093 Bench_ret_4w
+I 6094 Exp_Return
+B 6098 Equation Listing    SOLVE MaxRet_givenCVaR Using LP From line 97
+D 6101 BudgetDef
+D 6106 ReturnDef
+D 6111 LossDef
+D 6122 VarDevDef
+D 6133 CVarDef
+D 6138 CVaRCond
+B 6144 Column Listing      SOLVE MaxRet_givenCVaR Using LP From line 97
+E 6147 x
+E 6163 VaRDev
+E 6182 Loss
+E 6201 VaR
+E 7208 CVar
+E 7216 Exp_Return
+B 7224 Range Statistics    SOLVE MaxRet_givenCVaR Using LP From line 97
+B 7235 Model Statistics    SOLVE MaxRet_givenCVaR Using LP From line 97
+B 7248 Solution Report     SOLVE MaxRet_givenCVaR Using LP From line 97
+F 7283 BudgetDef
+F 7284 ReturnDef
+F 7286 LossDef
+F 8291 VarDevDef
+F 9298 CVarDef
+F 9299 CVaRCond
+G 9301 x
+G 10031 VaRDev
+G 11036 Loss
+G 12043 VaR
+G 12044 CVar
+G 12045 Exp_Return
+B 12053 E x e c u t i o n
+I 12055 VaR
+I 12056 Bench_CVaR_4w
+I 12057 CVar
+I 12058 Bench_ret_4w
+I 12059 Exp_Return

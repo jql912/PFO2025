@@ -1,7 +1,7 @@
 SET
     AssetName
     Date
-    Asset
+    Asset /DK0016111511/
 ;
 
 ALIAS(AssetName, i);
@@ -23,8 +23,26 @@ PARAMETER
 ;
 
 $GDXIN weekly_returns_2013_2025
-$LOAD Date Asset AssetName AssetReturn
+$LOAD Date AssetName AssetReturn
 $GDXIN
+
+SET
+    First3YDates(t)
+;
+
+First3YDates(t) = yes$(ord(t)<156)
+
+PARAMETER
+    First3YRet(t,Asset,i)
+;
+
+First3YRet(t,Asset,i) = AssetReturn(t,Asset,i)$(First3YDates(t))
+
+display First3YRet
+
+$exit
+
+
 
 Returns(t,i) = SUM(Asset, AssetReturn(t,Asset,i));
 

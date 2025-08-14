@@ -1,0 +1,40 @@
+
+--- Job Opgave 4.3.gms Start 08/13/25 11:39:11 50.3.0 5a352073 DEX-DEG x86 64bit/macOS
+--- Applying:
+    /Library/Frameworks/GAMS.framework/Versions/50/Resources/gmsprmun.txt
+--- GAMS Parameters defined
+    Input "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Opgave 4.3.gms"
+    PageSize 0
+    ScrDir "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/225d/"
+    SysDir /Library/Frameworks/GAMS.framework/Versions/50/Resources/
+    LogOption 3
+    AppendLog 1
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Course License                                 G250404+0003Ac-GEN
+          University of Copenhagen                                  DCE4232
+          225d/gamslice.dat
+          node:10959501 mem:16 cores:6 ipport:56485 v:2                    
+          Course license for use within the course and related course work
+          The expiration date of time-limited license is Oct 01, 2025
+System information: 6 physical cores and 16 Gb physical memory detected
+GAMS 50.3.0   Copyright (C) 1987-2025 GAMS Development. All rights reserved
+--- Starting compilation
+--- Opgave 4.3.gms(59) 3 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/weekly_returns_2013_2025.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/weekly_returns_2013_2025.gdx
+--- Opgave 4.3.gms(92) 5 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Data_4.3.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Data_4.3.gdx
+--- Opgave 4.3.gms(177) 5 Mb 1 Error
+*** Error 141 in /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 4/Opgave 4.3.gms
+    Symbol declared but no values have been assigned. Check for missing
+       data definition, assignment, data loading or implicit assignment
+       via a solve statement. Suppress with $onImplicitAssign.
+       A wild shot: You may have spurious commas in the explanatory
+       text of a declaration. Check symbol reference list.
+--- Opgave 4.3.gms(177) 5 Mb 1 Error
+*** Status: Compilation error(s)
+--- Job Opgave 4.3.gms Stop 08/13/25 11:39:11 elapsed 0:00:00.053

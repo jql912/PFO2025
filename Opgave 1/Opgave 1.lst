@@ -1,4 +1,4 @@
-GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/11/25 14:03:21 Page 1
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/12/25 14:01:11 Page 1
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 C o m p i l a t i o n
 
@@ -6,7 +6,7 @@ C o m p i l a t i o n
    1  SET
    2      AssetName
    3      Date
-   4      Asset
+   4      Asset /DK0016111511/
    5  ;
    6   
    7  ALIAS(AssetName, i);
@@ -27,41 +27,204 @@ C o m p i l a t i o n
   22      StdDevAnnualReturn10(i);
   23  ;
   24   
-GDXIN   /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/weekly_returns_2013_2025.gdx
+GDXIN   /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/weekly_returns_2013_2025.gdx
 --- LOAD  Date = 3:Date
---- LOAD  Asset = 1:Asset
 --- LOAD  AssetName = 2:AssetName
 --- LOAD  AssetReturn = 4:AssetReturn
   28   
-  29  Returns(t,i) = SUM(Asset, AssetReturn(t,Asset,i));
-  30   
-  31  SET YearIndex10 /2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024/;
-  32  SET YearIndex5 /2020, 2021, 2022, 2023, 2024/;
-  33  SET YearIndex3 /2022, 2023, 2024/;
+  29  SET
+  30      First3YDates(t)
+  31  ;
+  32   
+  33  First3YDates(t) = yes$(ord(t)<156)
   34   
-  35   
-  36  execute_unload 'returns.gdx', Returns;
-  37   
-  38  execute 'gdxdump returns.gdx par=Returns output=returns.csv';
-  39   
+  35  PARAMETER
+  36      First3YRet(t,Asset,i)
+  37  ;
+  38   
+  39  First3YRet(t,Asset,i) = AssetReturn(t,Asset,i)$(First3YDates(t))
   40   
-EXIT /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
-GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/11/25 14:03:21 Page 2
+  41  display First3YRet
+  42   
+EXIT /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/Opgave 1.gms
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/12/25 14:01:11 Page 2
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Include File Summary
 
 
    SEQ   GLOBAL TYPE      PARENT   LOCAL  FILENAME
 
-     1        1 INPUT          0       0  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
-     2       25 GDXIN          1      25  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/weekly_returns_2013_2025.gdx
-     3       41 EXIT           1      41  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
+     1        1 INPUT          0       0  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/Opgave 1.gms
+     2       25 GDXIN          1      25  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/weekly_returns_2013_2025.gdx
+     3       43 EXIT           1      43  /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/Opgave 1.gms
 
 
-COMPILATION TIME     =        0.055 SECONDS     30 MB  50.3.0 5a352073 DEX-DEG
-GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/11/25 14:03:21 Page 3
+COMPILATION TIME     =        0.047 SECONDS      3 MB  50.3.0 5a352073 DEX-DEG
+GAMS 50.3.0  5a352073 Jul 30, 2025          DEX-DEG x86 64bit/macOS - 08/12/25 14:01:11 Page 3
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
+
+
+----     41 PARAMETER First3YRet  
+
+                         Wealth In~
+
+2013-01-09.DK0016111511       0.013
+2013-01-16.DK0016111511      -0.011
+2013-01-23.DK0016111511       0.010
+2013-01-30.DK0016111511      -0.009
+2013-02-06.DK0016111511      -0.001
+2013-02-13.DK0016111511       0.014
+2013-02-20.DK0016111511       0.003
+2013-02-27.DK0016111511       0.011
+2013-03-06.DK0016111511       0.025
+2013-03-13.DK0016111511       0.009
+2013-03-20.DK0016111511       0.003
+2013-03-27.DK0016111511       0.010
+2013-04-03.DK0016111511      -0.008
+2013-04-10.DK0016111511       0.003
+2013-04-17.DK0016111511      -0.018
+2013-04-24.DK0016111511       0.025
+2013-05-01.DK0016111511      -0.004
+2013-05-08.DK0016111511       0.025
+2013-05-15.DK0016111511       0.028
+2013-05-22.DK0016111511       0.001
+2013-05-29.DK0016111511      -0.020
+2013-06-05.DK0016111511      -0.019
+2013-06-12.DK0016111511      -0.030
+2013-06-19.DK0016111511       0.006
+2013-06-26.DK0016111511      -0.003
+2013-07-03.DK0016111511       0.012
+2013-07-10.DK0016111511       0.032
+2013-07-17.DK0016111511       0.001
+2013-07-24.DK0016111511      -0.001
+2013-07-31.DK0016111511      -0.013
+2013-08-07.DK0016111511       0.004
+2013-08-14.DK0016111511       0.010
+2013-08-21.DK0016111511      -0.033
+2013-08-28.DK0016111511      -0.004
+2013-09-04.DK0016111511       0.021
+2013-09-11.DK0016111511       0.020
+2013-09-18.DK0016111511       0.013
+2013-09-25.DK0016111511      -0.019
+2013-10-02.DK0016111511      -0.008
+2013-10-09.DK0016111511      -0.013
+2013-10-16.DK0016111511       0.035
+2013-10-23.DK0016111511      -0.001
+2013-10-30.DK0016111511       0.009
+2013-11-06.DK0016111511       0.016
+2013-11-13.DK0016111511       0.006
+2013-11-20.DK0016111511       0.003
+2013-11-27.DK0016111511      -0.002
+2013-12-04.DK0016111511      -0.011
+2013-12-11.DK0016111511      -0.020
+2013-12-18.DK0016111511       0.008
+2013-12-25.DK0016111511       0.019
+2014-01-01.DK0016111511       0.008
+2014-01-08.DK0016111511       0.006
+2014-01-15.DK0016111511       0.006
+2014-01-22.DK0016111511       0.002
+2014-01-29.DK0016111511      -0.043
+2014-02-05.DK0016111511      -0.008
+2014-02-12.DK0016111511       0.037
+2014-02-19.DK0016111511      -0.001
+2014-02-26.DK0016111511       0.012
+2014-03-05.DK0016111511       0.003
+2014-03-12.DK0016111511      -0.019
+2014-03-19.DK0016111511      -0.006
+2014-03-26.DK0016111511       0.009
+2014-04-02.DK0016111511       0.024
+2014-04-09.DK0016111511      -0.009
+2014-04-16.DK0016111511      -0.003
+2014-04-23.DK0016111511       0.007
+2014-04-30.DK0016111511       0.004
+2014-05-07.DK0016111511      -0.007
+2014-05-14.DK0016111511       0.024
+2014-05-21.DK0016111511 4.306169E-4
+2014-05-28.DK0016111511       0.014
+2014-06-04.DK0016111511       0.005
+2014-06-11.DK0016111511       0.014
+2014-06-18.DK0016111511      -0.001
+2014-06-25.DK0016111511      -0.004
+2014-07-02.DK0016111511       0.008
+2014-07-09.DK0016111511      -0.005
+2014-07-16.DK0016111511       0.012
+2014-07-23.DK0016111511       0.005
+2014-07-30.DK0016111511      -0.003
+2014-08-06.DK0016111511      -0.025
+2014-08-13.DK0016111511       0.010
+2014-08-20.DK0016111511       0.021
+2014-08-27.DK0016111511       0.014
+2014-09-03.DK0016111511       0.006
+2014-09-10.DK0016111511       0.006
+2014-09-17.DK0016111511      -0.004
+2014-09-24.DK0016111511       0.002
+2014-10-01.DK0016111511      -0.009
+2014-10-08.DK0016111511      -0.011
+2014-10-15.DK0016111511      -0.051
+2014-10-22.DK0016111511       0.038
+2014-10-29.DK0016111511       0.013
+2014-11-05.DK0016111511       0.033
+2014-11-12.DK0016111511       0.007
+2014-11-19.DK0016111511 3.928115E-4
+2014-11-26.DK0016111511       0.013
+2014-12-03.DK0016111511       0.010
+2014-12-10.DK0016111511      -0.032
+2014-12-17.DK0016111511      -0.012
+2014-12-24.DK0016111511       0.053
+2014-12-31.DK0016111511      -0.006
+2015-01-07.DK0016111511      -0.003
+2015-01-14.DK0016111511       0.004
+2015-01-21.DK0016111511       0.033
+2015-01-28.DK0016111511       0.019
+2015-02-04.DK0016111511       0.012
+2015-02-11.DK0016111511       0.016
+2015-02-18.DK0016111511       0.018
+2015-02-25.DK0016111511       0.012
+2015-03-04.DK0016111511       0.014
+2015-03-11.DK0016111511       0.018
+2015-03-18.DK0016111511       0.019
+2015-03-25.DK0016111511      -0.028
+2015-04-01.DK0016111511       0.012
+2015-04-08.DK0016111511       0.012
+2015-04-15.DK0016111511       0.027
+2015-04-22.DK0016111511      -0.008
+2015-04-29.DK0016111511      -0.032
+2015-05-06.DK0016111511      -0.031
+2015-05-13.DK0016111511       0.009
+2015-05-20.DK0016111511       0.028
+2015-05-27.DK0016111511       0.012
+2015-06-03.DK0016111511      -0.038
+2015-06-10.DK0016111511      -0.010
+2015-06-17.DK0016111511      -0.002
+2015-06-24.DK0016111511       0.018
+2015-07-01.DK0016111511      -0.014
+2015-07-08.DK0016111511      -0.019
+2015-07-15.DK0016111511       0.046
+2015-07-22.DK0016111511       0.003
+2015-07-29.DK0016111511      -0.017
+2015-08-05.DK0016111511       0.016
+2015-08-12.DK0016111511      -0.037
+2015-08-19.DK0016111511       0.002
+2015-08-26.DK0016111511      -0.092
+2015-09-02.DK0016111511       0.014
+2015-09-09.DK0016111511       0.012
+2015-09-16.DK0016111511       0.001
+2015-09-23.DK0016111511      -0.021
+2015-09-30.DK0016111511      -0.004
+2015-10-07.DK0016111511       0.040
+2015-10-14.DK0016111511      -0.019
+2015-10-21.DK0016111511       0.021
+2015-10-28.DK0016111511       0.054
+2015-11-04.DK0016111511       0.024
+2015-11-11.DK0016111511       0.001
+2015-11-18.DK0016111511       0.007
+2015-11-25.DK0016111511       0.005
+2015-12-02.DK0016111511       0.003
+2015-12-09.DK0016111511      -0.051
+2015-12-16.DK0016111511       0.002
+2015-12-23.DK0016111511       0.008
+
 
 
 USER: Course License                                 G250404+0003Ac-GEN
@@ -71,5 +234,5 @@ USER: Course License                                 G250404+0003Ac-GEN
 
 **** FILE SUMMARY
 
-Input      /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.gms
-Output     /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1.lst
+Input      /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/Opgave 1.gms
+Output     /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/Opgave 1.lst

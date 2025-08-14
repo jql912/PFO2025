@@ -1,8 +1,8 @@
 library(tidyverse)
-install.packages("PerformanceAnalytics")
 library(PerformanceAnalytics)
+library(readxl)
 
-Return <- read_excel("~/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Return.xlsx",col_types = c("date", "text", "numeric", "numeric"))
+Return <- read_excel("~/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 1/Return.xlsx",col_types = c("date", "text", "numeric", "numeric"))
 
 Return = Return %>% select(c(Date, Asset, Return)) %>% filter(Asset %in% c("Jyske Portefølje Vækst Akk KL","Jyske Portefølje Balanceret Akk KL","Jyske Portefølje Stabil Akk KL","Jyske Portefølje Dæmpet akk KL"))
 
@@ -17,7 +17,11 @@ individual_yearly_avg_ret_3 = Return %>%
   mutate(Year = year(Date)) %>%
   group_by(Asset, Year) %>%
   summarise(mean_week_ret = prod(1+Return)-1) %>%
-  ungroup()
+  ungroup() %>%
+  group_by(Asset) %>%
+  mutate(avg_ret = mean(mean_week_ret)) %>%
+  select(Asset, avg_ret) %>%
+  unique()
 
 
 ### Mean return by compound the average weekly returns------
@@ -72,11 +76,11 @@ week_cvar_3 = Return %>%
   filter(year(Date) >= 2022 & year(Date) <= 2024) %>%
   mutate(Year = year(Date)) %>%
   group_by(Asset, Year) %>%
-  mutate(CVaR = CVaR(Return, p = 0.99, method = "historical"))
+  mutate(CVaR = CVaR(Return, p = 0.95, method = "historical"))
 
 year_svg_cvar_3 = left_join(week_cvar_3, n_weeks,by = c("Year", "Asset")) %>%
   group_by(Asset, Year) %>%
-  mutate(CVaR = (1+CVaR)**n_weeks - 1) %>%
+  mutate(CVaR = CVaR * sqrt(n_weeks)) %>%
   select(c(Asset, Year, CVaR)) %>%
   unique() %>%
   ungroup() %>%
@@ -104,7 +108,11 @@ individual_yearly_avg_ret_5 = Return %>%
   mutate(Year = year(Date)) %>%
   group_by(Asset, Year) %>%
   summarise(mean_week_ret = prod(1+Return)-1) %>%
-  ungroup()
+  ungroup() %>%
+  group_by(Asset) %>%
+  mutate(avg_ret = mean(mean_week_ret)) %>%
+  select(Asset, avg_ret) %>%
+  unique()
 
 
 ### Mean return by compound the average weekly returns------
@@ -153,11 +161,11 @@ week_cvar_5 = Return %>%
   filter(year(Date) >= 2020 & year(Date) <= 2024) %>%
   mutate(Year = year(Date)) %>%
   group_by(Asset, Year) %>%
-  mutate(CVaR = CVaR(Return, p = 0.99, method = "historical"))
+  mutate(CVaR = CVaR(Return, p = 0.95, method = "historical"))
 
 year_svg_cvar_5 = left_join(week_cvar_5, n_weeks,by = c("Year", "Asset")) %>%
   group_by(Asset, Year) %>%
-  mutate(CVaR = (1+CVaR)**n_weeks - 1) %>%
+  mutate(CVaR = CVaR * sqrt(n_weeks)) %>%
   select(c(Asset, Year, CVaR)) %>%
   unique() %>%
   ungroup() %>%
@@ -180,7 +188,11 @@ individual_yearly_avg_ret_10 = Return %>%
   mutate(Year = year(Date)) %>%
   group_by(Asset, Year) %>%
   summarise(mean_week_ret = prod(1+Return)-1) %>%
-  ungroup()
+  ungroup() %>%
+  group_by(Asset) %>%
+  mutate(avg_ret = mean(mean_week_ret)) %>%
+  select(Asset, avg_ret) %>%
+  unique()
 
 
 ### Mean return by compound the average weekly returns------
@@ -229,11 +241,11 @@ week_cvar_10 = Return %>%
   filter(year(Date) >= 2015 & year(Date) <= 2024) %>%
   mutate(Year = year(Date)) %>%
   group_by(Asset, Year) %>%
-  mutate(CVaR = CVaR(Return, p = 0.99, method = "historical"))
+  mutate(CVaR = CVaR(Return, p = 0.95, method = "historical"))
 
 year_svg_cvar_10 = left_join(week_cvar_10, n_weeks,by = c("Year", "Asset")) %>%
   group_by(Asset, Year) %>%
-  mutate(CVaR = (1+CVaR)**n_weeks - 1) %>%
+  mutate(CVaR = CVaR * sqrt(n_weeks)) %>%
   select(c(Asset, Year, CVaR)) %>%
   unique() %>%
   ungroup() %>%
@@ -246,9 +258,9 @@ year_svg_cvar_10 = left_join(week_cvar_10, n_weeks,by = c("Year", "Asset")) %>%
 
 # SAMLET --------
 
-year_avg_ret_3_sus
-year_avg_ret_5_sus
-year_avg_ret_10_sus
+individual_yearly_avg_ret_3
+individual_yearly_avg_ret_5
+individual_yearly_avg_ret_10
 year_svg_sd_3
 year_svg_sd_5
 year_svg_sd_10

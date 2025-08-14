@@ -1,0 +1,132 @@
+--- Job Opgave 5.1-5.4.gms Start 08/14/25 09:51:43 50.3.0 5a352073 DEX-DEG x86 64bit/macOS
+--- Applying:
+    /Library/Frameworks/GAMS.framework/Versions/50/Resources/gmsprmun.txt
+--- GAMS Parameters defined
+    Input "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 5/Opgave 5.1-5.4.gms"
+    PageSize 0
+    ScrDir "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 5/225a/"
+    SysDir /Library/Frameworks/GAMS.framework/Versions/50/Resources/
+    LogOption 3
+    AppendLog 1
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Course License                                 G250404+0003Ac-GEN
+          University of Copenhagen                                  DCE4232
+          225a/gamslice.dat
+          node:10959501 mem:16 cores:6 ipport:63687 v:2                    
+          Course license for use within the course and related course work
+          The expiration date of time-limited license is Oct 01, 2025
+System information: 6 physical cores and 16 Gb physical memory detected
+GAMS 50.3.0   Copyright (C) 1987-2025 GAMS Development. All rights reserved
+--- Starting compilation
+--- Opgave 5.1-5.4.gms(10) 2 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 5/bootstrap_data_O5.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 5/bootstrap_data_O5.gdx
+--- Opgave 5.1-5.4.gms(111) 4 Mb
+--- Starting execution: elapsed 0:00:00.020
+--- Opgave 5.1-5.4.gms(70) 5 Mb
+--- Generating LP model MinDR_given_return
+--- Opgave 5.1-5.4.gms(82) 53 Mb
+---   1,004 rows  1,727 columns  727,769 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.427E-03, 1.002E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 7.292E-04, 1.373E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.522
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.09 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 33.82 Mb (peak 33.83 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.04 Mb (peak 8.48 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 0
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 688 columns.
+Reduced LP has 1002 rows, 1039 columns, and 40077 nonzeros.
+Presolve time = 0.08 sec. (52.89 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Iteration:    66   Dual objective     =             0.000635
+Iteration:   150   Dual objective     =             0.001140
+Iteration:   232   Dual objective     =             0.001380
+Iteration:   315   Dual objective     =             0.001459
+Removing shift (12).
+Iteration:   321   Scaled dual infeas =             0.002721
+Iteration:   325   Dual objective     =             0.001435
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.14sec (det. 90.82 ticks)
+
+
+Optimal solution found
+Objective:            0.001448
+
+--- Reading solution for model MinDR_given_return
+--- Executing after solve: elapsed 0:00:01.013
+--- Opgave 5.1-5.4.gms(92) 53 Mb
+--- Generating LP model MaxReturn_given_DR
+--- Opgave 5.1-5.4.gms(95) 53 Mb
+---   2,003 rows  1,727 columns  728,768 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 6.451E-03, 1.002E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 7.292E-04, 1.373E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.587
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.11 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 33.93 Mb (peak 33.94 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.06 Mb (peak 8.54 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 0
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1000 rows and 688 columns.
+Reduced LP has 1002 rows, 1039 columns, and 41039 nonzeros.
+Presolve time = 0.07 sec. (55.64 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.016684
+Perturbation started.
+Iteration:   101   Dual objective     =             0.016684
+Iteration:   238   Dual objective     =             0.014355
+Iteration:   300   Dual objective     =             0.013624
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.11sec (det. 88.01 ticks)
+
+
+Optimal solution found
+Objective:            0.013571
+
+--- Reading solution for model MaxReturn_given_DR
+--- Executing after solve: elapsed 0:00:02.024
+--- Opgave 5.1-5.4.gms(109) 53 Mb
+--- GDX File (execute_unload) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 5/Data_5.5.gdx
+*** Status: Normal completion
+--- Job Opgave 5.1-5.4.gms Stop 08/14/25 09:51:45 elapsed 0:00:02.027

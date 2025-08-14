@@ -1,0 +1,12 @@
+B 3 C o m p i l a t i o n
+B 208 Include File Summary
+B 221 E x e c u t i o n
+I 221 Return
+I 519 x_min_cvar
+I 524 x_max_ret
+I 529 CumReturn_min_sd
+I 536 CumReturn_max_ret
+I 544 TotalReturn_min_sd
+I 545 TotalReturn_max_ret
+I 546 Return_min_sd
+I 556 Return_max_ret

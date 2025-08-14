@@ -1,0 +1,32 @@
+B 3 C o m p i l a t i o n
+B 142 Include File Summary
+B 154 E x e c u t i o n
+I 154 Return
+I 522 Return_bs_3
+I 529 avg_ret
+B 537 Equation Listing    SOLVE MinDR Using LP From line 126
+D 540 BudgetCond
+D 545 ExpRetDef
+D 550 Downside_def
+D 561 ObjMinDR
+B 567 Column Listing      SOLVE MinDR Using LP From line 126
+E 570 x
+E 3586 Downside_regret
+E 3605 Exp_Return
+E 3612 z_min_DR
+B 3620 Range Statistics    SOLVE MinDR Using LP From line 126
+B 3631 Model Statistics    SOLVE MinDR Using LP From line 126
+B 3644 Solution Report     SOLVE MinDR Using LP From line 126
+F 3679 BudgetCond
+F 3680 ExpRetDef
+F 3685 Downside_def
+F 4692 ObjMinDR
+G 4696 x
+G 5426 Downside_regret
+G 6433 Exp_Return
+G 6434 z_min_DR
+B 6444 E x e c u t i o n
+I 6444 x
+I 6451 Exp_Return
+I 6452 Downside_regret
+I 6461 z_min_DR

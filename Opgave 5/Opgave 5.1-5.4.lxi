@@ -1,0 +1,60 @@
+B 3 C o m p i l a t i o n
+B 120 Include File Summary
+B 133 Equation Listing    SOLVE MinDR_given_return Using LP From line 82
+D 136 BudgetCond
+D 141 ExpRetDef
+D 146 Return_cond
+D 151 Downside_def
+D 162 Downside_reg_port
+B 168 Column Listing      SOLVE MinDR_given_return Using LP From line 82
+E 171 x
+E 3187 Downside_regret
+E 3206 Exp_Return
+E 3214 Downside_regret_port
+B 3222 Range Statistics    SOLVE MinDR_given_return Using LP From line 82
+B 3233 Model Statistics    SOLVE MinDR_given_return Using LP From line 82
+B 3246 Solution Report     SOLVE MinDR_given_return Using LP From line 82
+F 3281 BudgetCond
+F 3282 ExpRetDef
+F 3283 Return_cond
+F 3289 Downside_def
+F 4296 Downside_reg_port
+G 4300 x
+G 5030 Downside_regret
+G 6037 Exp_Return
+G 6038 Downside_regret_port
+B 6048 E x e c u t i o n
+I 6048 x
+I 6055 Exp_Return
+I 6056 Bench_ret_4w
+I 6057 Downside_regret
+I 6065 Downside_regret_port
+B 6069 Equation Listing    SOLVE MaxReturn_given_DR Using LP From line 95
+D 6072 BudgetCond
+D 6077 ExpRetDef
+D 6082 Downside_def
+D 6093 Downside_cond
+D 6104 Downside_reg_port
+B 6110 Column Listing      SOLVE MaxReturn_given_DR Using LP From line 95
+E 6113 x
+E 9129 Downside_regret
+E 9148 Exp_Return
+E 9155 Downside_regret_port
+B 10163 Range Statistics    SOLVE MaxReturn_given_DR Using LP From line 95
+B 10174 Model Statistics    SOLVE MaxReturn_given_DR Using LP From line 95
+B 10187 Solution Report     SOLVE MaxReturn_given_DR Using LP From line 95
+F 10222 BudgetCond
+F 10223 ExpRetDef
+F 10228 Downside_def
+F 11233 Downside_cond
+F 12240 Downside_reg_port
+G 12244 x
+G 12974 Downside_regret
+G 13981 Exp_Return
+G 13982 Downside_regret_port
+B 13992 E x e c u t i o n
+I 13992 x
+I 13999 Exp_Return
+I 14000 Bench_ret_4w
+I 14001 Downside_regret
+I 14009 Downside_regret_port
