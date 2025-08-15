@@ -1,0 +1,118 @@
+=1
+=2
+=0CONOPT 4         50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+=1
+ 
+ 
+    C O N O P T   version 4.37
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+=2
+=1
+    Will use up to 4 threads.
+ 
+=2
+ 
+  ***  Line    0  SET       LFEERR =            0
+ 
+  ***  Line    0  SET       LFEERR =            0
+ 
+  ***  Line    0  SET       LFITER =   2147483647
+ 
+  ***  Line    0  SET       RVTIME =     1.0000000000E+10
+=1
+ 
+    The user model has 1455 constraints and 1453 variables
+    with 4437 Jacobian elements, 41 of which are nonlinear.
+    The Hessian of the Lagrangian has 41 elements on the diagonal,
+    820 elements below the diagonal, and 41 nonlinear variables.
+=2
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.9685031831E-02 (Input point)
+=1
+ 
+    The pre-triangular part of the model has 720 constraints and 0 variables.
+=2
+=1
+    The post-triangular part of the model has 1 constraints and variables.
+=2
+=1
+ 
+    Preprocessed model has 734 constraints and 1452 variables
+    with 2956 Jacobian elements, 41 of which are nonlinear.
+=2
+                      1.6384731571E-02 (Full preprocessed model)
+                      1.6384731571E-02 (After scaling)
+                      7.8148530788E-05 (After adjusting individual variables)
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       1   0          1.0628055025E-07                 1.0E+00     1 T  T
+       2   0          1.9909795384E-13                 1.0E+00     1 T  T
+ 
+ ** Feasible solution. Value of objective =   8.392360475412E-03
+ 
+Search for an optimal solution.
+ 
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       3   3          8.6234557637E-03 3.2E-03       1 9.5E-01     1 T  T
+       4   3          8.6437800312E-03 8.6E-03      19 1.4E-01     5 F  T
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+       5   4          8.8005850750E-03 1.7E-03      20 1.0E+00    19 T  T
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+       6   4          8.8018383239E-03 1.3E-04       8 1.0E+00     9 T  T
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+ AddSuperbasics. NoBounds= F
+       7   4          8.8019311500E-03 5.3E-06       5 1.0E+00     6 T  T
+       8   4          8.8019311500E-03 1.2E-08       3
+=1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+=2
+=1
+ 
+ CONOPT time Total                            0.076 seconds
+   of which: Function evaluations             0.001 =  1.3%
+             1st Derivative evaluations       0.000 =  0.0%
+             2nd Derivative evaluations       0.000 =  0.0%
+             Directional 2nd Deriv(Hess)      0.002 =  2.6%
+             Interval derivative evals        0.041 = 53.9%
+ 
+=2
+ 
+ Memory: Max used =      2.92 Mbytes
+  Total Allocated =      3.45 Mbytes
+ 

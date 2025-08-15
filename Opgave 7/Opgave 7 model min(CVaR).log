@@ -1,0 +1,4011 @@
+
+--- Job Opgave 7 model min(CVaR).gms Start 08/15/25 16:04:36 50.3.0 5a352073 DEX-DEG x86 64bit/macOS
+--- Applying:
+    /Library/Frameworks/GAMS.framework/Versions/50/Resources/gmsprmun.txt
+--- GAMS Parameters defined
+    Input "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Opgave 7 model min(CVaR).gms"
+    PageSize 0
+    ScrDir "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/225d/"
+    SysDir /Library/Frameworks/GAMS.framework/Versions/50/Resources/
+    LogOption 3
+    AppendLog 1
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Course License                                 G250404+0003Ac-GEN
+          University of Copenhagen                                  DCE4232
+          225d/gamslice.dat
+          node:10959501 mem:16 cores:6 ipport:52395 v:2                    
+          Course license for use within the course and related course work
+          The expiration date of time-limited license is Oct 01, 2025
+System information: 6 physical cores and 16 Gb physical memory detected
+GAMS 50.3.0   Copyright (C) 1987-2025 GAMS Development. All rights reserved
+--- Starting compilation
+--- Opgave 7 model min(CVaR).gms(59) 3 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/weekly_returns_2013_2025.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/weekly_returns_2013_2025.gdx
+--- Opgave 7 model min(CVaR).gms(71) 5 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Initial_inv_strat_CVaR.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Initial_inv_strat_CVaR.gdx
+--- Opgave 7 model min(CVaR).gms(100) 5 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Benchmark_Opg7.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Benchmark_Opg7.gdx
+--- Opgave 7 model min(CVaR).gms(324) 5 Mb
+--- Starting execution: elapsed 0:00:00.048
+--- Opgave 7 model min(CVaR).gms(204) 14 Mb  3 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 17 Mb
+--- LOOPS loop_no = loop1
+---   3,455 rows  3,454 columns  50,311 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.832E-03, 1.008E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.542
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 0
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2451 columns, and 45867 nonzeros.
+Presolve time = 0.05 sec. (51.41 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.983226
+Iteration:    62   Scaled dual infeas =             0.044601
+Iteration:    71   Dual objective     =             1.005190
+Iteration:   132   Dual objective     =             1.013760
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 80.16 ticks)
+
+
+Optimal solution found
+Objective:            1.018352
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:03.736
+--- Opgave 7 model min(CVaR).gms(204) 17 Mb  13 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop2
+---   3,455 rows  3,454 columns  50,318 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.301E-03, 1.016E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.105E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:17.456
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 718 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1735 rows, 2451 columns, and 45878 nonzeros.
+Presolve time = 0.05 sec. (51.42 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.400818
+Iteration:    43   Dual objective     =             1.001672
+Iteration:   104   Dual objective     =             1.017793
+Iteration:   218   Dual objective     =             1.025629
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 88.59 ticks)
+
+
+Optimal solution found
+Objective:            1.025738
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:17.645
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop3
+---   3,455 rows  3,454 columns  50,311 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.900E-03, 8.698E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.110E-16, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:27.851
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2451 columns, and 45866 nonzeros.
+Presolve time = 0.05 sec. (51.41 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.139255
+Iteration:    85   Scaled dual infeas =             0.095458
+Iteration:   100   Dual objective     =             0.865337
+Iteration:   165   Dual objective     =             0.881786
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 80.37 ticks)
+
+
+Optimal solution found
+Objective:            0.885257
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:28.033
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop4
+---   3,455 rows  3,454 columns  50,319 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.203E-03, 9.007E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:40.108
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2451 columns, and 45875 nonzeros.
+Presolve time = 0.07 sec. (51.42 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.693096
+Iteration:     6   Dual objective     =             0.890663
+Iteration:    73   Dual objective     =             0.898880
+Iteration:   168   Dual objective     =             0.920289
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.10sec (det. 79.83 ticks)
+
+
+Optimal solution found
+Objective:            0.920662
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:40.364
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  12 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop5
+---   3,455 rows  3,454 columns  50,338 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.057E-03, 9.091E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:53.344
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45892 nonzeros.
+Presolve time = 0.06 sec. (51.47 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.042967
+Iteration:    13   Dual objective     =             0.897675
+Iteration:    74   Dual objective     =             0.923380
+Removing shift (2).
+Iteration:   152   Scaled dual infeas =             0.000000
+Iteration:   153   Dual objective     =             0.928808
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 78.63 ticks)
+
+
+Optimal solution found
+Objective:            0.928808
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:53.553
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  12 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop6
+---   3,455 rows  3,454 columns  50,325 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.588E-03, 9.135E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:01:05.814
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45879 nonzeros.
+Presolve time = 0.05 sec. (51.43 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.745677
+Iteration:    66   Scaled dual infeas =             0.125735
+Iteration:   102   Dual objective     =             0.913496
+Iteration:   192   Dual objective     =             0.933622
+Removing shift (1).
+Iteration:   216   Scaled dual infeas =             0.000000
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 80.15 ticks)
+
+
+Optimal solution found
+Objective:            0.934541
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:01:05.997
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop7
+---   3,455 rows  3,454 columns  50,342 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.391E-03, 9.207E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:01:15.882
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45894 nonzeros.
+Presolve time = 0.05 sec. (51.48 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.027748
+Iteration:    10   Dual objective     =             0.905592
+Iteration:    71   Dual objective     =             0.923615
+Removing shift (1).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 85.60 ticks)
+
+
+Optimal solution found
+Objective:            0.931799
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:01:16.068
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop8
+---   3,455 rows  3,454 columns  50,338 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.174E-03, 9.275E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.110E-16, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:01:26.432
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45891 nonzeros.
+Presolve time = 0.05 sec. (51.47 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.044284
+Iteration:    80   Dual objective     =             0.926135
+Iteration:   180   Dual objective     =             0.945542
+Removing shift (1).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 82.95 ticks)
+
+
+Optimal solution found
+Objective:            0.946149
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:01:26.616
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop9
+---   3,455 rows  3,454 columns  50,348 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.319E-03, 9.307E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.834E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:01:36.531
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2451 columns, and 45904 nonzeros.
+Presolve time = 0.05 sec. (51.48 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.153518
+Iteration:    42   Dual objective     =             0.930564
+Iteration:   134   Dual objective     =             0.947323
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 78.83 ticks)
+
+
+Optimal solution found
+Objective:            0.949384
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:01:36.710
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop10
+---   3,455 rows  3,454 columns  50,338 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.070E-03, 9.308E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:01:47.848
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45888 nonzeros.
+Presolve time = 0.06 sec. (51.48 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.636188
+Iteration:    88   Scaled dual infeas =             0.005439
+Iteration:   103   Dual objective     =             0.929237
+Iteration:   190   Dual objective     =             0.946548
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.09sec (det. 80.18 ticks)
+
+
+Optimal solution found
+Objective:            0.947297
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:01:48.062
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  13 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop11
+---   3,455 rows  3,454 columns  50,346 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.280E-03, 9.262E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:02:01.440
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45900 nonzeros.
+Presolve time = 0.07 sec. (51.49 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.797627
+Iteration:    66   Dual objective     =             0.918395
+Iteration:   127   Dual objective     =             0.934061
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.10sec (det. 80.41 ticks)
+
+
+Optimal solution found
+Objective:            0.936816
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:02:01.677
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  13 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop12
+---   3,455 rows  3,454 columns  50,356 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.404E-03, 9.296E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:02:14.948
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 719 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1734 rows, 2451 columns, and 45914 nonzeros.
+Presolve time = 0.05 sec. (51.51 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             3.720120
+Iteration:   104   Dual objective     =             0.929473
+Iteration:   214   Dual objective     =             0.948620
+Removing shift (1).
+Iteration:   220   Scaled dual infeas =             0.000000
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 82.11 ticks)
+
+
+Optimal solution found
+Objective:            0.948636
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:02:15.135
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop13
+---   3,455 rows  3,454 columns  50,346 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.655E-03, 9.360E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.643E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:02:25.936
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45898 nonzeros.
+Presolve time = 0.05 sec. (51.50 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.152612
+Iteration:    72   Scaled dual infeas =             0.095302
+Iteration:    92   Dual objective     =             0.934065
+Iteration:   159   Dual objective     =             0.942599
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 83.77 ticks)
+
+
+Optimal solution found
+Objective:            0.944549
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:02:26.120
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop14
+---   3,455 rows  3,454 columns  50,365 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.275E-03, 9.366E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:02:36.492
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45919 nonzeros.
+Presolve time = 0.05 sec. (51.54 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.123579
+Iteration:    52   Dual objective     =             0.936621
+Iteration:   126   Dual objective     =             0.952241
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 81.06 ticks)
+
+
+Optimal solution found
+Objective:            0.958998
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:02:36.679
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  13 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop15
+---   3,455 rows  3,454 columns  50,364 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 5.122E-03, 9.358E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:02:50.179
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45916 nonzeros.
+Presolve time = 0.04 sec. (51.54 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.197557
+Iteration:    66   Scaled dual infeas =             0.075107
+Iteration:    96   Dual objective     =             0.929294
+Iteration:   161   Dual objective     =             0.953318
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 79.90 ticks)
+
+
+Optimal solution found
+Objective:            0.956955
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:02:50.343
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop16
+---   3,455 rows  3,454 columns  50,359 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.057E-03, 9.245E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.777E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:03:00.107
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45909 nonzeros.
+Presolve time = 0.05 sec. (51.54 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.097692
+Iteration:    10   Dual objective     =             0.893541
+Iteration:    71   Dual objective     =             0.929363
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 87.63 ticks)
+
+
+Optimal solution found
+Objective:            0.952232
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:03:00.279
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop17
+---   3,455 rows  3,454 columns  50,365 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.953E-03, 9.403E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:03:11.028
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45919 nonzeros.
+Presolve time = 0.04 sec. (51.54 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.243017
+Iteration:    53   Dual objective     =             0.939417
+Iteration:   115   Dual objective     =             0.952800
+Removing shift (1).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 89.16 ticks)
+
+
+Optimal solution found
+Objective:            0.965634
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:03:11.201
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop18
+---   3,455 rows  3,454 columns  50,368 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.557E-04, 9.305E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.860E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:03:23.137
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45920 nonzeros.
+Presolve time = 0.06 sec. (51.55 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.054960
+Iteration:     9   Dual objective     =             0.912107
+Iteration:    75   Dual objective     =             0.939914
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.09sec (det. 76.92 ticks)
+
+
+Optimal solution found
+Objective:            0.949735
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:03:23.356
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  13 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop19
+---   3,455 rows  3,454 columns  50,373 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.229E-03, 9.367E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:03:36.755
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45925 nonzeros.
+Presolve time = 0.05 sec. (51.57 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.028756
+Iteration:    12   Dual objective     =             0.936446
+Iteration:    90   Dual objective     =             0.955511
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.56 ticks)
+
+
+Optimal solution found
+Objective:            0.960709
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:03:36.936
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop20
+---   3,455 rows  3,454 columns  50,376 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.380E-03, 9.442E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.142E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:03:48.772
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45928 nonzeros.
+Presolve time = 0.05 sec. (51.57 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.326617
+Iteration:    58   Dual objective     =             0.925973
+Iteration:   121   Dual objective     =             0.958296
+Removing shift (25).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 78.88 ticks)
+
+
+Optimal solution found
+Objective:            0.967028
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:03:48.965
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop21
+---   3,455 rows  3,454 columns  50,376 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.569E-03, 9.560E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.441E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:04:00.880
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45926 nonzeros.
+Presolve time = 0.05 sec. (51.58 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.208343
+Iteration:    10   Dual objective     =             0.924872
+Iteration:    74   Dual objective     =             0.968268
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 74.28 ticks)
+
+
+Optimal solution found
+Objective:            0.976976
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:04:01.059
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop22
+---   3,455 rows  3,454 columns  50,381 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.151E-03, 9.566E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:04:13.158
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45931 nonzeros.
+Presolve time = 0.05 sec. (51.59 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.298680
+Iteration:     7   Dual objective     =             0.920456
+Iteration:    84   Dual objective     =             0.972569
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 75.47 ticks)
+
+
+Optimal solution found
+Objective:            0.978964
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:04:13.333
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop23
+---   3,455 rows  3,454 columns  50,374 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.527E-03, 9.390E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.277E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:04:23.914
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 724 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1729 rows, 2451 columns, and 45922 nonzeros.
+Presolve time = 0.06 sec. (51.57 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.035236
+Iteration:     7   Dual objective     =             0.918149
+Iteration:    74   Dual objective     =             0.956575
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 73.28 ticks)
+
+
+Optimal solution found
+Objective:            0.962344
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:04:24.118
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop24
+---   3,455 rows  3,454 columns  50,378 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.720E-03, 9.551E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.178E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:04:34.211
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45928 nonzeros.
+Presolve time = 0.05 sec. (51.59 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.355247
+Iteration:    55   Dual objective     =             0.955125
+Iteration:   126   Dual objective     =             0.964714
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 78.43 ticks)
+
+
+Optimal solution found
+Objective:            0.969453
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:04:34.388
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop25
+---   3,455 rows  3,454 columns  50,386 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.535E-03, 9.563E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.365E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:04:45.860
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45938 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.027853
+Iteration:     8   Dual objective     =             0.942319
+Iteration:    69   Dual objective     =             0.972172
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 73.56 ticks)
+
+
+Optimal solution found
+Objective:            0.977836
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:04:46.055
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  12 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop26
+---   3,455 rows  3,454 columns  50,388 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.165E-03, 9.630E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.119E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:04:59.310
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45940 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.050798
+Iteration:    48   Dual objective     =             0.963010
+Iteration:   138   Dual objective     =             0.981285
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 77.46 ticks)
+
+
+Optimal solution found
+Objective:            0.983026
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:04:59.485
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop27
+---   3,455 rows  3,454 columns  50,390 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.556E-04, 9.560E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.563E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:05:11.291
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45944 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.524117
+Iteration:    21   Dual objective     =             0.941675
+Iteration:    82   Dual objective     =             0.964316
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 85.32 ticks)
+
+
+Optimal solution found
+Objective:            0.977345
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:05:11.480
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  12 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop28
+---   3,455 rows  3,454 columns  50,387 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.845E-03, 9.194E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.480E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:05:23.664
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45941 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =            25.254820
+Iteration:    55   Dual objective     =             0.912475
+Iteration:   116   Dual objective     =             0.930540
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 76.03 ticks)
+
+
+Optimal solution found
+Objective:            0.936347
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:05:23.860
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  12 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop29
+---   3,455 rows  3,454 columns  50,390 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.749E-03, 9.183E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.737E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:05:36.725
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45944 nonzeros.
+Presolve time = 0.05 sec. (51.62 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             4.747608
+Iteration:    66   Dual objective     =             0.917922
+Iteration:   143   Dual objective     =             0.933253
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.48 ticks)
+
+
+Optimal solution found
+Objective:            0.934335
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:05:36.913
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  11 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop30
+---   3,455 rows  3,454 columns  50,388 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 6.158E-04, 9.170E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.753E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:05:48.499
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45942 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.742595
+Iteration:    14   Dual objective     =             0.904273
+Iteration:    75   Dual objective     =             0.922727
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.89 ticks)
+
+
+Optimal solution found
+Objective:            0.930067
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:05:48.686
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  12 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop31
+---   3,455 rows  3,454 columns  50,385 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.746E-03, 8.966E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.217E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:06:01.434
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45939 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.062669
+Iteration:     3   Dual objective     =             0.878242
+Iteration:    72   Dual objective     =             0.907448
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 72.75 ticks)
+
+
+Optimal solution found
+Objective:            0.919242
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:06:01.616
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop32
+---   3,455 rows  3,454 columns  50,385 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.921E-03, 9.031E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.122E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:06:12.720
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45939 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             4.428295
+Iteration:    94   Dual objective     =             0.902232
+Iteration:   174   Dual objective     =             0.916864
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 78.40 ticks)
+
+
+Optimal solution found
+Objective:            0.919505
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:06:12.904
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop33
+---   3,455 rows  3,454 columns  50,387 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.581E-03, 8.925E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.315E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:06:23.485
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2451 columns, and 45943 nonzeros.
+Presolve time = 0.05 sec. (51.61 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.088082
+Iteration:    45   Dual objective     =             0.892197
+Iteration:   122   Dual objective     =             0.901792
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.79 ticks)
+
+
+Optimal solution found
+Objective:            0.907855
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:06:23.673
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop34
+---   3,455 rows  3,454 columns  50,391 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.730E-04, 8.945E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.746E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:06:34.529
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 1 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2452 columns, and 45944 nonzeros.
+Presolve time = 0.05 sec. (51.62 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.206496
+Iteration:     6   Dual objective     =             0.885024
+Iteration:    70   Dual objective     =             0.894627
+Iteration:   143   Dual objective     =             0.895421
+Iteration:   238   Dual objective     =             0.896354
+Removing shift (1).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 85.05 ticks)
+
+
+Optimal solution found
+Objective:            0.896702
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:06:34.727
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop35
+---   3,455 rows  3,454 columns  50,388 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.831E-03, 8.916E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.334E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:06:45.007
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45942 nonzeros.
+Presolve time = 0.05 sec. (51.62 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.098991
+Iteration:    15   Dual objective     =             0.875554
+Iteration:    84   Dual objective     =             0.903072
+Removing shift (1).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 74.42 ticks)
+
+
+Optimal solution found
+Objective:            0.912500
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:06:45.182
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop36
+---   3,455 rows  3,454 columns  50,393 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.366E-03, 8.796E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.334E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:06:54.594
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45945 nonzeros.
+Presolve time = 0.05 sec. (51.63 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.034747
+Iteration:    18   Dual objective     =             0.879856
+Iteration:    93   Dual objective     =             0.897209
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 69.97 ticks)
+
+
+Optimal solution found
+Objective:            0.899289
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:06:54.770
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop37
+---   3,455 rows  3,454 columns  50,386 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.697E-03, 8.869E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.939E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:07:04.690
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45936 nonzeros.
+Presolve time = 0.05 sec. (51.62 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.022425
+Iteration:     5   Dual objective     =             0.855150
+Iteration:    81   Dual objective     =             0.900384
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 70.47 ticks)
+
+
+Optimal solution found
+Objective:            0.904352
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:07:04.866
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop38
+---   3,455 rows  3,454 columns  50,393 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.474E-03, 8.971E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.842E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:07:14.303
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45945 nonzeros.
+Presolve time = 0.05 sec. (51.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.042801
+Iteration:     3   Dual objective     =             0.879476
+Iteration:    64   Dual objective     =             0.902910
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.54 ticks)
+
+
+Optimal solution found
+Objective:            0.912070
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:07:14.481
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop39
+---   3,455 rows  3,454 columns  50,393 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.021E-03, 8.904E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.712E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:07:23.282
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45943 nonzeros.
+Presolve time = 0.05 sec. (51.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.044289
+Iteration:     8   Dual objective     =             0.874568
+Iteration:    76   Dual objective     =             0.896939
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 70.99 ticks)
+
+
+Optimal solution found
+Objective:            0.900366
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:07:23.462
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop40
+---   3,455 rows  3,454 columns  50,392 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.404E-03, 8.959E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.529E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:07:32.754
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45944 nonzeros.
+Presolve time = 0.05 sec. (51.63 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             4.036483
+Iteration:    82   Dual objective     =             0.895169
+Iteration:   168   Dual objective     =             0.909453
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 74.33 ticks)
+
+
+Optimal solution found
+Objective:            0.909773
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:07:32.933
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop41
+---   3,455 rows  3,454 columns  50,395 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.696E-03, 8.921E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.623E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:07:41.799
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45945 nonzeros.
+Presolve time = 0.05 sec. (51.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.142645
+Iteration:    45   Dual objective     =             0.892052
+Iteration:   132   Dual objective     =             0.912256
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 72.08 ticks)
+
+
+Optimal solution found
+Objective:            0.914193
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:07:41.981
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop42
+---   3,455 rows  3,454 columns  50,394 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.354E-03, 8.831E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.480E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:07:51.609
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45944 nonzeros.
+Presolve time = 0.05 sec. (51.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.046361
+Iteration:     6   Dual objective     =             0.872394
+Iteration:    75   Dual objective     =             0.892968
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 70.73 ticks)
+
+
+Optimal solution found
+Objective:            0.897551
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:07:51.776
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop43
+---   3,455 rows  3,454 columns  50,395 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.465E-03, 8.900E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.082E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:08:00.545
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45945 nonzeros.
+Presolve time = 0.05 sec. (51.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000210
+Iteration:     4   Dual objective     =             0.847383
+Iteration:    80   Dual objective     =             0.899419
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 71.70 ticks)
+
+
+Optimal solution found
+Objective:            0.903815
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:08:00.724
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop44
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.857E-03, 8.979E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.964E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:08:09.334
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45947 nonzeros.
+Presolve time = 0.05 sec. (51.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.068337
+Iteration:    17   Dual objective     =             0.889635
+Iteration:    92   Dual objective     =             0.911312
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 71.73 ticks)
+
+
+Optimal solution found
+Objective:            0.916117
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:08:09.516
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop45
+---   3,455 rows  3,454 columns  50,396 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.016E-03, 8.934E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.145E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:08:18.160
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45948 nonzeros.
+Presolve time = 0.05 sec. (51.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.032132
+Iteration:     5   Dual objective     =             0.878831
+Iteration:    66   Dual objective     =             0.904800
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 73.01 ticks)
+
+
+Optimal solution found
+Objective:            0.912686
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:08:18.339
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop46
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.035E-03, 8.848E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.257E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:08:26.952
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45949 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.043528
+Iteration:    25   Dual objective     =             0.878823
+Iteration:    92   Dual objective     =             0.892664
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 72.85 ticks)
+
+
+Optimal solution found
+Objective:            0.896813
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:08:27.138
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop47
+---   3,455 rows  3,454 columns  50,396 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 6.581E-04, 8.847E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 7.794E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:08:36.389
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 1 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2452 columns, and 45949 nonzeros.
+Presolve time = 0.05 sec. (51.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             9.196069
+Iteration:    70   Dual objective     =             0.884667
+Iteration:   156   Dual objective     =             0.894231
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 72.38 ticks)
+
+
+Optimal solution found
+Objective:            0.894751
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:08:36.569
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop48
+---   3,455 rows  3,454 columns  50,396 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.463E-03, 8.833E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:08:46.645
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45946 nonzeros.
+Presolve time = 0.05 sec. (51.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.018727
+Iteration:     7   Dual objective     =             0.869872
+Iteration:    86   Dual objective     =             0.894875
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 70.56 ticks)
+
+
+Optimal solution found
+Objective:            0.898190
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:08:46.827
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop49
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.453E-03, 8.751E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.563E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:08:56.004
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45947 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.293308
+Iteration:    89   Dual objective     =             0.875111
+Iteration:   196   Dual objective     =             0.896419
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 75.63 ticks)
+
+
+Optimal solution found
+Objective:            0.896430
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:08:56.186
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop50
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.087E-03, 8.634E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.258E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:09:06.906
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 724 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1729 rows, 2451 columns, and 45945 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =             0.829404
+Iteration:    74   Dual objective     =             0.872644
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 70.55 ticks)
+
+
+Optimal solution found
+Objective:            0.878938
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:09:07.085
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop51
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.101E-03, 8.692E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 9.063E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:09:17.987
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45949 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.003579
+Iteration:     4   Dual objective     =             0.866585
+Iteration:    79   Dual objective     =             0.879612
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 68.65 ticks)
+
+
+Optimal solution found
+Objective:            0.880571
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:09:18.184
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop52
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.753E-03, 8.733E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:09:28.675
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45947 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.322076
+Iteration:     8   Dual objective     =             0.867934
+Iteration:    79   Dual objective     =             0.885646
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 72.73 ticks)
+
+
+Optimal solution found
+Objective:            0.891813
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:09:28.847
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop53
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.073E-03, 8.719E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.040E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:09:38.704
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45947 nonzeros.
+Presolve time = 0.06 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.021947
+Iteration:     6   Dual objective     =             0.838759
+Iteration:    98   Dual objective     =             0.885268
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 73.40 ticks)
+
+
+Optimal solution found
+Objective:            0.890612
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:09:38.916
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop54
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.669E-03, 8.862E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.654E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:09:49.110
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45949 nonzeros.
+Presolve time = 0.05 sec. (51.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.267692
+Iteration:    37   Dual objective     =             0.882914
+Iteration:    99   Dual objective     =             0.893007
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 76.75 ticks)
+
+
+Optimal solution found
+Objective:            0.901911
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:09:49.284
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  7 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop55
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.345E-03, 8.846E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.546E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:09:57.099
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45949 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.016560
+Iteration:     8   Dual objective     =             0.875305
+Iteration:    85   Dual objective     =             0.898386
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 70.88 ticks)
+
+
+Optimal solution found
+Objective:            0.903171
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:09:57.272
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop56
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 5.997E-04, 8.815E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 9.323E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:10:06.780
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 724 rows and 1 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1729 rows, 2452 columns, and 45946 nonzeros.
+Presolve time = 0.05 sec. (51.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =             0.878649
+Iteration:    73   Dual objective     =             0.883109
+Iteration:   155   Dual objective     =             0.885441
+Iteration:   249   Dual objective     =             0.887967
+Removing shift (684).
+Iteration:   306    Objective     =             0.888979
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 85.56 ticks)
+
+
+Optimal solution found
+Objective:            0.888979
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:10:06.980
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  10 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop57
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 5.860E-04, 8.812E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.488E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:10:17.344
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 1 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2452 columns, and 45950 nonzeros.
+Presolve time = 0.05 sec. (51.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.822408
+Iteration:    73   Dual objective     =             0.881115
+Iteration:   198   Dual objective     =             0.889086
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 77.66 ticks)
+
+
+Optimal solution found
+Objective:            0.889107
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:10:17.527
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop58
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.524E-03, 8.792E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.043E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:10:27.685
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 724 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1729 rows, 2451 columns, and 45945 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.002937
+Iteration:     4   Dual objective     =             0.864736
+Iteration:    65   Dual objective     =             0.890025
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.06sec (det. 71.65 ticks)
+
+
+Optimal solution found
+Objective:            0.898573
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:10:27.860
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop59
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.186E-03, 8.835E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.396E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:10:38.011
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2451 columns, and 45953 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.735101
+Iteration:    93   Dual objective     =             0.879158
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.98 ticks)
+
+
+Optimal solution found
+Objective:            0.905477
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:10:38.186
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop60
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.936E-03, 8.828E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 7.474E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:10:47.962
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 724 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1729 rows, 2451 columns, and 45945 nonzeros.
+Presolve time = 0.06 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.004308
+Iteration:     4   Dual objective     =             0.882025
+Iteration:    82   Dual objective     =             0.899279
+Removing shift (1).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 69.54 ticks)
+
+
+Optimal solution found
+Objective:            0.901660
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:10:48.159
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop61
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.569E-03, 8.791E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.621E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:10:56.826
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45947 nonzeros.
+Presolve time = 0.06 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.017354
+Iteration:     8   Dual objective     =             0.867459
+Iteration:    69   Dual objective     =             0.895934
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 73.39 ticks)
+
+
+Optimal solution found
+Objective:            0.905871
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:10:57.031
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop62
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.302E-03, 8.823E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.733E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:11:06.279
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45951 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.119196
+Iteration:    18   Dual objective     =             0.874180
+Iteration:    82   Dual objective     =             0.892942
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.05 ticks)
+
+
+Optimal solution found
+Objective:            0.903578
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:11:06.454
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop63
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.509E-03, 8.896E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.851E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:11:14.815
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2451 columns, and 45953 nonzeros.
+Presolve time = 0.05 sec. (51.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.020734
+Iteration:    10   Dual objective     =             0.883987
+Iteration:    88   Dual objective     =             0.900203
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 71.95 ticks)
+
+
+Optimal solution found
+Objective:            0.903084
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:11:15.004
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop64
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.639E-03, 8.805E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.256E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:11:24.183
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45951 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.019991
+Iteration:     5   Dual objective     =             0.859968
+Iteration:    66   Dual objective     =             0.884860
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 82.46 ticks)
+
+
+Optimal solution found
+Objective:            0.906981
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:11:24.409
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop65
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.769E-03, 8.915E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.585E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:11:32.924
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 723 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1730 rows, 2451 columns, and 45947 nonzeros.
+Presolve time = 0.05 sec. (51.69 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.074839
+Iteration:    12   Dual objective     =             0.873742
+Iteration:    94   Dual objective     =             0.905163
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 74.18 ticks)
+
+
+Optimal solution found
+Objective:            0.915947
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:11:33.112
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop66
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.131E-03, 8.849E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.529E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:11:41.860
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45951 nonzeros.
+Presolve time = 0.06 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.029079
+Iteration:     8   Dual objective     =             0.877363
+Iteration:    97   Dual objective     =             0.898937
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.09sec (det. 77.21 ticks)
+
+
+Optimal solution found
+Objective:            0.905282
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:11:42.080
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop67
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.166E-03, 8.933E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 7.718E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:11:51.504
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45951 nonzeros.
+Presolve time = 0.06 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.088290
+Iteration:    10   Dual objective     =             0.893300
+Iteration:    72   Dual objective     =             0.912845
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 72.48 ticks)
+
+
+Optimal solution found
+Objective:            0.919823
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:11:51.707
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  8 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop68
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.700E-03, 8.799E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.710E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:12:00.474
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 722 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1731 rows, 2451 columns, and 45949 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.161363
+Iteration:    14   Dual objective     =             0.870423
+Iteration:    81   Dual objective     =             0.890924
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.08sec (det. 72.93 ticks)
+
+
+Optimal solution found
+Objective:            0.896255
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:12:00.669
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  7 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop69
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.638E-04, 8.828E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.786E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:12:08.845
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 720 rows and 1 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1733 rows, 2452 columns, and 45954 nonzeros.
+Presolve time = 0.05 sec. (51.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.719178
+Iteration:    59   Dual objective     =             0.876220
+Iteration:   120   Dual objective     =             0.884392
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.97 ticks)
+
+
+Optimal solution found
+Objective:            0.885641
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:12:09.030
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  9 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop70
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.266E-03, 8.844E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.301E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:12:18.438
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45951 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.079965
+Iteration:     4   Dual objective     =             0.865834
+Iteration:    65   Dual objective     =             0.896895
+Removing shift (1).
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 73.38 ticks)
+
+
+Optimal solution found
+Objective:            0.904972
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:12:18.625
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  7 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop71
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.428E-03, 8.933E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.582E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:12:26.682
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45951 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.927096
+Iteration:    68   Dual objective     =             0.890777
+Iteration:   144   Dual objective     =             0.905004
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 74.38 ticks)
+
+
+Optimal solution found
+Objective:            0.907109
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:12:26.862
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  7 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop72
+---   3,455 rows  3,454 columns  50,396 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.992E-03, 8.885E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.956E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:12:34.698
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45950 nonzeros.
+Presolve time = 0.05 sec. (51.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             5.444766
+Iteration:    84   Dual objective     =             0.886497
+Iteration:   145   Dual objective     =             0.901622
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.15 ticks)
+
+
+Optimal solution found
+Objective:            0.907498
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:12:34.879
+--- Opgave 7 model min(CVaR).gms(204) 18 Mb  6 secs
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 18 Mb
+--- LOOPS loop_no = loop73
+---   3,455 rows  3,454 columns  50,397 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.932E-03, 8.935E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.090E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:12:41.536
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.22 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 3.29 Mb (peak 3.32 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.11 Mb (peak 0.96 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 721 rows and 2 columns.
+Aggregator did 1001 substitutions.
+Reduced LP has 1732 rows, 2451 columns, and 45951 nonzeros.
+Presolve time = 0.05 sec. (51.68 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.660959
+Iteration:    48   Dual objective     =             0.893490
+Iteration:   127   Dual objective     =             0.907501
+
+Dual simplex solved model.
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.07sec (det. 76.32 ticks)
+
+
+Optimal solution found
+Objective:            0.913095
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:12:41.716
+--- Opgave 7 model min(CVaR).gms(317) 18 Mb
+--- GDX File (execute_unload) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Weight_Opg7.gdx
+--- Putfile ReturnFile /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/PortValues_Opg7_minCVaR.csv
+*** Status: Normal completion
+--- Job Opgave 7 model min(CVaR).gms Stop 08/15/25 16:17:18 elapsed 0:12:41.722

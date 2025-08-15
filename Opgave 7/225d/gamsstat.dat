@@ -1,0 +1,77 @@
+=1
+=2
+=0CONOPT 4         50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+=1
+ 
+ 
+    C O N O P T   version 4.37
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+=2
+=1
+    Will use up to 4 threads.
+ 
+=2
+ 
+  ***  Line    0  SET       LFEERR =            0
+ 
+  ***  Line    0  SET       LFEERR =            0
+ 
+  ***  Line    0  SET       LFITER =   2147483647
+ 
+  ***  Line    0  SET       RVTIME =     1.0000000000E+10
+=1
+ 
+    The user model has 1455 constraints and 1453 variables
+    with 4437 Jacobian elements, 41 of which are nonlinear.
+    The Hessian of the Lagrangian has 41 elements on the diagonal,
+    820 elements below the diagonal, and 41 nonlinear variables.
+=2
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.2783470085E-01 (Input point)
+=1
+ 
+    The pre-triangular part of the model has 724 constraints and 0 variables.
+=2
+=1
+    The post-triangular part of the model has 1 constraints and variables.
+=2
+=1
+ 
+    Preprocessed model has 730 constraints and 1452 variables
+    with 2948 Jacobian elements, 41 of which are nonlinear.
+=2
+                      1.1689924359E-01 (Full preprocessed model)
+                      1.1689924359E-01 (After scaling)
+                      5.4897943513E-02 (After adjusting individual variables)
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       1   0          5.4560645756E-02                 1.0E+00     1 T  T
+ 
+ ** Feasible solution. Value of objective =  -6.982325047568E-03
+ 
+Search for an optimal solution.
+ 
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       2   3          1.2331410728E-02 6.3E-02       1 1.0E+00     1 T  T
+       3   4          1.2331410728E-02 0.0E+00       0
+=1
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+=2
+=1
+ 
+ CONOPT time Total                            0.075 seconds
+   of which: Function evaluations             0.000 =  0.0%
+             1st Derivative evaluations       0.000 =  0.0%
+             Interval derivative evals        0.045 = 60.0%
+ 
+=2
+ 
+ Memory: Max used =      3.24 Mbytes
+  Total Allocated =      4.01 Mbytes
+ 

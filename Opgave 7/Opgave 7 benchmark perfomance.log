@@ -1,0 +1,33 @@
+
+--- Job Opgave 7 benchmark perfomance.gms Start 08/15/25 18:00:53 50.3.0 5a352073 DEX-DEG x86 64bit/macOS
+--- Applying:
+    /Library/Frameworks/GAMS.framework/Versions/50/Resources/gmsprmun.txt
+--- GAMS Parameters defined
+    Input "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Opgave 7 benchmark perfomance.gms"
+    PageSize 0
+    ScrDir "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/225h/"
+    SysDir /Library/Frameworks/GAMS.framework/Versions/50/Resources/
+    LogOption 3
+    AppendLog 1
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Course License                                 G250404+0003Ac-GEN
+          University of Copenhagen                                  DCE4232
+          225h/gamslice.dat
+          node:10959501 mem:16 cores:6 ipport:55191 v:2                    
+          Course license for use within the course and related course work
+          The expiration date of time-limited license is Oct 01, 2025
+System information: 6 physical cores and 16 Gb physical memory detected
+GAMS 50.3.0   Copyright (C) 1987-2025 GAMS Development. All rights reserved
+--- Starting compilation
+--- Opgave 7 benchmark perfomance.gms(21) 3 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/weekly_returns_2013_2025.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/weekly_returns_2013_2025.gdx
+--- Opgave 7 benchmark perfomance.gms(85) 3 Mb
+--- Starting execution: elapsed 0:00:00.057
+--- Opgave 7 benchmark perfomance.gms(82) 4 Mb
+--- GDX File (execute_unload) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/benchmark_port_value.gdx
+*** Status: Normal completion
+--- Job Opgave 7 benchmark perfomance.gms Stop 08/15/25 18:00:53 elapsed 0:00:00.067

@@ -1,0 +1,3740 @@
+--- Job Opgave 7 model min(CVaR).gms Start 08/15/25 17:35:23 50.3.0 5a352073 DEX-DEG x86 64bit/macOS
+--- Applying:
+    /Library/Frameworks/GAMS.framework/Versions/50/Resources/gmsprmun.txt
+--- GAMS Parameters defined
+    Input "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Opgave 7 model min(CVaR).gms"
+    PageSize 0
+    ScrDir "/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/225i/"
+    SysDir /Library/Frameworks/GAMS.framework/Versions/50/Resources/
+    LogOption 3
+    AppendLog 1
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Course License                                 G250404+0003Ac-GEN
+          University of Copenhagen                                  DCE4232
+          225i/gamslice.dat
+          node:10959501 mem:16 cores:6 ipport:54564 v:2                    
+          Course license for use within the course and related course work
+          The expiration date of time-limited license is Oct 01, 2025
+System information: 6 physical cores and 16 Gb physical memory detected
+GAMS 50.3.0   Copyright (C) 1987-2025 GAMS Development. All rights reserved
+--- Starting compilation
+--- Opgave 7 model min(CVaR).gms(59) 3 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/weekly_returns_2013_2025.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/weekly_returns_2013_2025.gdx
+--- Opgave 7 model min(CVaR).gms(71) 5 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Initial_inv_strat_CVaR.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Initial_inv_strat_CVaR.gdx
+--- Opgave 7 model min(CVaR).gms(100) 5 Mb
+--- GDXin=/Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Benchmark_Opg7.gdx
+--- GDX File ($gdxIn) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Benchmark_Opg7.gdx
+--- Opgave 7 model min(CVaR).gms(324) 5 Mb
+--- Starting execution: elapsed 0:00:00.064
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop1
+---   1,655 rows  1,654 columns  8,986 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.832E-03, 1.008E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.795E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.254
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 0
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8680 nonzeros.
+Presolve time = 0.01 sec. (3.63 ticks)
+Symmetry aggregator did 2740 additional substitutions.
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.000000
+Iteration:    62   Scaled dual infeas =             0.000508
+Iteration:    65   Dual objective     =             1.007279
+
+Dual crossover.
+  Dual:  Fixed no variables.
+  Primal:  Fixed no variables.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 7.50 ticks)
+
+
+Optimal solution found
+Objective:            1.014433
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:00.428
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop2
+---   1,655 rows  1,654 columns  8,990 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.301E-03, 1.013E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.238E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.720
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8684 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             6.762208
+Iteration:   112   Scaled dual infeas =             0.010889
+Iteration:   308   Scaled dual infeas =             0.009024
+Iteration:   510   Scaled dual infeas =             0.006350
+Iteration:   718   Scaled dual infeas =             0.003597
+Iteration:   738   Dual objective     =             1.005717
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 22.74 ticks)
+
+
+Optimal solution found
+Objective:            1.021437
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:00.858
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop3
+---   1,655 rows  1,654 columns  8,992 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.900E-03, 9.220E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.750E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.120
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8686 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.493166
+Iteration:   168   Scaled dual infeas =             0.022032
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.022583
+Iteration:   380   Scaled dual infeas =             0.021649
+Iteration:   562   Scaled dual infeas =             0.020694
+Iteration:   733   Scaled dual infeas =             0.004480
+Iteration:   736   Dual objective     =             0.912946
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 23.78 ticks)
+
+
+Optimal solution found
+Objective:            0.925702
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:01.255
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop4
+---   1,655 rows  1,654 columns  8,989 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.203E-03, 9.750E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.210E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.500
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8683 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.226178
+Iteration:    26   Dual objective     =             0.963477
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 11.94 ticks)
+
+
+Optimal solution found
+Objective:            0.983861
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:01.625
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop5
+---   1,655 rows  1,654 columns  8,994 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.455E-04, 9.811E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 9.337E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.862
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8688 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.484945
+Iteration:   186   Scaled dual infeas =             0.334074
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.334095
+Iteration:   402   Scaled dual infeas =             0.334095
+Iteration:   608   Scaled dual infeas =             0.334095
+Iteration:   841   Scaled dual infeas =             0.018570
+Iteration:   877   Dual objective     =             0.979291
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 16.42 ticks)
+
+
+Optimal solution found
+Objective:            1.037544
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:01.982
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop6
+---   1,655 rows  1,654 columns  8,987 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.588E-03, 9.826E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.227
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8681 nonzeros.
+Presolve time = 0.01 sec. (3.63 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.356321
+Iteration:   103   Scaled dual infeas =             0.011351
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.011578
+Iteration:   402   Scaled dual infeas =             0.010574
+Iteration:   608   Scaled dual infeas =             0.009541
+Iteration:   737   Dual objective     =             0.977646
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.88 ticks)
+
+
+Optimal solution found
+Objective:            0.991419
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:02.351
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop7
+---   1,655 rows  1,654 columns  8,992 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.391E-03, 9.879E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.410E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.583
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8686 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.607443
+Iteration:    32   Dual objective     =             0.987938
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 10.43 ticks)
+
+
+Optimal solution found
+Objective:            1.004372
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:02.712
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop8
+---   1,655 rows  1,654 columns  8,992 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.174E-03, 9.886E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.619E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.952
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8686 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.915332
+Iteration:   113   Scaled dual infeas =             0.007312
+Iteration:   288   Scaled dual infeas =             0.005252
+Iteration:   468   Scaled dual infeas =             0.003128
+Iteration:   653   Scaled dual infeas =             0.000944
+Iteration:   734   Dual objective     =             0.977514
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.09 ticks)
+
+
+Optimal solution found
+Objective:            1.012356
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:03.082
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop9
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.319E-03, 9.990E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.326
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.578153
+Iteration:    42   Dual objective     =             0.997141
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 12.56 ticks)
+
+
+Optimal solution found
+Objective:            1.013277
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:03.445
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop10
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.070E-03, 9.996E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.547E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.688
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.066269
+Iteration:    51   Dual objective     =             0.995007
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 13.36 ticks)
+
+
+Optimal solution found
+Objective:            1.007666
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:03.804
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop11
+---   1,655 rows  1,654 columns  8,992 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.280E-03, 9.957E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.489E-09, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.048
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8686 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             4.229143
+Iteration:   118   Scaled dual infeas =             0.013816
+Iteration:   293   Scaled dual infeas =             0.010298
+Iteration:   471   Scaled dual infeas =             0.006786
+Iteration:   657   Scaled dual infeas =             0.003047
+Iteration:   737   Dual objective     =             0.974647
+Removing shift (1).
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 23.03 ticks)
+
+
+Optimal solution found
+Objective:            0.997791
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:04.171
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop12
+---   1,655 rows  1,654 columns  8,994 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.230E-03, 9.994E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.038E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.415
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8688 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.781285
+Iteration:   187   Scaled dual infeas =             0.204358
+Iteration:   364   Scaled dual infeas =             0.203441
+Iteration:   531   Scaled dual infeas =             0.201889
+Iteration:   719   Scaled dual infeas =             0.200131
+Iteration:   736   Dual objective     =             0.989919
+Removing shift (1).
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 23.75 ticks)
+
+
+Optimal solution found
+Objective:            1.002392
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:04.538
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop13
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.655E-03, 1.000E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.982E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.782
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.125053
+Iteration:   126   Scaled dual infeas =             0.259634
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.260173
+Iteration:   380   Scaled dual infeas =             0.259720
+Iteration:   562   Scaled dual infeas =             0.259257
+Iteration:   734   Scaled dual infeas =             0.068188
+Iteration:   738   Dual objective     =             0.990062
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 22.69 ticks)
+
+
+Optimal solution found
+Objective:            1.003390
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:04.909
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop14
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.275E-03, 1.000E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.236E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:05.153
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.64 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.053292
+Iteration:   155   Scaled dual infeas =             0.027810
+Iteration:   352   Scaled dual infeas =             0.025407
+Iteration:   478   Scaled dual infeas =             0.023846
+Iteration:   685   Scaled dual infeas =             0.021293
+Iteration:   731   Dual objective     =             0.975158
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.86 ticks)
+
+
+Optimal solution found
+Objective:            1.020651
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:05.274
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop15
+---   1,655 rows  1,654 columns  8,991 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 5.122E-03, 9.863E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.686E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:05.516
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8685 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.418017
+Iteration:   151   Scaled dual infeas =             0.003876
+Iteration:   327   Scaled dual infeas =             0.002706
+Iteration:   508   Scaled dual infeas =             0.001500
+Iteration:   694   Scaled dual infeas =             0.000260
+Iteration:   734   Dual objective     =             0.984282
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.40 ticks)
+
+
+Optimal solution found
+Objective:            1.003984
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:05.638
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop16
+---   1,655 rows  1,654 columns  8,991 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.793E-03, 9.759E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.180E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:05.877
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8685 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.419727
+Iteration:   153   Scaled dual infeas =             0.247463
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.248188
+Iteration:   401   Scaled dual infeas =             0.248188
+Iteration:   606   Scaled dual infeas =             0.248188
+Iteration:   790   Scaled dual infeas =             0.024263
+Iteration:   862   Dual objective     =             0.953830
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 17.34 ticks)
+
+
+Optimal solution found
+Objective:            1.000255
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:06.001
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop17
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.953E-03, 9.784E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.793E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:06.256
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.918055
+Iteration:   113   Scaled dual infeas =             0.034446
+Iteration:   287   Scaled dual infeas =             0.024758
+Iteration:   487   Scaled dual infeas =             0.013622
+Iteration:   693   Scaled dual infeas =             0.002171
+Iteration:   733   Dual objective     =             0.948526
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 22.36 ticks)
+
+
+Optimal solution found
+Objective:            0.987708
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:06.381
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop18
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.067E-03, 9.854E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.322E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:06.626
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.680669
+Iteration:   151   Scaled dual infeas =             0.001529
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.002239
+Iteration:   399   Scaled dual infeas =             0.002239
+Iteration:   602   Scaled dual infeas =             0.002239
+Iteration:   792   Scaled dual infeas =             0.001373
+Iteration:   857   Dual objective     =             0.985016
+Iteration:   922   Dual objective     =             0.990686
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.52 ticks)
+
+
+Optimal solution found
+Objective:            0.993182
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:06.750
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop19
+---   1,655 rows  1,654 columns  8,992 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.190E-03, 9.874E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.036E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:07.001
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8686 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.259320
+Iteration:   156   Scaled dual infeas =             0.061224
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.061248
+Iteration:   401   Scaled dual infeas =             0.061248
+Iteration:   606   Scaled dual infeas =             0.061248
+Iteration:   791   Scaled dual infeas =             0.039929
+Iteration:   882   Dual objective     =             0.985968
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 17.12 ticks)
+
+
+Optimal solution found
+Objective:            0.990356
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:07.125
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop20
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 8.180E-05, 9.907E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.142E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:07.362
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.981600
+Iteration:   165   Scaled dual infeas =             0.009515
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.009564
+Iteration:   404   Scaled dual infeas =             0.009564
+Iteration:   612   Scaled dual infeas =             0.009564
+Iteration:   800   Scaled dual infeas =             0.001749
+Iteration:   865   Dual objective     =             0.990026
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 15.95 ticks)
+
+
+Optimal solution found
+Objective:            1.034810
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:07.486
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop21
+---   1,655 rows  1,654 columns  8,994 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.569E-03, 1.002E+00] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.612E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:07.722
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8688 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.183175
+Iteration:   113   Scaled dual infeas =             0.024710
+Iteration:   288   Scaled dual infeas =             0.017753
+Iteration:   468   Scaled dual infeas =             0.010654
+Iteration:   653   Scaled dual infeas =             0.003299
+Iteration:   737   Dual objective     =             0.969025
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.88 ticks)
+
+
+Optimal solution found
+Objective:            1.018589
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:07.846
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop22
+---   1,655 rows  1,654 columns  8,993 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.151E-03, 9.983E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.512E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:08.094
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8687 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.882915
+Iteration:    34   Dual objective     =             0.996422
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 11.03 ticks)
+
+
+Optimal solution found
+Objective:            1.019090
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:08.207
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop23
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.527E-03, 9.769E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.691E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:08.451
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.017442
+Iteration:   156   Scaled dual infeas =             0.017442
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.017446
+Iteration:   401   Scaled dual infeas =             0.017446
+Iteration:   606   Scaled dual infeas =             0.017446
+Iteration:   791   Scaled dual infeas =             0.017443
+Iteration:   862   Dual objective     =             0.972228
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 14.89 ticks)
+
+
+Optimal solution found
+Objective:            0.993114
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:08.579
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop24
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.720E-03, 9.711E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.692E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:08.823
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             3.089317
+Iteration:   114   Scaled dual infeas =             0.016560
+Iteration:   288   Scaled dual infeas =             0.011901
+Iteration:   488   Scaled dual infeas =             0.006561
+Iteration:   694   Scaled dual infeas =             0.001044
+Iteration:   734   Dual objective     =             0.970502
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.61 ticks)
+
+
+Optimal solution found
+Objective:            0.981737
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:08.946
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop25
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.535E-03, 9.670E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.588E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:09.189
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.65 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.061794
+Iteration:   144   Scaled dual infeas =             0.023760
+Iteration:   319   Scaled dual infeas =             0.016987
+Iteration:   520   Scaled dual infeas =             0.009238
+Iteration:   727   Scaled dual infeas =             0.001226
+Iteration:   730   Dual objective     =             0.931948
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 22.53 ticks)
+
+
+Optimal solution found
+Objective:            0.976118
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:09.313
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop26
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.165E-03, 9.756E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.666E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:09.557
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.208226
+Iteration:   166   Scaled dual infeas =             0.058096
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.058145
+Iteration:   402   Scaled dual infeas =             0.058145
+Iteration:   608   Scaled dual infeas =             0.058145
+Iteration:   796   Scaled dual infeas =             0.046288
+Iteration:   866   Dual objective     =             0.949848
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 17.47 ticks)
+
+
+Optimal solution found
+Objective:            0.990472
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:09.679
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop27
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.466E-03, 9.557E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.311E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:09.920
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.087241
+Iteration:    37   Dual objective     =             0.955668
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 11.10 ticks)
+
+
+Optimal solution found
+Objective:            0.969277
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:10.035
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop28
+---   1,655 rows  1,654 columns  8,995 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.004E-03, 9.281E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.186E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:10.275
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8689 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.313488
+Iteration:   126   Scaled dual infeas =             0.213217
+Iteration:   290   Scaled dual infeas =             0.210386
+Iteration:   491   Scaled dual infeas =             0.206871
+Iteration:   698   Scaled dual infeas =             0.203251
+Iteration:   735   Dual objective     =             0.892012
+Removing shift (1).
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.47 ticks)
+
+
+Optimal solution found
+Objective:            0.936700
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:10.398
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop29
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.749E-03, 9.278E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.493E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:10.633
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =            49.753848
+Iteration:   187   Scaled dual infeas =             0.204486
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.204520
+Iteration:   399   Scaled dual infeas =             0.204520
+Iteration:   602   Scaled dual infeas =             0.204520
+Iteration:   799   Scaled dual infeas =             0.091586
+Iteration:   882   Dual objective     =             0.926963
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 17.65 ticks)
+
+
+Optimal solution found
+Objective:            0.942619
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:10.757
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop30
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 9.665E-04, 9.323E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.589E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:11.023
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.369303
+Iteration:   121   Scaled dual infeas =             0.026302
+Iteration:   295   Scaled dual infeas =             0.018820
+Iteration:   495   Scaled dual infeas =             0.010220
+Iteration:   701   Scaled dual infeas =             0.001376
+Iteration:   734   Dual objective     =             0.892246
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.62 ticks)
+
+
+Optimal solution found
+Objective:            0.942931
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:11.144
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop31
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.746E-03, 9.110E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.721E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:11.386
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.816080
+Iteration:   187   Scaled dual infeas =             0.088677
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.088724
+Iteration:   401   Scaled dual infeas =             0.088724
+Iteration:   606   Scaled dual infeas =             0.088724
+Iteration:   799   Scaled dual infeas =             0.026613
+Iteration:   812   Dual objective     =             0.910968
+Iteration:   878   Dual objective     =             0.911833
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 18.90 ticks)
+
+
+Optimal solution found
+Objective:            0.920955
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:11.505
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop32
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.921E-03, 9.023E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 7.126E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:11.746
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.810200
+Iteration:   152   Scaled dual infeas =             0.003284
+Iteration:   327   Scaled dual infeas =             0.002327
+Iteration:   528   Scaled dual infeas =             0.001172
+Iteration:   733   Dual objective     =             0.897084
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.44 ticks)
+
+
+Optimal solution found
+Objective:            0.910817
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:11.870
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop33
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.581E-03, 8.961E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.263E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:12.111
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.033727
+Iteration:   145   Scaled dual infeas =             0.014125
+Iteration:   315   Scaled dual infeas =             0.007334
+Iteration:   496   Scaled dual infeas =             0.004119
+Iteration:   682   Scaled dual infeas =             0.000816
+Iteration:   729   Dual objective     =             0.882208
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.65 ticks)
+
+
+Optimal solution found
+Objective:            0.906264
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:12.232
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop34
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.730E-04, 9.065E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.920E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:12.481
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1552 columns, and 8692 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.112764
+Iteration:   186   Scaled dual infeas =             0.025471
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.025503
+Iteration:   401   Scaled dual infeas =             0.025503
+Iteration:   606   Scaled dual infeas =             0.025503
+Iteration:   801   Scaled dual infeas =             0.016372
+Iteration:   876   Dual objective     =             0.897542
+Iteration:   940   Dual objective     =             0.906811
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.84 ticks)
+
+
+Optimal solution found
+Objective:            0.907321
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:12.604
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop35
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.831E-03, 9.043E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.379E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:12.842
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.344796
+Iteration:   141   Scaled dual infeas =             0.015735
+Iteration:   316   Scaled dual infeas =             0.011118
+Iteration:   516   Scaled dual infeas =             0.005786
+Iteration:   722   Scaled dual infeas =             0.000293
+Iteration:   734   Dual objective     =             0.880841
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.90 ticks)
+
+
+Optimal solution found
+Objective:            0.911566
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:12.963
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop36
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.366E-03, 8.794E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.147E-08, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:13.205
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =            11.989796
+Iteration:   185   Scaled dual infeas =             0.143452
+Iteration:   337   Scaled dual infeas =             0.142912
+Iteration:   493   Scaled dual infeas =             0.142299
+Iteration:   652   Scaled dual infeas =             0.141673
+Iteration:   747   Dual objective     =             0.877474
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.48 ticks)
+
+
+Optimal solution found
+Objective:            0.886760
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:13.328
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop37
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.697E-03, 8.841E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.738E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:13.569
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.019772
+Iteration:   144   Scaled dual infeas =             0.009789
+Iteration:   322   Scaled dual infeas =             0.008773
+Iteration:   504   Scaled dual infeas =             0.007712
+Iteration:   691   Scaled dual infeas =             0.006621
+Iteration:   731   Dual objective     =             0.875651
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.94 ticks)
+
+
+Optimal solution found
+Objective:            0.892622
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:13.692
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop38
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.474E-03, 8.919E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.345E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:13.930
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.054591
+Iteration:   152   Scaled dual infeas =             0.005336
+Iteration:   327   Scaled dual infeas =             0.003751
+Iteration:   528   Scaled dual infeas =             0.001890
+Iteration:   733   Dual objective     =             0.883685
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.72 ticks)
+
+
+Optimal solution found
+Objective:            0.901914
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:14.049
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop39
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.021E-03, 8.917E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.845E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:14.288
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.427261
+Iteration:   186   Scaled dual infeas =             0.008256
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.008284
+Iteration:   401   Scaled dual infeas =             0.008284
+Iteration:   606   Scaled dual infeas =             0.008284
+Iteration:   799   Dual objective     =             0.891742
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 15.81 ticks)
+
+
+Optimal solution found
+Objective:            0.907667
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:14.407
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop40
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.404E-03, 9.033E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.729E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:14.638
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.162511
+Iteration:   156   Scaled dual infeas =             0.048075
+Iteration:   332   Scaled dual infeas =             0.046437
+Iteration:   513   Scaled dual infeas =             0.044692
+Iteration:   699   Scaled dual infeas =             0.042899
+Iteration:   734   Dual objective     =             0.878766
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.28 ticks)
+
+
+Optimal solution found
+Objective:            0.911986
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:14.758
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop41
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.696E-03, 8.971E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.076E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:14.994
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.676257
+Iteration:   187   Scaled dual infeas =             0.352732
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.352754
+Iteration:   399   Scaled dual infeas =             0.352754
+Iteration:   602   Scaled dual infeas =             0.352754
+Iteration:   798   Scaled dual infeas =             0.021321
+Iteration:   801   Dual objective     =             0.897083
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 13.91 ticks)
+
+
+Optimal solution found
+Objective:            0.920535
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:15.115
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop42
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.354E-03, 8.964E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.091E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:15.344
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.354680
+Iteration:   156   Scaled dual infeas =             0.017765
+Iteration:   353   Scaled dual infeas =             0.011968
+Iteration:   556   Scaled dual infeas =             0.005947
+Iteration:   730   Scaled dual infeas =             0.000000
+Iteration:   731   Dual objective     =             0.869255
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.13 ticks)
+
+
+Optimal solution found
+Objective:            0.902332
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:15.467
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop43
+---   1,655 rows  1,654 columns  8,996 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.465E-03, 8.956E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.730E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:15.709
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8690 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.032706
+Iteration:   156   Scaled dual infeas =             0.017343
+Iteration:   331   Scaled dual infeas =             0.015036
+Iteration:   532   Scaled dual infeas =             0.012359
+Iteration:   728   Dual objective     =             0.877267
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.01 ticks)
+
+
+Optimal solution found
+Objective:            0.898257
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:15.828
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop44
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.002E-03, 8.977E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.461E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:16.067
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             5.578288
+Iteration:   187   Scaled dual infeas =             0.018483
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.018518
+Iteration:   401   Scaled dual infeas =             0.018518
+Iteration:   606   Scaled dual infeas =             0.018518
+Iteration:   826   Scaled dual infeas =             0.008247
+Iteration:   872   Dual objective     =             0.893388
+Iteration:   935   Dual objective     =             0.897663
+Iteration:  1006   Dual objective     =             0.901784
+Iteration:  1079   Dual objective     =             0.909528
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.03sec (det. 29.82 ticks)
+
+
+Optimal solution found
+Objective:            0.910403
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:16.201
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop45
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.016E-03, 8.940E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.463E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:16.443
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             2.363449
+Iteration:   168   Scaled dual infeas =             0.010977
+Iteration:   343   Scaled dual infeas =             0.007583
+Iteration:   544   Scaled dual infeas =             0.003665
+Iteration:   733   Dual objective     =             0.876617
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.11 ticks)
+
+
+Optimal solution found
+Objective:            0.919013
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:16.571
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop46
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.035E-03, 8.873E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.025E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:16.810
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.410845
+Iteration:   156   Scaled dual infeas =             0.257167
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.257162
+Iteration:   402   Scaled dual infeas =             0.257162
+Iteration:   608   Scaled dual infeas =             0.257162
+Iteration:   788   Scaled dual infeas =             0.130512
+Iteration:   811   Dual objective     =             0.888331
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 13.27 ticks)
+
+
+Optimal solution found
+Objective:            0.895664
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:16.932
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop47
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 6.581E-04, 8.857E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.236E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:17.166
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1552 columns, and 8692 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             5.652042
+Iteration:   152   Scaled dual infeas =             0.021091
+Iteration:   314   Scaled dual infeas =             0.016035
+Iteration:   480   Scaled dual infeas =             0.010949
+Iteration:   650   Scaled dual infeas =             0.005643
+Iteration:   737   Dual objective     =             0.858707
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.63 ticks)
+
+
+Optimal solution found
+Objective:            0.890141
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:17.289
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop48
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.463E-03, 8.834E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.104E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:17.522
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.122623
+Iteration:   186   Scaled dual infeas =             0.038474
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.038495
+Iteration:   402   Scaled dual infeas =             0.038495
+Iteration:   608   Scaled dual infeas =             0.038495
+Iteration:   799   Scaled dual infeas =             0.021823
+Iteration:   911   Dual objective     =             0.880819
+Iteration:   974   Dual objective     =             0.887542
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.53 ticks)
+
+
+Optimal solution found
+Objective:            0.930534
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:17.643
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop49
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.453E-03, 8.475E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.313E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:17.873
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.003493
+Iteration:     5   Dual objective     =             0.860592
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 8.74 ticks)
+
+
+Optimal solution found
+Objective:            0.886886
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:17.987
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop50
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.087E-03, 8.225E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 9.605E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:18.219
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 0
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+Symmetry aggregator did 2724 additional substitutions.
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.000000
+Iteration:    50   Dual objective     =             0.822520
+
+Dual crossover.
+  Dual:  Fixing 1 variable.
+        0 DMoves:  Infeasibility  0.00000000e+00  Objective  8.29441118e-01
+  Dual:  Pushed 0, exchanged 1.
+  Primal:  Fixing 681 variables.
+      680 PMoves:  Infeasibility  0.00000000e+00  Objective  8.29441118e-01
+        0 PMoves:  Infeasibility  0.00000000e+00  Objective  8.29441118e-01
+  Primal:  Pushed 681, exchanged 0.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 8.08 ticks)
+
+
+Optimal solution found
+Objective:            0.829441
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:18.335
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop51
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.741E-04, 8.210E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.403E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:18.565
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.039135
+Iteration:   155   Scaled dual infeas =             0.038173
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.038177
+Iteration:   402   Scaled dual infeas =             0.038177
+Iteration:   608   Scaled dual infeas =             0.038177
+Iteration:   796   Dual objective     =             0.820951
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 12.51 ticks)
+
+
+Optimal solution found
+Objective:            0.831360
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:18.689
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop52
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.753E-03, 8.258E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 9.459E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:18.976
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.387109
+Iteration:   187   Scaled dual infeas =             0.349966
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.349982
+Iteration:   401   Scaled dual infeas =             0.349982
+Iteration:   606   Scaled dual infeas =             0.349982
+Iteration:   799   Scaled dual infeas =             0.091568
+Iteration:   808   Dual objective     =             0.826167
+Iteration:   879   Dual objective     =             0.834181
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.35 ticks)
+
+
+Optimal solution found
+Objective:            0.838845
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:19.098
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop53
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.073E-03, 8.188E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.864E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:19.328
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             4.026454
+Iteration:   105   Scaled dual infeas =             0.019823
+Iteration:   300   Scaled dual infeas =             0.015057
+Iteration:   480   Scaled dual infeas =             0.011418
+Iteration:   665   Scaled dual infeas =             0.006896
+Iteration:   739   Dual objective     =             0.809030
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.89 ticks)
+
+
+Optimal solution found
+Objective:            0.843269
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:19.448
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop54
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.669E-03, 8.429E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.054E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:19.675
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.073647
+Iteration:     3   Dual objective     =             0.825780
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 9.78 ticks)
+
+
+Optimal solution found
+Objective:            0.850132
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:19.788
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop55
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.345E-03, 8.419E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.025E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:20.014
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.039121
+Iteration:   156   Scaled dual infeas =             0.036318
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.036327
+Iteration:   401   Scaled dual infeas =             0.036327
+Iteration:   606   Scaled dual infeas =             0.036327
+Iteration:   793   Scaled dual infeas =             0.002830
+Iteration:   859   Dual objective     =             0.841141
+Iteration:   928   Dual objective     =             0.854664
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 18.44 ticks)
+
+
+Optimal solution found
+Objective:            0.854900
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:20.136
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop56
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 5.997E-04, 8.434E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.691E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:20.366
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1552 columns, and 8692 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             7.587793
+Iteration:   186   Scaled dual infeas =             0.017600
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.017686
+Iteration:   402   Scaled dual infeas =             0.017686
+Iteration:   608   Scaled dual infeas =             0.017686
+Iteration:   824   Scaled dual infeas =             0.000161
+Iteration:   867   Dual objective     =             0.843389
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.15 ticks)
+
+
+Optimal solution found
+Objective:            0.845595
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:20.488
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop57
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 5.860E-04, 8.420E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.198E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:20.722
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1552 columns, and 8692 nonzeros.
+Presolve time = 0.01 sec. (3.66 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             4.411530
+Iteration:   141   Scaled dual infeas =             0.028796
+Iteration:   316   Scaled dual infeas =             0.020277
+Iteration:   516   Scaled dual infeas =             0.010612
+Iteration:   722   Scaled dual infeas =             0.000584
+Iteration:   735   Dual objective     =             0.808195
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 21.09 ticks)
+
+
+Optimal solution found
+Objective:            0.843412
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:20.841
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop58
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 8.030E-04, 8.406E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 9.991E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:21.070
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =            13.615735
+Iteration:   187   Scaled dual infeas =             0.237418
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.237452
+Iteration:   399   Scaled dual infeas =             0.237452
+Iteration:   602   Scaled dual infeas =             0.237452
+Iteration:   804   Scaled dual infeas =             0.178839
+Iteration:   820   Dual objective     =             0.840608
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 15.44 ticks)
+
+
+Optimal solution found
+Objective:            0.858407
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:21.188
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop59
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.186E-03, 8.327E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.091E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:21.419
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =           541.878506
+Iteration:   186   Scaled dual infeas =             0.010199
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.010260
+Iteration:   401   Scaled dual infeas =             0.010260
+Iteration:   606   Scaled dual infeas =             0.010260
+Iteration:   825   Scaled dual infeas =             0.005718
+Iteration:   873   Dual objective     =             0.828870
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.05 ticks)
+
+
+Optimal solution found
+Objective:            0.847815
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:21.566
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop60
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.936E-03, 8.366E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.092E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:21.798
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.066389
+Iteration:   134   Scaled dual infeas =             0.002308
+Iteration:   332   Scaled dual infeas =             0.002001
+Iteration:   536   Scaled dual infeas =             0.001637
+Iteration:   731   Dual objective     =             0.836499
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.55 ticks)
+
+
+Optimal solution found
+Objective:            0.853809
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:21.922
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop61
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.569E-03, 8.374E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.080E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:22.146
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.947024
+Iteration:   118   Scaled dual infeas =             0.098249
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.098963
+Iteration:   402   Scaled dual infeas =             0.098963
+Iteration:   608   Scaled dual infeas =             0.098963
+Iteration:   799   Scaled dual infeas =             0.088157
+Iteration:   895   Dual objective     =             0.837161
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 18.18 ticks)
+
+
+Optimal solution found
+Objective:            0.858793
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:22.266
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop62
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.302E-03, 8.472E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.324E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:22.492
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.091120
+Iteration:   167   Scaled dual infeas =             0.019567
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.019581
+Iteration:   401   Scaled dual infeas =             0.019581
+Iteration:   606   Scaled dual infeas =             0.019581
+Iteration:   797   Scaled dual infeas =             0.000000
+Iteration:   798   Dual objective     =             0.847227
+Iteration:   869   Dual objective     =             0.868163
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 18.65 ticks)
+
+
+Optimal solution found
+Objective:            0.869407
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:22.612
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop63
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.509E-03, 8.544E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.617E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:22.839
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.147037
+Iteration:   116   Scaled dual infeas =             0.014286
+Iteration:   290   Scaled dual infeas =             0.010295
+Iteration:   490   Scaled dual infeas =             0.005724
+Iteration:   696   Scaled dual infeas =             0.000999
+Iteration:   737   Dual objective     =             0.834714
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 20.76 ticks)
+
+
+Optimal solution found
+Objective:            0.860526
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:22.966
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop64
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.639E-03, 8.522E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 5.271E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:23.190
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.621733
+Iteration:   187   Scaled dual infeas =             0.022554
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.022580
+Iteration:   399   Scaled dual infeas =             0.022580
+Iteration:   602   Scaled dual infeas =             0.022580
+Iteration:   812   Scaled dual infeas =             0.022578
+Iteration:   873   Dual objective     =             0.850695
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 15.39 ticks)
+
+
+Optimal solution found
+Objective:            0.869375
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:23.310
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop65
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.769E-03, 8.490E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.829E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:23.538
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.075321
+Iteration:    10   Dual objective     =             0.830311
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 9.77 ticks)
+
+
+Optimal solution found
+Objective:            0.867537
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:23.653
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop66
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.131E-03, 8.464E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.449E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:23.876
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.254555
+Iteration:    58   Dual objective     =             0.821311
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 14.31 ticks)
+
+
+Optimal solution found
+Objective:            0.860412
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:23.995
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop67
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.570E-04, 8.496E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.113E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:24.214
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.71 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.191355
+Iteration:    24   Dual objective     =             0.847242
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 11.63 ticks)
+
+
+Optimal solution found
+Objective:            0.864367
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:24.335
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop68
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.700E-03, 8.360E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.835E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:24.554
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             3.412591
+Iteration:   167   Scaled dual infeas =             0.003659
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.003698
+Iteration:   401   Scaled dual infeas =             0.003698
+Iteration:   606   Scaled dual infeas =             0.003144
+Iteration:   830   Scaled dual infeas =             0.002623
+Iteration:   887   Dual objective     =             0.833790
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 16.20 ticks)
+
+
+Optimal solution found
+Objective:            0.880295
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:24.679
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop69
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.638E-04, 7.934E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.633E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:24.900
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1552 columns, and 8692 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.162195
+Iteration:    12   Dual objective     =             0.780565
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 12.16 ticks)
+
+
+Optimal solution found
+Objective:            0.794369
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:25.015
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop70
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 9.913E-04, 7.935E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.299E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:25.233
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.328984
+Iteration:   189   Scaled dual infeas =             0.000397
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.000481
+Iteration:   399   Scaled dual infeas =             0.000481
+Iteration:   602   Scaled dual infeas =             0.000481
+Iteration:   802   Dual objective     =             0.795620
+Iteration:   867   Dual objective     =             0.795623
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.29 ticks)
+
+
+Optimal solution found
+Objective:            0.807852
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:25.356
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop71
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.428E-03, 7.979E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.626E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:25.578
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             1.986625
+Iteration:   168   Scaled dual infeas =             0.031270
+Perturbation started.
+Iteration:   202   Scaled dual infeas =             0.031317
+Iteration:   399   Scaled dual infeas =             0.031317
+Iteration:   602   Scaled dual infeas =             0.031317
+Iteration:   811   Scaled dual infeas =             0.013863
+Iteration:   816   Dual objective     =             0.798154
+Removing perturbation.
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 14.16 ticks)
+
+
+Optimal solution found
+Objective:            0.813209
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:25.695
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop72
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.992E-03, 7.921E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 6.702E-06, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:25.914
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.250898
+Iteration:   144   Scaled dual infeas =             0.029220
+Iteration:   322   Scaled dual infeas =             0.019463
+Iteration:   503   Scaled dual infeas =             0.011208
+Iteration:   689   Scaled dual infeas =             0.002689
+Iteration:   731   Dual objective     =             0.759902
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 19.02 ticks)
+
+
+Optimal solution found
+Objective:            0.825047
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:26.033
+--- Opgave 7 model min(CVaR).gms(204) 8 Mb
+--- Generating LP model MinCVaR_Opg7
+--- Opgave 7 model min(CVaR).gms(270) 8 Mb
+--- LOOPS loop_no = loop73
+---   1,655 rows  1,654 columns  8,997 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.932E-03, 7.992E-01] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 8.290E-07, 1.000E+00]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:26.256
+
+IBM ILOG CPLEX   50.3.0 5a352073 Jul 30, 2025          DEG x86 64bit/macOS    
+
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.15 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.88 Mb (peak 0.89 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.05 Mb (peak 0.33 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-12-02 | 8bd2200c8
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 2 columns.
+Aggregator did 101 substitutions.
+Reduced LP has 1552 rows, 1551 columns, and 8691 nonzeros.
+Presolve time = 0.01 sec. (3.67 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.104923
+Iteration:     6   Dual objective     =             0.769406
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 10.15 ticks)
+
+
+Optimal solution found
+Objective:            0.806411
+
+--- Reading solution for model MinCVaR_Opg7
+--- Executing after solve: elapsed 0:00:26.377
+--- Opgave 7 model min(CVaR).gms(317) 8 Mb
+--- GDX File (execute_unload) /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/Weight_Opg7_minCVaR.gdx
+--- Putfile ReturnFile /Users/lukaskranker/Library/CloudStorage/OneDrive-KøbenhavnsUniversitet/Uni/6. År/PFO2025/Opgave 7/PortValues_Opg7_minCVaR.csv
+*** Status: Normal completion
+--- Job Opgave 7 model min(CVaR).gms Stop 08/15/25 17:35:49 elapsed 0:00:26.384

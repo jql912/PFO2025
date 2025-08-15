@@ -1,0 +1,3800 @@
+B 3 C o m p i l a t i o n
+B 331 Include File Summary
+B 345 E x e c u t i o n
+I 345 x_init
+I 351 Dates
+I 358 Dates_for_actual_return
+I 364 date_end
+I 365 Return_4
+I 412 avg_ret
+I 417 min_ret
+I 422 max_ret
+B 430 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 433 diff_pos
+D 444 diff_neg
+D 455 CostDef
+D 462 BudgetDef
+D 467 ReturnDef
+D 472 ReturnCond
+D 477 LossDef
+D 488 VarDevDef
+D 499 CVarDef
+B 505 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 508 x
+E 530 VaRDev
+E 549 Loss
+E 568 VaR
+E 675 CVar
+E 682 Exp_Return
+E 690 Cost
+E 698 diff
+B 721 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 732 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 750 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 783 diff_pos
+F 1513 diff_neg
+F 2245 CostDef
+F 2246 BudgetDef
+F 2247 ReturnDef
+F 2248 ReturnCond
+F 2250 LossDef
+F 2355 VarDevDef
+F 2462 CVarDef
+G 2464 x
+G 3194 VaRDev
+G 3299 Loss
+G 3406 VaR
+G 3407 CVar
+G 3408 Exp_Return
+G 3409 Cost
+G 3411 diff
+B 4147 E x e c u t i o n
+I 4147 Port_value
+I 4153 Port_value_avg
+I 4158 Port_value_min
+I 4163 Port_value_max
+I 4169 Cost
+I 4170 Dates
+I 4177 Dates_for_actual_return
+I 4183 date_end
+I 4184 Return_4
+I 4231 avg_ret
+I 4236 min_ret
+I 4241 max_ret
+B 4249 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 4252 diff_pos
+D 4263 diff_neg
+D 4274 CostDef
+D 4281 BudgetDef
+D 4286 ReturnDef
+D 4291 ReturnCond
+D 4296 LossDef
+D 4307 VarDevDef
+D 4318 CVarDef
+B 4324 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 4327 x
+E 4349 VaRDev
+E 4368 Loss
+E 4387 VaR
+E 4494 CVar
+E 4501 Exp_Return
+E 4509 Cost
+E 4517 diff
+B 4540 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 4551 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 4569 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 4602 diff_pos
+F 5332 diff_neg
+F 6064 CostDef
+F 6065 BudgetDef
+F 6066 ReturnDef
+F 6067 ReturnCond
+F 6069 LossDef
+F 6174 VarDevDef
+F 6281 CVarDef
+G 6283 x
+G 7013 VaRDev
+G 7118 Loss
+G 7225 VaR
+G 7226 CVar
+G 7227 Exp_Return
+G 7228 Cost
+G 7230 diff
+B 7966 E x e c u t i o n
+I 7966 Port_value
+I 7972 Port_value_avg
+I 7977 Port_value_min
+I 7982 Port_value_max
+I 7988 Cost
+I 7989 Dates
+I 7996 Dates_for_actual_return
+I 8002 date_end
+I 8003 Return_4
+I 8050 avg_ret
+I 8055 min_ret
+I 8060 max_ret
+B 8068 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 8071 diff_pos
+D 8082 diff_neg
+D 8093 CostDef
+D 8100 BudgetDef
+D 8105 ReturnDef
+D 8110 ReturnCond
+D 8115 LossDef
+D 8126 VarDevDef
+D 8137 CVarDef
+B 8143 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 8146 x
+E 8168 VaRDev
+E 8187 Loss
+E 8206 VaR
+E 8313 CVar
+E 8320 Exp_Return
+E 8328 Cost
+E 8336 diff
+B 8359 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 8370 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 8388 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 8421 diff_pos
+F 9151 diff_neg
+F 9883 CostDef
+F 9884 BudgetDef
+F 9885 ReturnDef
+F 9886 ReturnCond
+F 9888 LossDef
+F 9993 VarDevDef
+F 10100 CVarDef
+G 10102 x
+G 10832 VaRDev
+G 10937 Loss
+G 11044 VaR
+G 11045 CVar
+G 11046 Exp_Return
+G 11047 Cost
+G 11049 diff
+B 11785 E x e c u t i o n
+I 11785 Port_value
+I 11791 Port_value_avg
+I 11796 Port_value_min
+I 11801 Port_value_max
+I 11807 Cost
+I 11808 Dates
+I 11815 Dates_for_actual_return
+I 11821 date_end
+I 11822 Return_4
+I 11869 avg_ret
+I 11874 min_ret
+I 11879 max_ret
+B 11887 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 11890 diff_pos
+D 11901 diff_neg
+D 11912 CostDef
+D 11919 BudgetDef
+D 11924 ReturnDef
+D 11929 ReturnCond
+D 11934 LossDef
+D 11945 VarDevDef
+D 11956 CVarDef
+B 11962 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 11965 x
+E 11987 VaRDev
+E 12006 Loss
+E 12025 VaR
+E 12132 CVar
+E 12139 Exp_Return
+E 12147 Cost
+E 12155 diff
+B 12178 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 12189 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 12207 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 12240 diff_pos
+F 12970 diff_neg
+F 13702 CostDef
+F 13703 BudgetDef
+F 13704 ReturnDef
+F 13705 ReturnCond
+F 13707 LossDef
+F 13812 VarDevDef
+F 13919 CVarDef
+G 13921 x
+G 14651 VaRDev
+G 14756 Loss
+G 14863 VaR
+G 14864 CVar
+G 14865 Exp_Return
+G 14866 Cost
+G 14868 diff
+B 15604 E x e c u t i o n
+I 15604 Port_value
+I 15610 Port_value_avg
+I 15615 Port_value_min
+I 15620 Port_value_max
+I 15626 Cost
+I 15627 Dates
+I 15634 Dates_for_actual_return
+I 15640 date_end
+I 15641 Return_4
+I 15688 avg_ret
+I 15693 min_ret
+I 15698 max_ret
+B 15706 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 15709 diff_pos
+D 15720 diff_neg
+D 15731 CostDef
+D 15738 BudgetDef
+D 15743 ReturnDef
+D 15748 ReturnCond
+D 15753 LossDef
+D 15764 VarDevDef
+D 15775 CVarDef
+B 15781 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 15784 x
+E 15806 VaRDev
+E 15825 Loss
+E 15844 VaR
+E 15951 CVar
+E 15958 Exp_Return
+E 15966 Cost
+E 15974 diff
+B 15997 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 16008 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 16026 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 16059 diff_pos
+F 16789 diff_neg
+F 17521 CostDef
+F 17522 BudgetDef
+F 17523 ReturnDef
+F 17524 ReturnCond
+F 17526 LossDef
+F 17631 VarDevDef
+F 17738 CVarDef
+G 17740 x
+G 18470 VaRDev
+G 18575 Loss
+G 18682 VaR
+G 18683 CVar
+G 18684 Exp_Return
+G 18685 Cost
+G 18687 diff
+B 19423 E x e c u t i o n
+I 19423 Port_value
+I 19429 Port_value_avg
+I 19434 Port_value_min
+I 19439 Port_value_max
+I 19445 Cost
+I 19446 Dates
+I 19453 Dates_for_actual_return
+I 19459 date_end
+I 19460 Return_4
+I 19507 avg_ret
+I 19512 min_ret
+I 19517 max_ret
+B 19525 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 19528 diff_pos
+D 19539 diff_neg
+D 19550 CostDef
+D 19557 BudgetDef
+D 19562 ReturnDef
+D 19567 ReturnCond
+D 19572 LossDef
+D 19583 VarDevDef
+D 19594 CVarDef
+B 19600 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 19603 x
+E 19625 VaRDev
+E 19644 Loss
+E 19663 VaR
+E 19770 CVar
+E 19777 Exp_Return
+E 19785 Cost
+E 19793 diff
+B 19816 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 19827 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 19845 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 19878 diff_pos
+F 20608 diff_neg
+F 21340 CostDef
+F 21341 BudgetDef
+F 21342 ReturnDef
+F 21343 ReturnCond
+F 21345 LossDef
+F 21450 VarDevDef
+F 21557 CVarDef
+G 21559 x
+G 22289 VaRDev
+G 22394 Loss
+G 22501 VaR
+G 22502 CVar
+G 22503 Exp_Return
+G 22504 Cost
+G 22506 diff
+B 23242 E x e c u t i o n
+I 23242 Port_value
+I 23248 Port_value_avg
+I 23253 Port_value_min
+I 23258 Port_value_max
+I 23264 Cost
+I 23265 Dates
+I 23272 Dates_for_actual_return
+I 23278 date_end
+I 23279 Return_4
+I 23326 avg_ret
+I 23331 min_ret
+I 23336 max_ret
+B 23344 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 23347 diff_pos
+D 23358 diff_neg
+D 23369 CostDef
+D 23376 BudgetDef
+D 23381 ReturnDef
+D 23386 ReturnCond
+D 23391 LossDef
+D 23402 VarDevDef
+D 23413 CVarDef
+B 23419 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 23422 x
+E 23444 VaRDev
+E 23463 Loss
+E 23482 VaR
+E 23589 CVar
+E 23596 Exp_Return
+E 23604 Cost
+E 23612 diff
+B 23635 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 23646 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 23664 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 23697 diff_pos
+F 24427 diff_neg
+F 25159 CostDef
+F 25160 BudgetDef
+F 25161 ReturnDef
+F 25162 ReturnCond
+F 25164 LossDef
+F 25269 VarDevDef
+F 25376 CVarDef
+G 25378 x
+G 26108 VaRDev
+G 26213 Loss
+G 26320 VaR
+G 26321 CVar
+G 26322 Exp_Return
+G 26323 Cost
+G 26325 diff
+B 27061 E x e c u t i o n
+I 27061 Port_value
+I 27067 Port_value_avg
+I 27072 Port_value_min
+I 27077 Port_value_max
+I 27083 Cost
+I 27084 Dates
+I 27091 Dates_for_actual_return
+I 27097 date_end
+I 27098 Return_4
+I 27145 avg_ret
+I 27150 min_ret
+I 27155 max_ret
+B 27163 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 27166 diff_pos
+D 27177 diff_neg
+D 27188 CostDef
+D 27195 BudgetDef
+D 27200 ReturnDef
+D 27205 ReturnCond
+D 27210 LossDef
+D 27221 VarDevDef
+D 27232 CVarDef
+B 27238 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 27241 x
+E 27263 VaRDev
+E 27282 Loss
+E 27301 VaR
+E 27408 CVar
+E 27415 Exp_Return
+E 27423 Cost
+E 27431 diff
+B 27454 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 27465 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 27483 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 27516 diff_pos
+F 28246 diff_neg
+F 28978 CostDef
+F 28979 BudgetDef
+F 28980 ReturnDef
+F 28981 ReturnCond
+F 28983 LossDef
+F 29088 VarDevDef
+F 29195 CVarDef
+G 29197 x
+G 29927 VaRDev
+G 30032 Loss
+G 30139 VaR
+G 30140 CVar
+G 30141 Exp_Return
+G 30142 Cost
+G 30144 diff
+B 30880 E x e c u t i o n
+I 30880 Port_value
+I 30886 Port_value_avg
+I 30891 Port_value_min
+I 30896 Port_value_max
+I 30902 Cost
+I 30903 Dates
+I 30910 Dates_for_actual_return
+I 30916 date_end
+I 30917 Return_4
+I 30964 avg_ret
+I 30969 min_ret
+I 30974 max_ret
+B 30982 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 30985 diff_pos
+D 30996 diff_neg
+D 31007 CostDef
+D 31014 BudgetDef
+D 31019 ReturnDef
+D 31024 ReturnCond
+D 31029 LossDef
+D 31040 VarDevDef
+D 31051 CVarDef
+B 31057 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 31060 x
+E 31082 VaRDev
+E 31101 Loss
+E 31120 VaR
+E 31227 CVar
+E 31234 Exp_Return
+E 31242 Cost
+E 31250 diff
+B 31273 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 31284 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 31302 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 31335 diff_pos
+F 32065 diff_neg
+F 32797 CostDef
+F 32798 BudgetDef
+F 32799 ReturnDef
+F 32800 ReturnCond
+F 32802 LossDef
+F 32907 VarDevDef
+F 33014 CVarDef
+G 33016 x
+G 33746 VaRDev
+G 33851 Loss
+G 33958 VaR
+G 33959 CVar
+G 33960 Exp_Return
+G 33961 Cost
+G 33963 diff
+B 34699 E x e c u t i o n
+I 34699 Port_value
+I 34705 Port_value_avg
+I 34710 Port_value_min
+I 34715 Port_value_max
+I 34721 Cost
+I 34722 Dates
+I 34729 Dates_for_actual_return
+I 34735 date_end
+I 34736 Return_4
+I 34783 avg_ret
+I 34788 min_ret
+I 34793 max_ret
+B 34801 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 34804 diff_pos
+D 34815 diff_neg
+D 34826 CostDef
+D 34833 BudgetDef
+D 34838 ReturnDef
+D 34843 ReturnCond
+D 34848 LossDef
+D 34859 VarDevDef
+D 34870 CVarDef
+B 34876 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 34879 x
+E 34901 VaRDev
+E 34920 Loss
+E 34939 VaR
+E 35046 CVar
+E 35053 Exp_Return
+E 35061 Cost
+E 35069 diff
+B 35092 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 35103 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 35121 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 35154 diff_pos
+F 35884 diff_neg
+F 36616 CostDef
+F 36617 BudgetDef
+F 36618 ReturnDef
+F 36619 ReturnCond
+F 36621 LossDef
+F 36726 VarDevDef
+F 36833 CVarDef
+G 36835 x
+G 37565 VaRDev
+G 37670 Loss
+G 37777 VaR
+G 37778 CVar
+G 37779 Exp_Return
+G 37780 Cost
+G 37782 diff
+B 38518 E x e c u t i o n
+I 38518 Port_value
+I 38524 Port_value_avg
+I 38529 Port_value_min
+I 38534 Port_value_max
+I 38540 Cost
+I 38541 Dates
+I 38548 Dates_for_actual_return
+I 38554 date_end
+I 38555 Return_4
+I 38602 avg_ret
+I 38607 min_ret
+I 38612 max_ret
+B 38620 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 38623 diff_pos
+D 38634 diff_neg
+D 38645 CostDef
+D 38652 BudgetDef
+D 38657 ReturnDef
+D 38662 ReturnCond
+D 38667 LossDef
+D 38678 VarDevDef
+D 38689 CVarDef
+B 38695 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 38698 x
+E 38720 VaRDev
+E 38739 Loss
+E 38758 VaR
+E 38865 CVar
+E 38872 Exp_Return
+E 38880 Cost
+E 38888 diff
+B 38911 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 38922 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 38940 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 38973 diff_pos
+F 39703 diff_neg
+F 40435 CostDef
+F 40436 BudgetDef
+F 40437 ReturnDef
+F 40438 ReturnCond
+F 40440 LossDef
+F 40545 VarDevDef
+F 40652 CVarDef
+G 40654 x
+G 41384 VaRDev
+G 41489 Loss
+G 41596 VaR
+G 41597 CVar
+G 41598 Exp_Return
+G 41599 Cost
+G 41601 diff
+B 42337 E x e c u t i o n
+I 42337 Port_value
+I 42343 Port_value_avg
+I 42348 Port_value_min
+I 42353 Port_value_max
+I 42359 Cost
+I 42360 Dates
+I 42367 Dates_for_actual_return
+I 42373 date_end
+I 42374 Return_4
+I 42421 avg_ret
+I 42426 min_ret
+I 42431 max_ret
+B 42439 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 42442 diff_pos
+D 42453 diff_neg
+D 42464 CostDef
+D 42471 BudgetDef
+D 42476 ReturnDef
+D 42481 ReturnCond
+D 42486 LossDef
+D 42497 VarDevDef
+D 42508 CVarDef
+B 42514 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 42517 x
+E 42539 VaRDev
+E 42558 Loss
+E 42577 VaR
+E 42684 CVar
+E 42691 Exp_Return
+E 42699 Cost
+E 42707 diff
+B 42730 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 42741 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 42759 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 42792 diff_pos
+F 43522 diff_neg
+F 44254 CostDef
+F 44255 BudgetDef
+F 44256 ReturnDef
+F 44257 ReturnCond
+F 44259 LossDef
+F 44364 VarDevDef
+F 44471 CVarDef
+G 44473 x
+G 45203 VaRDev
+G 45308 Loss
+G 45415 VaR
+G 45416 CVar
+G 45417 Exp_Return
+G 45418 Cost
+G 45420 diff
+B 46156 E x e c u t i o n
+I 46156 Port_value
+I 46162 Port_value_avg
+I 46167 Port_value_min
+I 46172 Port_value_max
+I 46178 Cost
+I 46179 Dates
+I 46186 Dates_for_actual_return
+I 46192 date_end
+I 46193 Return_4
+I 46240 avg_ret
+I 46245 min_ret
+I 46250 max_ret
+B 46258 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 46261 diff_pos
+D 46272 diff_neg
+D 46283 CostDef
+D 46290 BudgetDef
+D 46295 ReturnDef
+D 46300 ReturnCond
+D 46305 LossDef
+D 46316 VarDevDef
+D 46327 CVarDef
+B 46333 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 46336 x
+E 46358 VaRDev
+E 46377 Loss
+E 46396 VaR
+E 46503 CVar
+E 46510 Exp_Return
+E 46518 Cost
+E 46526 diff
+B 46549 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 46560 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 46578 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 46611 diff_pos
+F 47341 diff_neg
+F 48073 CostDef
+F 48074 BudgetDef
+F 48075 ReturnDef
+F 48076 ReturnCond
+F 48078 LossDef
+F 48183 VarDevDef
+F 48290 CVarDef
+G 48292 x
+G 49022 VaRDev
+G 49127 Loss
+G 49234 VaR
+G 49235 CVar
+G 49236 Exp_Return
+G 49237 Cost
+G 49239 diff
+B 49975 E x e c u t i o n
+I 49975 Port_value
+I 49981 Port_value_avg
+I 49986 Port_value_min
+I 49991 Port_value_max
+I 49997 Cost
+I 49998 Dates
+I 50005 Dates_for_actual_return
+I 50011 date_end
+I 50012 Return_4
+I 50059 avg_ret
+I 50064 min_ret
+I 50069 max_ret
+B 50077 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 50080 diff_pos
+D 50091 diff_neg
+D 50102 CostDef
+D 50109 BudgetDef
+D 50114 ReturnDef
+D 50119 ReturnCond
+D 50124 LossDef
+D 50135 VarDevDef
+D 50146 CVarDef
+B 50152 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 50155 x
+E 50177 VaRDev
+E 50196 Loss
+E 50215 VaR
+E 50322 CVar
+E 50329 Exp_Return
+E 50337 Cost
+E 50345 diff
+B 50368 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 50379 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 50397 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 50430 diff_pos
+F 51160 diff_neg
+F 51892 CostDef
+F 51893 BudgetDef
+F 51894 ReturnDef
+F 51895 ReturnCond
+F 51897 LossDef
+F 52002 VarDevDef
+F 52109 CVarDef
+G 52111 x
+G 52841 VaRDev
+G 52946 Loss
+G 53053 VaR
+G 53054 CVar
+G 53055 Exp_Return
+G 53056 Cost
+G 53058 diff
+B 53794 E x e c u t i o n
+I 53794 Port_value
+I 53800 Port_value_avg
+I 53805 Port_value_min
+I 53810 Port_value_max
+I 53816 Cost
+I 53817 Dates
+I 53824 Dates_for_actual_return
+I 53830 date_end
+I 53831 Return_4
+I 53878 avg_ret
+I 53883 min_ret
+I 53888 max_ret
+B 53896 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 53899 diff_pos
+D 53910 diff_neg
+D 53921 CostDef
+D 53928 BudgetDef
+D 53933 ReturnDef
+D 53938 ReturnCond
+D 53943 LossDef
+D 53954 VarDevDef
+D 53965 CVarDef
+B 53971 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 53974 x
+E 53996 VaRDev
+E 54015 Loss
+E 54034 VaR
+E 54141 CVar
+E 54148 Exp_Return
+E 54156 Cost
+E 54164 diff
+B 54187 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 54198 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 54216 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 54249 diff_pos
+F 54979 diff_neg
+F 55711 CostDef
+F 55712 BudgetDef
+F 55713 ReturnDef
+F 55714 ReturnCond
+F 55716 LossDef
+F 55821 VarDevDef
+F 55928 CVarDef
+G 55930 x
+G 56660 VaRDev
+G 56765 Loss
+G 56872 VaR
+G 56873 CVar
+G 56874 Exp_Return
+G 56875 Cost
+G 56877 diff
+B 57613 E x e c u t i o n
+I 57613 Port_value
+I 57619 Port_value_avg
+I 57624 Port_value_min
+I 57629 Port_value_max
+I 57635 Cost
+I 57636 Dates
+I 57643 Dates_for_actual_return
+I 57649 date_end
+I 57650 Return_4
+I 57697 avg_ret
+I 57702 min_ret
+I 57707 max_ret
+B 57715 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 57718 diff_pos
+D 57729 diff_neg
+D 57740 CostDef
+D 57747 BudgetDef
+D 57752 ReturnDef
+D 57757 ReturnCond
+D 57762 LossDef
+D 57773 VarDevDef
+D 57784 CVarDef
+B 57790 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 57793 x
+E 57815 VaRDev
+E 57834 Loss
+E 57853 VaR
+E 57960 CVar
+E 57967 Exp_Return
+E 57975 Cost
+E 57983 diff
+B 58006 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 58017 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 58035 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 58068 diff_pos
+F 58798 diff_neg
+F 59530 CostDef
+F 59531 BudgetDef
+F 59532 ReturnDef
+F 59533 ReturnCond
+F 59535 LossDef
+F 59640 VarDevDef
+F 59747 CVarDef
+G 59749 x
+G 60479 VaRDev
+G 60584 Loss
+G 60691 VaR
+G 60692 CVar
+G 60693 Exp_Return
+G 60694 Cost
+G 60696 diff
+B 61432 E x e c u t i o n
+I 61432 Port_value
+I 61438 Port_value_avg
+I 61443 Port_value_min
+I 61448 Port_value_max
+I 61454 Cost
+I 61455 Dates
+I 61462 Dates_for_actual_return
+I 61468 date_end
+I 61469 Return_4
+I 61516 avg_ret
+I 61521 min_ret
+I 61526 max_ret
+B 61534 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 61537 diff_pos
+D 61548 diff_neg
+D 61559 CostDef
+D 61566 BudgetDef
+D 61571 ReturnDef
+D 61576 ReturnCond
+D 61581 LossDef
+D 61592 VarDevDef
+D 61603 CVarDef
+B 61609 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 61612 x
+E 61634 VaRDev
+E 61653 Loss
+E 61672 VaR
+E 61779 CVar
+E 61786 Exp_Return
+E 61794 Cost
+E 61802 diff
+B 61825 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 61836 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 61854 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 61887 diff_pos
+F 62617 diff_neg
+F 63349 CostDef
+F 63350 BudgetDef
+F 63351 ReturnDef
+F 63352 ReturnCond
+F 63354 LossDef
+F 63459 VarDevDef
+F 63566 CVarDef
+G 63568 x
+G 64298 VaRDev
+G 64403 Loss
+G 64510 VaR
+G 64511 CVar
+G 64512 Exp_Return
+G 64513 Cost
+G 64515 diff
+B 65251 E x e c u t i o n
+I 65251 Port_value
+I 65257 Port_value_avg
+I 65262 Port_value_min
+I 65267 Port_value_max
+I 65273 Cost
+I 65274 Dates
+I 65281 Dates_for_actual_return
+I 65287 date_end
+I 65288 Return_4
+I 65335 avg_ret
+I 65340 min_ret
+I 65345 max_ret
+B 65353 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 65356 diff_pos
+D 65367 diff_neg
+D 65378 CostDef
+D 65385 BudgetDef
+D 65390 ReturnDef
+D 65395 ReturnCond
+D 65400 LossDef
+D 65411 VarDevDef
+D 65422 CVarDef
+B 65428 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 65431 x
+E 65453 VaRDev
+E 65472 Loss
+E 65491 VaR
+E 65598 CVar
+E 65605 Exp_Return
+E 65613 Cost
+E 65621 diff
+B 65644 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 65655 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 65673 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 65706 diff_pos
+F 66436 diff_neg
+F 67168 CostDef
+F 67169 BudgetDef
+F 67170 ReturnDef
+F 67171 ReturnCond
+F 67173 LossDef
+F 67278 VarDevDef
+F 67385 CVarDef
+G 67387 x
+G 68117 VaRDev
+G 68222 Loss
+G 68329 VaR
+G 68330 CVar
+G 68331 Exp_Return
+G 68332 Cost
+G 68334 diff
+B 69070 E x e c u t i o n
+I 69070 Port_value
+I 69076 Port_value_avg
+I 69081 Port_value_min
+I 69086 Port_value_max
+I 69092 Cost
+I 69093 Dates
+I 69100 Dates_for_actual_return
+I 69106 date_end
+I 69107 Return_4
+I 69154 avg_ret
+I 69159 min_ret
+I 69164 max_ret
+B 69172 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 69175 diff_pos
+D 69186 diff_neg
+D 69197 CostDef
+D 69204 BudgetDef
+D 69209 ReturnDef
+D 69214 ReturnCond
+D 69219 LossDef
+D 69230 VarDevDef
+D 69241 CVarDef
+B 69247 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 69250 x
+E 69272 VaRDev
+E 69291 Loss
+E 69310 VaR
+E 69417 CVar
+E 69424 Exp_Return
+E 69432 Cost
+E 69440 diff
+B 69463 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 69474 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 69492 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 69525 diff_pos
+F 70255 diff_neg
+F 70987 CostDef
+F 70988 BudgetDef
+F 70989 ReturnDef
+F 70990 ReturnCond
+F 70992 LossDef
+F 71097 VarDevDef
+F 71204 CVarDef
+G 71206 x
+G 71936 VaRDev
+G 72041 Loss
+G 72148 VaR
+G 72149 CVar
+G 72150 Exp_Return
+G 72151 Cost
+G 72153 diff
+B 72889 E x e c u t i o n
+I 72889 Port_value
+I 72895 Port_value_avg
+I 72900 Port_value_min
+I 72905 Port_value_max
+I 72911 Cost
+I 72912 Dates
+I 72919 Dates_for_actual_return
+I 72925 date_end
+I 72926 Return_4
+I 72973 avg_ret
+I 72978 min_ret
+I 72983 max_ret
+B 72991 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 72994 diff_pos
+D 73005 diff_neg
+D 73016 CostDef
+D 73023 BudgetDef
+D 73028 ReturnDef
+D 73033 ReturnCond
+D 73038 LossDef
+D 73049 VarDevDef
+D 73060 CVarDef
+B 73066 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 73069 x
+E 73091 VaRDev
+E 73110 Loss
+E 73129 VaR
+E 73236 CVar
+E 73243 Exp_Return
+E 73251 Cost
+E 73259 diff
+B 73282 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 73293 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 73311 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 73344 diff_pos
+F 74074 diff_neg
+F 74806 CostDef
+F 74807 BudgetDef
+F 74808 ReturnDef
+F 74809 ReturnCond
+F 74811 LossDef
+F 74916 VarDevDef
+F 75023 CVarDef
+G 75025 x
+G 75755 VaRDev
+G 75860 Loss
+G 75967 VaR
+G 75968 CVar
+G 75969 Exp_Return
+G 75970 Cost
+G 75972 diff
+B 76708 E x e c u t i o n
+I 76708 Port_value
+I 76714 Port_value_avg
+I 76719 Port_value_min
+I 76724 Port_value_max
+I 76730 Cost
+I 76731 Dates
+I 76738 Dates_for_actual_return
+I 76744 date_end
+I 76745 Return_4
+I 76792 avg_ret
+I 76797 min_ret
+I 76802 max_ret
+B 76810 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 76813 diff_pos
+D 76824 diff_neg
+D 76835 CostDef
+D 76842 BudgetDef
+D 76847 ReturnDef
+D 76852 ReturnCond
+D 76857 LossDef
+D 76868 VarDevDef
+D 76879 CVarDef
+B 76885 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 76888 x
+E 76910 VaRDev
+E 76929 Loss
+E 76948 VaR
+E 77055 CVar
+E 77062 Exp_Return
+E 77070 Cost
+E 77078 diff
+B 77101 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 77112 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 77130 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 77163 diff_pos
+F 77893 diff_neg
+F 78625 CostDef
+F 78626 BudgetDef
+F 78627 ReturnDef
+F 78628 ReturnCond
+F 78630 LossDef
+F 78735 VarDevDef
+F 78842 CVarDef
+G 78844 x
+G 79574 VaRDev
+G 79679 Loss
+G 79786 VaR
+G 79787 CVar
+G 79788 Exp_Return
+G 79789 Cost
+G 79791 diff
+B 80527 E x e c u t i o n
+I 80527 Port_value
+I 80533 Port_value_avg
+I 80538 Port_value_min
+I 80543 Port_value_max
+I 80549 Cost
+I 80550 Dates
+I 80557 Dates_for_actual_return
+I 80563 date_end
+I 80564 Return_4
+I 80611 avg_ret
+I 80616 min_ret
+I 80621 max_ret
+B 80629 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 80632 diff_pos
+D 80643 diff_neg
+D 80654 CostDef
+D 80661 BudgetDef
+D 80666 ReturnDef
+D 80671 ReturnCond
+D 80676 LossDef
+D 80687 VarDevDef
+D 80698 CVarDef
+B 80704 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 80707 x
+E 80729 VaRDev
+E 80748 Loss
+E 80767 VaR
+E 80874 CVar
+E 80881 Exp_Return
+E 80889 Cost
+E 80897 diff
+B 80920 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 80931 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 80949 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 80982 diff_pos
+F 81712 diff_neg
+F 82444 CostDef
+F 82445 BudgetDef
+F 82446 ReturnDef
+F 82447 ReturnCond
+F 82449 LossDef
+F 82554 VarDevDef
+F 82661 CVarDef
+G 82663 x
+G 83393 VaRDev
+G 83498 Loss
+G 83605 VaR
+G 83606 CVar
+G 83607 Exp_Return
+G 83608 Cost
+G 83610 diff
+B 84346 E x e c u t i o n
+I 84346 Port_value
+I 84352 Port_value_avg
+I 84357 Port_value_min
+I 84362 Port_value_max
+I 84368 Cost
+I 84369 Dates
+I 84376 Dates_for_actual_return
+I 84382 date_end
+I 84383 Return_4
+I 84430 avg_ret
+I 84435 min_ret
+I 84440 max_ret
+B 84448 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 84451 diff_pos
+D 84462 diff_neg
+D 84473 CostDef
+D 84480 BudgetDef
+D 84485 ReturnDef
+D 84490 ReturnCond
+D 84495 LossDef
+D 84506 VarDevDef
+D 84517 CVarDef
+B 84523 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 84526 x
+E 84548 VaRDev
+E 84567 Loss
+E 84586 VaR
+E 84693 CVar
+E 84700 Exp_Return
+E 84708 Cost
+E 84716 diff
+B 84739 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 84750 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 84768 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 84801 diff_pos
+F 85531 diff_neg
+F 86263 CostDef
+F 86264 BudgetDef
+F 86265 ReturnDef
+F 86266 ReturnCond
+F 86268 LossDef
+F 86373 VarDevDef
+F 86480 CVarDef
+G 86482 x
+G 87212 VaRDev
+G 87317 Loss
+G 87424 VaR
+G 87425 CVar
+G 87426 Exp_Return
+G 87427 Cost
+G 87429 diff
+B 88165 E x e c u t i o n
+I 88165 Port_value
+I 88171 Port_value_avg
+I 88176 Port_value_min
+I 88181 Port_value_max
+I 88187 Cost
+I 88188 Dates
+I 88195 Dates_for_actual_return
+I 88201 date_end
+I 88202 Return_4
+I 88249 avg_ret
+I 88254 min_ret
+I 88259 max_ret
+B 88267 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 88270 diff_pos
+D 88281 diff_neg
+D 88292 CostDef
+D 88299 BudgetDef
+D 88304 ReturnDef
+D 88309 ReturnCond
+D 88314 LossDef
+D 88325 VarDevDef
+D 88336 CVarDef
+B 88342 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 88345 x
+E 88367 VaRDev
+E 88386 Loss
+E 88405 VaR
+E 88512 CVar
+E 88519 Exp_Return
+E 88527 Cost
+E 88535 diff
+B 88558 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 88569 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 88587 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 88620 diff_pos
+F 89350 diff_neg
+F 90082 CostDef
+F 90083 BudgetDef
+F 90084 ReturnDef
+F 90085 ReturnCond
+F 90087 LossDef
+F 90192 VarDevDef
+F 90299 CVarDef
+G 90301 x
+G 91031 VaRDev
+G 91136 Loss
+G 91243 VaR
+G 91244 CVar
+G 91245 Exp_Return
+G 91246 Cost
+G 91248 diff
+B 91984 E x e c u t i o n
+I 91984 Port_value
+I 91990 Port_value_avg
+I 91995 Port_value_min
+I 92000 Port_value_max
+I 92006 Cost
+I 92007 Dates
+I 92014 Dates_for_actual_return
+I 92020 date_end
+I 92021 Return_4
+I 92068 avg_ret
+I 92073 min_ret
+I 92078 max_ret
+B 92086 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 92089 diff_pos
+D 92100 diff_neg
+D 92111 CostDef
+D 92118 BudgetDef
+D 92123 ReturnDef
+D 92128 ReturnCond
+D 92133 LossDef
+D 92144 VarDevDef
+D 92155 CVarDef
+B 92161 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 92164 x
+E 92186 VaRDev
+E 92205 Loss
+E 92224 VaR
+E 92331 CVar
+E 92338 Exp_Return
+E 92346 Cost
+E 92354 diff
+B 92377 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 92388 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 92406 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 92439 diff_pos
+F 93169 diff_neg
+F 93901 CostDef
+F 93902 BudgetDef
+F 93903 ReturnDef
+F 93904 ReturnCond
+F 93906 LossDef
+F 94011 VarDevDef
+F 94118 CVarDef
+G 94120 x
+G 94850 VaRDev
+G 94955 Loss
+G 95062 VaR
+G 95063 CVar
+G 95064 Exp_Return
+G 95065 Cost
+G 95067 diff
+B 95803 E x e c u t i o n
+I 95803 Port_value
+I 95809 Port_value_avg
+I 95814 Port_value_min
+I 95819 Port_value_max
+I 95825 Cost
+I 95826 Dates
+I 95833 Dates_for_actual_return
+I 95839 date_end
+I 95840 Return_4
+I 95887 avg_ret
+I 95892 min_ret
+I 95897 max_ret
+B 95905 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 95908 diff_pos
+D 95919 diff_neg
+D 95930 CostDef
+D 95937 BudgetDef
+D 95942 ReturnDef
+D 95947 ReturnCond
+D 95952 LossDef
+D 95963 VarDevDef
+D 95974 CVarDef
+B 95980 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 95983 x
+E 96005 VaRDev
+E 96024 Loss
+E 96043 VaR
+E 96150 CVar
+E 96157 Exp_Return
+E 96165 Cost
+E 96173 diff
+B 96196 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 96207 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 96225 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 96258 diff_pos
+F 96988 diff_neg
+F 97720 CostDef
+F 97721 BudgetDef
+F 97722 ReturnDef
+F 97723 ReturnCond
+F 97725 LossDef
+F 97830 VarDevDef
+F 97937 CVarDef
+G 97939 x
+G 98669 VaRDev
+G 98774 Loss
+G 98881 VaR
+G 98882 CVar
+G 98883 Exp_Return
+G 98884 Cost
+G 98886 diff
+B 99622 E x e c u t i o n
+I 99622 Port_value
+I 99628 Port_value_avg
+I 99633 Port_value_min
+I 99638 Port_value_max
+I 99644 Cost
+I 99645 Dates
+I 99652 Dates_for_actual_return
+I 99658 date_end
+I 99659 Return_4
+I 99706 avg_ret
+I 99711 min_ret
+I 99716 max_ret
+B 99724 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 99727 diff_pos
+D 99738 diff_neg
+D 99749 CostDef
+D 99756 BudgetDef
+D 99761 ReturnDef
+D 99766 ReturnCond
+D 99771 LossDef
+D 99782 VarDevDef
+D 99793 CVarDef
+B 99799 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 99802 x
+E 99824 VaRDev
+E 99843 Loss
+E 99862 VaR
+E 99969 CVar
+E 99976 Exp_Return
+E 99984 Cost
+E 99992 diff
+B 100015 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 100026 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 100044 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 100077 diff_pos
+F 100807 diff_neg
+F 101539 CostDef
+F 101540 BudgetDef
+F 101541 ReturnDef
+F 101542 ReturnCond
+F 101544 LossDef
+F 101649 VarDevDef
+F 101756 CVarDef
+G 101758 x
+G 102488 VaRDev
+G 102593 Loss
+G 102700 VaR
+G 102701 CVar
+G 102702 Exp_Return
+G 102703 Cost
+G 102705 diff
+B 103441 E x e c u t i o n
+I 103441 Port_value
+I 103447 Port_value_avg
+I 103452 Port_value_min
+I 103457 Port_value_max
+I 103463 Cost
+I 103464 Dates
+I 103471 Dates_for_actual_return
+I 103477 date_end
+I 103478 Return_4
+I 103525 avg_ret
+I 103530 min_ret
+I 103535 max_ret
+B 103543 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 103546 diff_pos
+D 103557 diff_neg
+D 103568 CostDef
+D 103575 BudgetDef
+D 103580 ReturnDef
+D 103585 ReturnCond
+D 103590 LossDef
+D 103601 VarDevDef
+D 103612 CVarDef
+B 103618 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 103621 x
+E 103643 VaRDev
+E 103662 Loss
+E 103681 VaR
+E 103788 CVar
+E 103795 Exp_Return
+E 103803 Cost
+E 103811 diff
+B 103834 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 103845 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 103863 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 103896 diff_pos
+F 104626 diff_neg
+F 105358 CostDef
+F 105359 BudgetDef
+F 105360 ReturnDef
+F 105361 ReturnCond
+F 105363 LossDef
+F 105468 VarDevDef
+F 105575 CVarDef
+G 105577 x
+G 106307 VaRDev
+G 106412 Loss
+G 106519 VaR
+G 106520 CVar
+G 106521 Exp_Return
+G 106522 Cost
+G 106524 diff
+B 107260 E x e c u t i o n
+I 107260 Port_value
+I 107266 Port_value_avg
+I 107271 Port_value_min
+I 107276 Port_value_max
+I 107282 Cost
+I 107283 Dates
+I 107290 Dates_for_actual_return
+I 107296 date_end
+I 107297 Return_4
+I 107344 avg_ret
+I 107349 min_ret
+I 107354 max_ret
+B 107362 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 107365 diff_pos
+D 107376 diff_neg
+D 107387 CostDef
+D 107394 BudgetDef
+D 107399 ReturnDef
+D 107404 ReturnCond
+D 107409 LossDef
+D 107420 VarDevDef
+D 107431 CVarDef
+B 107437 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 107440 x
+E 107462 VaRDev
+E 107481 Loss
+E 107500 VaR
+E 107607 CVar
+E 107614 Exp_Return
+E 107622 Cost
+E 107630 diff
+B 107653 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 107664 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 107682 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 107715 diff_pos
+F 108445 diff_neg
+F 109177 CostDef
+F 109178 BudgetDef
+F 109179 ReturnDef
+F 109180 ReturnCond
+F 109182 LossDef
+F 109287 VarDevDef
+F 109394 CVarDef
+G 109396 x
+G 110126 VaRDev
+G 110231 Loss
+G 110338 VaR
+G 110339 CVar
+G 110340 Exp_Return
+G 110341 Cost
+G 110343 diff
+B 111079 E x e c u t i o n
+I 111079 Port_value
+I 111085 Port_value_avg
+I 111090 Port_value_min
+I 111095 Port_value_max
+I 111101 Cost
+I 111102 Dates
+I 111109 Dates_for_actual_return
+I 111115 date_end
+I 111116 Return_4
+I 111163 avg_ret
+I 111168 min_ret
+I 111173 max_ret
+B 111181 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 111184 diff_pos
+D 111195 diff_neg
+D 111206 CostDef
+D 111213 BudgetDef
+D 111218 ReturnDef
+D 111223 ReturnCond
+D 111228 LossDef
+D 111239 VarDevDef
+D 111250 CVarDef
+B 111256 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 111259 x
+E 111281 VaRDev
+E 111300 Loss
+E 111319 VaR
+E 111426 CVar
+E 111433 Exp_Return
+E 111441 Cost
+E 111449 diff
+B 111472 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 111483 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 111501 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 111534 diff_pos
+F 112264 diff_neg
+F 112996 CostDef
+F 112997 BudgetDef
+F 112998 ReturnDef
+F 112999 ReturnCond
+F 113001 LossDef
+F 113106 VarDevDef
+F 113213 CVarDef
+G 113215 x
+G 113945 VaRDev
+G 114050 Loss
+G 114157 VaR
+G 114158 CVar
+G 114159 Exp_Return
+G 114160 Cost
+G 114162 diff
+B 114898 E x e c u t i o n
+I 114898 Port_value
+I 114904 Port_value_avg
+I 114909 Port_value_min
+I 114914 Port_value_max
+I 114920 Cost
+I 114921 Dates
+I 114928 Dates_for_actual_return
+I 114934 date_end
+I 114935 Return_4
+I 114982 avg_ret
+I 114987 min_ret
+I 114992 max_ret
+B 115000 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 115003 diff_pos
+D 115014 diff_neg
+D 115025 CostDef
+D 115032 BudgetDef
+D 115037 ReturnDef
+D 115042 ReturnCond
+D 115047 LossDef
+D 115058 VarDevDef
+D 115069 CVarDef
+B 115075 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 115078 x
+E 115100 VaRDev
+E 115119 Loss
+E 115138 VaR
+E 115245 CVar
+E 115252 Exp_Return
+E 115260 Cost
+E 115268 diff
+B 115291 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 115302 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 115320 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 115353 diff_pos
+F 116083 diff_neg
+F 116815 CostDef
+F 116816 BudgetDef
+F 116817 ReturnDef
+F 116818 ReturnCond
+F 116820 LossDef
+F 116925 VarDevDef
+F 117032 CVarDef
+G 117034 x
+G 117764 VaRDev
+G 117869 Loss
+G 117976 VaR
+G 117977 CVar
+G 117978 Exp_Return
+G 117979 Cost
+G 117981 diff
+B 118717 E x e c u t i o n
+I 118717 Port_value
+I 118723 Port_value_avg
+I 118728 Port_value_min
+I 118733 Port_value_max
+I 118739 Cost
+I 118740 Dates
+I 118747 Dates_for_actual_return
+I 118753 date_end
+I 118754 Return_4
+I 118801 avg_ret
+I 118806 min_ret
+I 118811 max_ret
+B 118819 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 118822 diff_pos
+D 118833 diff_neg
+D 118844 CostDef
+D 118851 BudgetDef
+D 118856 ReturnDef
+D 118861 ReturnCond
+D 118866 LossDef
+D 118877 VarDevDef
+D 118888 CVarDef
+B 118894 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 118897 x
+E 118919 VaRDev
+E 118938 Loss
+E 118957 VaR
+E 119064 CVar
+E 119071 Exp_Return
+E 119079 Cost
+E 119087 diff
+B 119110 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 119121 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 119139 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 119172 diff_pos
+F 119902 diff_neg
+F 120634 CostDef
+F 120635 BudgetDef
+F 120636 ReturnDef
+F 120637 ReturnCond
+F 120639 LossDef
+F 120744 VarDevDef
+F 120851 CVarDef
+G 120853 x
+G 121583 VaRDev
+G 121688 Loss
+G 121795 VaR
+G 121796 CVar
+G 121797 Exp_Return
+G 121798 Cost
+G 121800 diff
+B 122536 E x e c u t i o n
+I 122536 Port_value
+I 122542 Port_value_avg
+I 122547 Port_value_min
+I 122552 Port_value_max
+I 122558 Cost
+I 122559 Dates
+I 122566 Dates_for_actual_return
+I 122572 date_end
+I 122573 Return_4
+I 122620 avg_ret
+I 122625 min_ret
+I 122630 max_ret
+B 122638 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 122641 diff_pos
+D 122652 diff_neg
+D 122663 CostDef
+D 122670 BudgetDef
+D 122675 ReturnDef
+D 122680 ReturnCond
+D 122685 LossDef
+D 122696 VarDevDef
+D 122707 CVarDef
+B 122713 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 122716 x
+E 122738 VaRDev
+E 122757 Loss
+E 122776 VaR
+E 122883 CVar
+E 122890 Exp_Return
+E 122898 Cost
+E 122906 diff
+B 122929 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 122940 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 122958 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 122991 diff_pos
+F 123721 diff_neg
+F 124453 CostDef
+F 124454 BudgetDef
+F 124455 ReturnDef
+F 124456 ReturnCond
+F 124458 LossDef
+F 124563 VarDevDef
+F 124670 CVarDef
+G 124672 x
+G 125402 VaRDev
+G 125507 Loss
+G 125614 VaR
+G 125615 CVar
+G 125616 Exp_Return
+G 125617 Cost
+G 125619 diff
+B 126355 E x e c u t i o n
+I 126355 Port_value
+I 126361 Port_value_avg
+I 126366 Port_value_min
+I 126371 Port_value_max
+I 126377 Cost
+I 126378 Dates
+I 126385 Dates_for_actual_return
+I 126391 date_end
+I 126392 Return_4
+I 126439 avg_ret
+I 126444 min_ret
+I 126449 max_ret
+B 126457 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 126460 diff_pos
+D 126471 diff_neg
+D 126482 CostDef
+D 126489 BudgetDef
+D 126494 ReturnDef
+D 126499 ReturnCond
+D 126504 LossDef
+D 126515 VarDevDef
+D 126526 CVarDef
+B 126532 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 126535 x
+E 126557 VaRDev
+E 126576 Loss
+E 126595 VaR
+E 126702 CVar
+E 126709 Exp_Return
+E 126717 Cost
+E 126725 diff
+B 126748 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 126759 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 126777 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 126810 diff_pos
+F 127540 diff_neg
+F 128272 CostDef
+F 128273 BudgetDef
+F 128274 ReturnDef
+F 128275 ReturnCond
+F 128277 LossDef
+F 128382 VarDevDef
+F 128489 CVarDef
+G 128491 x
+G 129221 VaRDev
+G 129326 Loss
+G 129433 VaR
+G 129434 CVar
+G 129435 Exp_Return
+G 129436 Cost
+G 129438 diff
+B 130174 E x e c u t i o n
+I 130174 Port_value
+I 130180 Port_value_avg
+I 130185 Port_value_min
+I 130190 Port_value_max
+I 130196 Cost
+I 130197 Dates
+I 130204 Dates_for_actual_return
+I 130210 date_end
+I 130211 Return_4
+I 130258 avg_ret
+I 130263 min_ret
+I 130268 max_ret
+B 130276 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 130279 diff_pos
+D 130290 diff_neg
+D 130301 CostDef
+D 130308 BudgetDef
+D 130313 ReturnDef
+D 130318 ReturnCond
+D 130323 LossDef
+D 130334 VarDevDef
+D 130345 CVarDef
+B 130351 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 130354 x
+E 130376 VaRDev
+E 130395 Loss
+E 130414 VaR
+E 130521 CVar
+E 130528 Exp_Return
+E 130536 Cost
+E 130544 diff
+B 130567 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 130578 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 130596 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 130629 diff_pos
+F 131359 diff_neg
+F 132091 CostDef
+F 132092 BudgetDef
+F 132093 ReturnDef
+F 132094 ReturnCond
+F 132096 LossDef
+F 132201 VarDevDef
+F 132308 CVarDef
+G 132310 x
+G 133040 VaRDev
+G 133145 Loss
+G 133252 VaR
+G 133253 CVar
+G 133254 Exp_Return
+G 133255 Cost
+G 133257 diff
+B 133993 E x e c u t i o n
+I 133993 Port_value
+I 133999 Port_value_avg
+I 134004 Port_value_min
+I 134009 Port_value_max
+I 134015 Cost
+I 134016 Dates
+I 134023 Dates_for_actual_return
+I 134029 date_end
+I 134030 Return_4
+I 134077 avg_ret
+I 134082 min_ret
+I 134087 max_ret
+B 134095 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 134098 diff_pos
+D 134109 diff_neg
+D 134120 CostDef
+D 134127 BudgetDef
+D 134132 ReturnDef
+D 134137 ReturnCond
+D 134142 LossDef
+D 134153 VarDevDef
+D 134164 CVarDef
+B 134170 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 134173 x
+E 134195 VaRDev
+E 134214 Loss
+E 134233 VaR
+E 134340 CVar
+E 134347 Exp_Return
+E 134355 Cost
+E 134363 diff
+B 134386 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 134397 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 134415 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 134448 diff_pos
+F 135178 diff_neg
+F 135910 CostDef
+F 135911 BudgetDef
+F 135912 ReturnDef
+F 135913 ReturnCond
+F 135915 LossDef
+F 136020 VarDevDef
+F 136127 CVarDef
+G 136129 x
+G 136859 VaRDev
+G 136964 Loss
+G 137071 VaR
+G 137072 CVar
+G 137073 Exp_Return
+G 137074 Cost
+G 137076 diff
+B 137812 E x e c u t i o n
+I 137812 Port_value
+I 137818 Port_value_avg
+I 137823 Port_value_min
+I 137828 Port_value_max
+I 137834 Cost
+I 137835 Dates
+I 137842 Dates_for_actual_return
+I 137848 date_end
+I 137849 Return_4
+I 137896 avg_ret
+I 137901 min_ret
+I 137906 max_ret
+B 137914 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 137917 diff_pos
+D 137928 diff_neg
+D 137939 CostDef
+D 137946 BudgetDef
+D 137951 ReturnDef
+D 137956 ReturnCond
+D 137961 LossDef
+D 137972 VarDevDef
+D 137983 CVarDef
+B 137989 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 137992 x
+E 138014 VaRDev
+E 138033 Loss
+E 138052 VaR
+E 138159 CVar
+E 138166 Exp_Return
+E 138174 Cost
+E 138182 diff
+B 138205 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 138216 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 138234 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 138267 diff_pos
+F 138997 diff_neg
+F 139729 CostDef
+F 139730 BudgetDef
+F 139731 ReturnDef
+F 139732 ReturnCond
+F 139734 LossDef
+F 139839 VarDevDef
+F 139946 CVarDef
+G 139948 x
+G 140678 VaRDev
+G 140783 Loss
+G 140890 VaR
+G 140891 CVar
+G 140892 Exp_Return
+G 140893 Cost
+G 140895 diff
+B 141631 E x e c u t i o n
+I 141631 Port_value
+I 141637 Port_value_avg
+I 141642 Port_value_min
+I 141647 Port_value_max
+I 141653 Cost
+I 141654 Dates
+I 141661 Dates_for_actual_return
+I 141667 date_end
+I 141668 Return_4
+I 141715 avg_ret
+I 141720 min_ret
+I 141725 max_ret
+B 141733 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 141736 diff_pos
+D 141747 diff_neg
+D 141758 CostDef
+D 141765 BudgetDef
+D 141770 ReturnDef
+D 141775 ReturnCond
+D 141780 LossDef
+D 141791 VarDevDef
+D 141802 CVarDef
+B 141808 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 141811 x
+E 141833 VaRDev
+E 141852 Loss
+E 141871 VaR
+E 141978 CVar
+E 141985 Exp_Return
+E 141993 Cost
+E 142001 diff
+B 142024 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 142035 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 142053 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 142086 diff_pos
+F 142816 diff_neg
+F 143548 CostDef
+F 143549 BudgetDef
+F 143550 ReturnDef
+F 143551 ReturnCond
+F 143553 LossDef
+F 143658 VarDevDef
+F 143765 CVarDef
+G 143767 x
+G 144497 VaRDev
+G 144602 Loss
+G 144709 VaR
+G 144710 CVar
+G 144711 Exp_Return
+G 144712 Cost
+G 144714 diff
+B 145450 E x e c u t i o n
+I 145450 Port_value
+I 145456 Port_value_avg
+I 145461 Port_value_min
+I 145466 Port_value_max
+I 145472 Cost
+I 145473 Dates
+I 145480 Dates_for_actual_return
+I 145486 date_end
+I 145487 Return_4
+I 145534 avg_ret
+I 145539 min_ret
+I 145544 max_ret
+B 145552 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 145555 diff_pos
+D 145566 diff_neg
+D 145577 CostDef
+D 145584 BudgetDef
+D 145589 ReturnDef
+D 145594 ReturnCond
+D 145599 LossDef
+D 145610 VarDevDef
+D 145621 CVarDef
+B 145627 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 145630 x
+E 145652 VaRDev
+E 145671 Loss
+E 145690 VaR
+E 145797 CVar
+E 145804 Exp_Return
+E 145812 Cost
+E 145820 diff
+B 145843 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 145854 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 145872 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 145905 diff_pos
+F 146635 diff_neg
+F 147367 CostDef
+F 147368 BudgetDef
+F 147369 ReturnDef
+F 147370 ReturnCond
+F 147372 LossDef
+F 147477 VarDevDef
+F 147584 CVarDef
+G 147586 x
+G 148316 VaRDev
+G 148421 Loss
+G 148528 VaR
+G 148529 CVar
+G 148530 Exp_Return
+G 148531 Cost
+G 148533 diff
+B 149269 E x e c u t i o n
+I 149269 Port_value
+I 149275 Port_value_avg
+I 149280 Port_value_min
+I 149285 Port_value_max
+I 149291 Cost
+I 149292 Dates
+I 149299 Dates_for_actual_return
+I 149305 date_end
+I 149306 Return_4
+I 149353 avg_ret
+I 149358 min_ret
+I 149363 max_ret
+B 149371 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 149374 diff_pos
+D 149385 diff_neg
+D 149396 CostDef
+D 149403 BudgetDef
+D 149408 ReturnDef
+D 149413 ReturnCond
+D 149418 LossDef
+D 149429 VarDevDef
+D 149440 CVarDef
+B 149446 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 149449 x
+E 149471 VaRDev
+E 149490 Loss
+E 149509 VaR
+E 149616 CVar
+E 149623 Exp_Return
+E 149631 Cost
+E 149639 diff
+B 149662 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 149673 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 149691 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 149724 diff_pos
+F 150454 diff_neg
+F 151186 CostDef
+F 151187 BudgetDef
+F 151188 ReturnDef
+F 151189 ReturnCond
+F 151191 LossDef
+F 151296 VarDevDef
+F 151403 CVarDef
+G 151405 x
+G 152135 VaRDev
+G 152240 Loss
+G 152347 VaR
+G 152348 CVar
+G 152349 Exp_Return
+G 152350 Cost
+G 152352 diff
+B 153088 E x e c u t i o n
+I 153088 Port_value
+I 153094 Port_value_avg
+I 153099 Port_value_min
+I 153104 Port_value_max
+I 153110 Cost
+I 153111 Dates
+I 153118 Dates_for_actual_return
+I 153124 date_end
+I 153125 Return_4
+I 153172 avg_ret
+I 153177 min_ret
+I 153182 max_ret
+B 153190 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 153193 diff_pos
+D 153204 diff_neg
+D 153215 CostDef
+D 153222 BudgetDef
+D 153227 ReturnDef
+D 153232 ReturnCond
+D 153237 LossDef
+D 153248 VarDevDef
+D 153259 CVarDef
+B 153265 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 153268 x
+E 153290 VaRDev
+E 153309 Loss
+E 153328 VaR
+E 153435 CVar
+E 153442 Exp_Return
+E 153450 Cost
+E 153458 diff
+B 153481 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 153492 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 153510 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 153543 diff_pos
+F 154273 diff_neg
+F 155005 CostDef
+F 155006 BudgetDef
+F 155007 ReturnDef
+F 155008 ReturnCond
+F 155010 LossDef
+F 155115 VarDevDef
+F 155222 CVarDef
+G 155224 x
+G 155954 VaRDev
+G 156059 Loss
+G 156166 VaR
+G 156167 CVar
+G 156168 Exp_Return
+G 156169 Cost
+G 156171 diff
+B 156907 E x e c u t i o n
+I 156907 Port_value
+I 156913 Port_value_avg
+I 156918 Port_value_min
+I 156923 Port_value_max
+I 156929 Cost
+I 156930 Dates
+I 156937 Dates_for_actual_return
+I 156943 date_end
+I 156944 Return_4
+I 156991 avg_ret
+I 156996 min_ret
+I 157001 max_ret
+B 157009 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 157012 diff_pos
+D 157023 diff_neg
+D 157034 CostDef
+D 157041 BudgetDef
+D 157046 ReturnDef
+D 157051 ReturnCond
+D 157056 LossDef
+D 157067 VarDevDef
+D 157078 CVarDef
+B 157084 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 157087 x
+E 157109 VaRDev
+E 157128 Loss
+E 157147 VaR
+E 157254 CVar
+E 157261 Exp_Return
+E 157269 Cost
+E 157277 diff
+B 157300 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 157311 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 157329 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 157362 diff_pos
+F 158092 diff_neg
+F 158824 CostDef
+F 158825 BudgetDef
+F 158826 ReturnDef
+F 158827 ReturnCond
+F 158829 LossDef
+F 158934 VarDevDef
+F 159041 CVarDef
+G 159043 x
+G 159773 VaRDev
+G 159878 Loss
+G 159985 VaR
+G 159986 CVar
+G 159987 Exp_Return
+G 159988 Cost
+G 159990 diff
+B 160726 E x e c u t i o n
+I 160726 Port_value
+I 160732 Port_value_avg
+I 160737 Port_value_min
+I 160742 Port_value_max
+I 160748 Cost
+I 160749 Dates
+I 160756 Dates_for_actual_return
+I 160762 date_end
+I 160763 Return_4
+I 160810 avg_ret
+I 160815 min_ret
+I 160820 max_ret
+B 160828 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 160831 diff_pos
+D 160842 diff_neg
+D 160853 CostDef
+D 160860 BudgetDef
+D 160865 ReturnDef
+D 160870 ReturnCond
+D 160875 LossDef
+D 160886 VarDevDef
+D 160897 CVarDef
+B 160903 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 160906 x
+E 160928 VaRDev
+E 160947 Loss
+E 160966 VaR
+E 161073 CVar
+E 161080 Exp_Return
+E 161088 Cost
+E 161096 diff
+B 161119 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 161130 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 161148 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 161181 diff_pos
+F 161911 diff_neg
+F 162643 CostDef
+F 162644 BudgetDef
+F 162645 ReturnDef
+F 162646 ReturnCond
+F 162648 LossDef
+F 162753 VarDevDef
+F 162860 CVarDef
+G 162862 x
+G 163592 VaRDev
+G 163697 Loss
+G 163804 VaR
+G 163805 CVar
+G 163806 Exp_Return
+G 163807 Cost
+G 163809 diff
+B 164545 E x e c u t i o n
+I 164545 Port_value
+I 164551 Port_value_avg
+I 164556 Port_value_min
+I 164561 Port_value_max
+I 164567 Cost
+I 164568 Dates
+I 164575 Dates_for_actual_return
+I 164581 date_end
+I 164582 Return_4
+I 164629 avg_ret
+I 164634 min_ret
+I 164639 max_ret
+B 164647 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 164650 diff_pos
+D 164661 diff_neg
+D 164672 CostDef
+D 164679 BudgetDef
+D 164684 ReturnDef
+D 164689 ReturnCond
+D 164694 LossDef
+D 164705 VarDevDef
+D 164716 CVarDef
+B 164722 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 164725 x
+E 164747 VaRDev
+E 164766 Loss
+E 164785 VaR
+E 164892 CVar
+E 164899 Exp_Return
+E 164907 Cost
+E 164915 diff
+B 164938 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 164949 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 164967 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 165000 diff_pos
+F 165730 diff_neg
+F 166462 CostDef
+F 166463 BudgetDef
+F 166464 ReturnDef
+F 166465 ReturnCond
+F 166467 LossDef
+F 166572 VarDevDef
+F 166679 CVarDef
+G 166681 x
+G 167411 VaRDev
+G 167516 Loss
+G 167623 VaR
+G 167624 CVar
+G 167625 Exp_Return
+G 167626 Cost
+G 167628 diff
+B 168364 E x e c u t i o n
+I 168364 Port_value
+I 168370 Port_value_avg
+I 168375 Port_value_min
+I 168380 Port_value_max
+I 168386 Cost
+I 168387 Dates
+I 168394 Dates_for_actual_return
+I 168400 date_end
+I 168401 Return_4
+I 168448 avg_ret
+I 168453 min_ret
+I 168458 max_ret
+B 168466 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 168469 diff_pos
+D 168480 diff_neg
+D 168491 CostDef
+D 168498 BudgetDef
+D 168503 ReturnDef
+D 168508 ReturnCond
+D 168513 LossDef
+D 168524 VarDevDef
+D 168535 CVarDef
+B 168541 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 168544 x
+E 168566 VaRDev
+E 168585 Loss
+E 168604 VaR
+E 168711 CVar
+E 168718 Exp_Return
+E 168726 Cost
+E 168734 diff
+B 168757 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 168768 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 168786 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 168819 diff_pos
+F 169549 diff_neg
+F 170281 CostDef
+F 170282 BudgetDef
+F 170283 ReturnDef
+F 170284 ReturnCond
+F 170286 LossDef
+F 170391 VarDevDef
+F 170498 CVarDef
+G 170500 x
+G 171230 VaRDev
+G 171335 Loss
+G 171442 VaR
+G 171443 CVar
+G 171444 Exp_Return
+G 171445 Cost
+G 171447 diff
+B 172183 E x e c u t i o n
+I 172183 Port_value
+I 172189 Port_value_avg
+I 172194 Port_value_min
+I 172199 Port_value_max
+I 172205 Cost
+I 172206 Dates
+I 172213 Dates_for_actual_return
+I 172219 date_end
+I 172220 Return_4
+I 172267 avg_ret
+I 172272 min_ret
+I 172277 max_ret
+B 172285 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 172288 diff_pos
+D 172299 diff_neg
+D 172310 CostDef
+D 172317 BudgetDef
+D 172322 ReturnDef
+D 172327 ReturnCond
+D 172332 LossDef
+D 172343 VarDevDef
+D 172354 CVarDef
+B 172360 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 172363 x
+E 172385 VaRDev
+E 172404 Loss
+E 172423 VaR
+E 172530 CVar
+E 172537 Exp_Return
+E 172545 Cost
+E 172553 diff
+B 172576 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 172587 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 172605 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 172638 diff_pos
+F 173368 diff_neg
+F 174100 CostDef
+F 174101 BudgetDef
+F 174102 ReturnDef
+F 174103 ReturnCond
+F 174105 LossDef
+F 174210 VarDevDef
+F 174317 CVarDef
+G 174319 x
+G 175049 VaRDev
+G 175154 Loss
+G 175261 VaR
+G 175262 CVar
+G 175263 Exp_Return
+G 175264 Cost
+G 175266 diff
+B 176002 E x e c u t i o n
+I 176002 Port_value
+I 176008 Port_value_avg
+I 176013 Port_value_min
+I 176018 Port_value_max
+I 176024 Cost
+I 176025 Dates
+I 176032 Dates_for_actual_return
+I 176038 date_end
+I 176039 Return_4
+I 176086 avg_ret
+I 176091 min_ret
+I 176096 max_ret
+B 176104 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 176107 diff_pos
+D 176118 diff_neg
+D 176129 CostDef
+D 176136 BudgetDef
+D 176141 ReturnDef
+D 176146 ReturnCond
+D 176151 LossDef
+D 176162 VarDevDef
+D 176173 CVarDef
+B 176179 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 176182 x
+E 176204 VaRDev
+E 176223 Loss
+E 176242 VaR
+E 176349 CVar
+E 176356 Exp_Return
+E 176364 Cost
+E 176372 diff
+B 176395 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 176406 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 176424 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 176457 diff_pos
+F 177187 diff_neg
+F 177919 CostDef
+F 177920 BudgetDef
+F 177921 ReturnDef
+F 177922 ReturnCond
+F 177924 LossDef
+F 178029 VarDevDef
+F 178136 CVarDef
+G 178138 x
+G 178868 VaRDev
+G 178973 Loss
+G 179080 VaR
+G 179081 CVar
+G 179082 Exp_Return
+G 179083 Cost
+G 179085 diff
+B 179821 E x e c u t i o n
+I 179821 Port_value
+I 179827 Port_value_avg
+I 179832 Port_value_min
+I 179837 Port_value_max
+I 179843 Cost
+I 179844 Dates
+I 179851 Dates_for_actual_return
+I 179857 date_end
+I 179858 Return_4
+I 179905 avg_ret
+I 179910 min_ret
+I 179915 max_ret
+B 179923 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 179926 diff_pos
+D 179937 diff_neg
+D 179948 CostDef
+D 179955 BudgetDef
+D 179960 ReturnDef
+D 179965 ReturnCond
+D 179970 LossDef
+D 179981 VarDevDef
+D 179992 CVarDef
+B 179998 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 180001 x
+E 180023 VaRDev
+E 180042 Loss
+E 180061 VaR
+E 180168 CVar
+E 180175 Exp_Return
+E 180183 Cost
+E 180191 diff
+B 180214 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 180225 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 180243 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 180276 diff_pos
+F 181006 diff_neg
+F 181738 CostDef
+F 181739 BudgetDef
+F 181740 ReturnDef
+F 181741 ReturnCond
+F 181743 LossDef
+F 181848 VarDevDef
+F 181955 CVarDef
+G 181957 x
+G 182687 VaRDev
+G 182792 Loss
+G 182899 VaR
+G 182900 CVar
+G 182901 Exp_Return
+G 182902 Cost
+G 182904 diff
+B 183640 E x e c u t i o n
+I 183640 Port_value
+I 183646 Port_value_avg
+I 183651 Port_value_min
+I 183656 Port_value_max
+I 183662 Cost
+I 183663 Dates
+I 183670 Dates_for_actual_return
+I 183676 date_end
+I 183677 Return_4
+I 183724 avg_ret
+I 183729 min_ret
+I 183734 max_ret
+B 183742 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 183745 diff_pos
+D 183756 diff_neg
+D 183767 CostDef
+D 183774 BudgetDef
+D 183779 ReturnDef
+D 183784 ReturnCond
+D 183789 LossDef
+D 183800 VarDevDef
+D 183811 CVarDef
+B 183817 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 183820 x
+E 183842 VaRDev
+E 183861 Loss
+E 183880 VaR
+E 183987 CVar
+E 183994 Exp_Return
+E 184002 Cost
+E 184010 diff
+B 184033 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 184044 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 184062 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 184095 diff_pos
+F 184825 diff_neg
+F 185557 CostDef
+F 185558 BudgetDef
+F 185559 ReturnDef
+F 185560 ReturnCond
+F 185562 LossDef
+F 185667 VarDevDef
+F 185774 CVarDef
+G 185776 x
+G 186506 VaRDev
+G 186611 Loss
+G 186718 VaR
+G 186719 CVar
+G 186720 Exp_Return
+G 186721 Cost
+G 186723 diff
+B 187459 E x e c u t i o n
+I 187459 Port_value
+I 187465 Port_value_avg
+I 187470 Port_value_min
+I 187475 Port_value_max
+I 187481 Cost
+I 187482 Dates
+I 187489 Dates_for_actual_return
+I 187495 date_end
+I 187496 Return_4
+I 187543 avg_ret
+I 187548 min_ret
+I 187553 max_ret
+B 187561 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 187564 diff_pos
+D 187575 diff_neg
+D 187586 CostDef
+D 187593 BudgetDef
+D 187598 ReturnDef
+D 187603 ReturnCond
+D 187608 LossDef
+D 187619 VarDevDef
+D 187630 CVarDef
+B 187636 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 187639 x
+E 187661 VaRDev
+E 187680 Loss
+E 187699 VaR
+E 187806 CVar
+E 187813 Exp_Return
+E 187821 Cost
+E 187829 diff
+B 187852 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 187863 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 187881 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 187914 diff_pos
+F 188644 diff_neg
+F 189376 CostDef
+F 189377 BudgetDef
+F 189378 ReturnDef
+F 189379 ReturnCond
+F 189381 LossDef
+F 189486 VarDevDef
+F 189593 CVarDef
+G 189595 x
+G 190325 VaRDev
+G 190430 Loss
+G 190537 VaR
+G 190538 CVar
+G 190539 Exp_Return
+G 190540 Cost
+G 190542 diff
+B 191278 E x e c u t i o n
+I 191278 Port_value
+I 191284 Port_value_avg
+I 191289 Port_value_min
+I 191294 Port_value_max
+I 191300 Cost
+I 191301 Dates
+I 191308 Dates_for_actual_return
+I 191314 date_end
+I 191315 Return_4
+I 191362 avg_ret
+I 191367 min_ret
+I 191372 max_ret
+B 191380 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 191383 diff_pos
+D 191394 diff_neg
+D 191405 CostDef
+D 191412 BudgetDef
+D 191417 ReturnDef
+D 191422 ReturnCond
+D 191427 LossDef
+D 191438 VarDevDef
+D 191449 CVarDef
+B 191455 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 191458 x
+E 191480 VaRDev
+E 191499 Loss
+E 191518 VaR
+E 191625 CVar
+E 191632 Exp_Return
+E 191640 Cost
+E 191648 diff
+B 191671 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 191682 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 191700 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 191733 diff_pos
+F 192463 diff_neg
+F 193195 CostDef
+F 193196 BudgetDef
+F 193197 ReturnDef
+F 193198 ReturnCond
+F 193200 LossDef
+F 193305 VarDevDef
+F 193412 CVarDef
+G 193414 x
+G 194144 VaRDev
+G 194249 Loss
+G 194356 VaR
+G 194357 CVar
+G 194358 Exp_Return
+G 194359 Cost
+G 194361 diff
+B 195097 E x e c u t i o n
+I 195097 Port_value
+I 195103 Port_value_avg
+I 195108 Port_value_min
+I 195113 Port_value_max
+I 195119 Cost
+I 195120 Dates
+I 195127 Dates_for_actual_return
+I 195133 date_end
+I 195134 Return_4
+I 195181 avg_ret
+I 195186 min_ret
+I 195191 max_ret
+B 195199 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 195202 diff_pos
+D 195213 diff_neg
+D 195224 CostDef
+D 195231 BudgetDef
+D 195236 ReturnDef
+D 195241 ReturnCond
+D 195246 LossDef
+D 195257 VarDevDef
+D 195268 CVarDef
+B 195274 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 195277 x
+E 195299 VaRDev
+E 195318 Loss
+E 195337 VaR
+E 195444 CVar
+E 195451 Exp_Return
+E 195459 Cost
+E 195467 diff
+B 195490 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 195501 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 195519 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 195552 diff_pos
+F 196282 diff_neg
+F 197014 CostDef
+F 197015 BudgetDef
+F 197016 ReturnDef
+F 197017 ReturnCond
+F 197019 LossDef
+F 197124 VarDevDef
+F 197231 CVarDef
+G 197233 x
+G 197963 VaRDev
+G 198068 Loss
+G 198175 VaR
+G 198176 CVar
+G 198177 Exp_Return
+G 198178 Cost
+G 198180 diff
+B 198916 E x e c u t i o n
+I 198916 Port_value
+I 198922 Port_value_avg
+I 198927 Port_value_min
+I 198932 Port_value_max
+I 198938 Cost
+I 198939 Dates
+I 198946 Dates_for_actual_return
+I 198952 date_end
+I 198953 Return_4
+I 199000 avg_ret
+I 199005 min_ret
+I 199010 max_ret
+B 199018 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 199021 diff_pos
+D 199032 diff_neg
+D 199043 CostDef
+D 199050 BudgetDef
+D 199055 ReturnDef
+D 199060 ReturnCond
+D 199065 LossDef
+D 199076 VarDevDef
+D 199087 CVarDef
+B 199093 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 199096 x
+E 199118 VaRDev
+E 199137 Loss
+E 199156 VaR
+E 199263 CVar
+E 199270 Exp_Return
+E 199278 Cost
+E 199286 diff
+B 199309 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 199320 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 199338 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 199371 diff_pos
+F 200101 diff_neg
+F 200833 CostDef
+F 200834 BudgetDef
+F 200835 ReturnDef
+F 200836 ReturnCond
+F 200838 LossDef
+F 200943 VarDevDef
+F 201050 CVarDef
+G 201052 x
+G 201782 VaRDev
+G 201887 Loss
+G 201994 VaR
+G 201995 CVar
+G 201996 Exp_Return
+G 201997 Cost
+G 201999 diff
+B 202735 E x e c u t i o n
+I 202735 Port_value
+I 202741 Port_value_avg
+I 202746 Port_value_min
+I 202751 Port_value_max
+I 202757 Cost
+I 202758 Dates
+I 202765 Dates_for_actual_return
+I 202771 date_end
+I 202772 Return_4
+I 202819 avg_ret
+I 202824 min_ret
+I 202829 max_ret
+B 202837 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 202840 diff_pos
+D 202851 diff_neg
+D 202862 CostDef
+D 202869 BudgetDef
+D 202874 ReturnDef
+D 202879 ReturnCond
+D 202884 LossDef
+D 202895 VarDevDef
+D 202906 CVarDef
+B 202912 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 202915 x
+E 202937 VaRDev
+E 202956 Loss
+E 202975 VaR
+E 203082 CVar
+E 203089 Exp_Return
+E 203097 Cost
+E 203105 diff
+B 203128 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 203139 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 203157 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 203190 diff_pos
+F 203920 diff_neg
+F 204652 CostDef
+F 204653 BudgetDef
+F 204654 ReturnDef
+F 204655 ReturnCond
+F 204657 LossDef
+F 204762 VarDevDef
+F 204869 CVarDef
+G 204871 x
+G 205601 VaRDev
+G 205706 Loss
+G 205813 VaR
+G 205814 CVar
+G 205815 Exp_Return
+G 205816 Cost
+G 205818 diff
+B 206554 E x e c u t i o n
+I 206554 Port_value
+I 206560 Port_value_avg
+I 206565 Port_value_min
+I 206570 Port_value_max
+I 206576 Cost
+I 206577 Dates
+I 206584 Dates_for_actual_return
+I 206590 date_end
+I 206591 Return_4
+I 206638 avg_ret
+I 206643 min_ret
+I 206648 max_ret
+B 206656 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 206659 diff_pos
+D 206670 diff_neg
+D 206681 CostDef
+D 206688 BudgetDef
+D 206693 ReturnDef
+D 206698 ReturnCond
+D 206703 LossDef
+D 206714 VarDevDef
+D 206725 CVarDef
+B 206731 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 206734 x
+E 206756 VaRDev
+E 206775 Loss
+E 206794 VaR
+E 206901 CVar
+E 206908 Exp_Return
+E 206916 Cost
+E 206924 diff
+B 206947 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 206958 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 206976 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 207009 diff_pos
+F 207739 diff_neg
+F 208471 CostDef
+F 208472 BudgetDef
+F 208473 ReturnDef
+F 208474 ReturnCond
+F 208476 LossDef
+F 208581 VarDevDef
+F 208688 CVarDef
+G 208690 x
+G 209420 VaRDev
+G 209525 Loss
+G 209632 VaR
+G 209633 CVar
+G 209634 Exp_Return
+G 209635 Cost
+G 209637 diff
+B 210373 E x e c u t i o n
+I 210373 Port_value
+I 210379 Port_value_avg
+I 210384 Port_value_min
+I 210389 Port_value_max
+I 210395 Cost
+I 210396 Dates
+I 210403 Dates_for_actual_return
+I 210409 date_end
+I 210410 Return_4
+I 210457 avg_ret
+I 210462 min_ret
+I 210467 max_ret
+B 210475 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 210478 diff_pos
+D 210489 diff_neg
+D 210500 CostDef
+D 210507 BudgetDef
+D 210512 ReturnDef
+D 210517 ReturnCond
+D 210522 LossDef
+D 210533 VarDevDef
+D 210544 CVarDef
+B 210550 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 210553 x
+E 210575 VaRDev
+E 210594 Loss
+E 210613 VaR
+E 210720 CVar
+E 210727 Exp_Return
+E 210735 Cost
+E 210743 diff
+B 210766 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 210777 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 210795 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 210828 diff_pos
+F 211558 diff_neg
+F 212290 CostDef
+F 212291 BudgetDef
+F 212292 ReturnDef
+F 212293 ReturnCond
+F 212295 LossDef
+F 212400 VarDevDef
+F 212507 CVarDef
+G 212509 x
+G 213239 VaRDev
+G 213344 Loss
+G 213451 VaR
+G 213452 CVar
+G 213453 Exp_Return
+G 213454 Cost
+G 213456 diff
+B 214192 E x e c u t i o n
+I 214192 Port_value
+I 214198 Port_value_avg
+I 214203 Port_value_min
+I 214208 Port_value_max
+I 214214 Cost
+I 214215 Dates
+I 214222 Dates_for_actual_return
+I 214228 date_end
+I 214229 Return_4
+I 214276 avg_ret
+I 214281 min_ret
+I 214286 max_ret
+B 214294 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 214297 diff_pos
+D 214308 diff_neg
+D 214319 CostDef
+D 214326 BudgetDef
+D 214331 ReturnDef
+D 214336 ReturnCond
+D 214341 LossDef
+D 214352 VarDevDef
+D 214363 CVarDef
+B 214369 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 214372 x
+E 214394 VaRDev
+E 214413 Loss
+E 214432 VaR
+E 214539 CVar
+E 214546 Exp_Return
+E 214554 Cost
+E 214562 diff
+B 214585 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 214596 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 214614 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 214647 diff_pos
+F 215377 diff_neg
+F 216109 CostDef
+F 216110 BudgetDef
+F 216111 ReturnDef
+F 216112 ReturnCond
+F 216114 LossDef
+F 216219 VarDevDef
+F 216326 CVarDef
+G 216328 x
+G 217058 VaRDev
+G 217163 Loss
+G 217270 VaR
+G 217271 CVar
+G 217272 Exp_Return
+G 217273 Cost
+G 217275 diff
+B 218011 E x e c u t i o n
+I 218011 Port_value
+I 218017 Port_value_avg
+I 218022 Port_value_min
+I 218027 Port_value_max
+I 218033 Cost
+I 218034 Dates
+I 218041 Dates_for_actual_return
+I 218047 date_end
+I 218048 Return_4
+I 218095 avg_ret
+I 218100 min_ret
+I 218105 max_ret
+B 218113 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 218116 diff_pos
+D 218127 diff_neg
+D 218138 CostDef
+D 218145 BudgetDef
+D 218150 ReturnDef
+D 218155 ReturnCond
+D 218160 LossDef
+D 218171 VarDevDef
+D 218182 CVarDef
+B 218188 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 218191 x
+E 218213 VaRDev
+E 218232 Loss
+E 218251 VaR
+E 218358 CVar
+E 218365 Exp_Return
+E 218373 Cost
+E 218381 diff
+B 218404 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 218415 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 218433 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 218466 diff_pos
+F 219196 diff_neg
+F 219928 CostDef
+F 219929 BudgetDef
+F 219930 ReturnDef
+F 219931 ReturnCond
+F 219933 LossDef
+F 220038 VarDevDef
+F 220145 CVarDef
+G 220147 x
+G 220877 VaRDev
+G 220982 Loss
+G 221089 VaR
+G 221090 CVar
+G 221091 Exp_Return
+G 221092 Cost
+G 221094 diff
+B 221830 E x e c u t i o n
+I 221830 Port_value
+I 221836 Port_value_avg
+I 221841 Port_value_min
+I 221846 Port_value_max
+I 221852 Cost
+I 221853 Dates
+I 221860 Dates_for_actual_return
+I 221866 date_end
+I 221867 Return_4
+I 221914 avg_ret
+I 221919 min_ret
+I 221924 max_ret
+B 221932 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 221935 diff_pos
+D 221946 diff_neg
+D 221957 CostDef
+D 221964 BudgetDef
+D 221969 ReturnDef
+D 221974 ReturnCond
+D 221979 LossDef
+D 221990 VarDevDef
+D 222001 CVarDef
+B 222007 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 222010 x
+E 222032 VaRDev
+E 222051 Loss
+E 222070 VaR
+E 222177 CVar
+E 222184 Exp_Return
+E 222192 Cost
+E 222200 diff
+B 222223 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 222234 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 222252 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 222285 diff_pos
+F 223015 diff_neg
+F 223747 CostDef
+F 223748 BudgetDef
+F 223749 ReturnDef
+F 223750 ReturnCond
+F 223752 LossDef
+F 223857 VarDevDef
+F 223964 CVarDef
+G 223966 x
+G 224696 VaRDev
+G 224801 Loss
+G 224908 VaR
+G 224909 CVar
+G 224910 Exp_Return
+G 224911 Cost
+G 224913 diff
+B 225649 E x e c u t i o n
+I 225649 Port_value
+I 225655 Port_value_avg
+I 225660 Port_value_min
+I 225665 Port_value_max
+I 225671 Cost
+I 225672 Dates
+I 225679 Dates_for_actual_return
+I 225685 date_end
+I 225686 Return_4
+I 225733 avg_ret
+I 225738 min_ret
+I 225743 max_ret
+B 225751 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 225754 diff_pos
+D 225765 diff_neg
+D 225776 CostDef
+D 225783 BudgetDef
+D 225788 ReturnDef
+D 225793 ReturnCond
+D 225798 LossDef
+D 225809 VarDevDef
+D 225820 CVarDef
+B 225826 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 225829 x
+E 225851 VaRDev
+E 225870 Loss
+E 225889 VaR
+E 225996 CVar
+E 226003 Exp_Return
+E 226011 Cost
+E 226019 diff
+B 226042 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 226053 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 226071 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 226104 diff_pos
+F 226834 diff_neg
+F 227566 CostDef
+F 227567 BudgetDef
+F 227568 ReturnDef
+F 227569 ReturnCond
+F 227571 LossDef
+F 227676 VarDevDef
+F 227783 CVarDef
+G 227785 x
+G 228515 VaRDev
+G 228620 Loss
+G 228727 VaR
+G 228728 CVar
+G 228729 Exp_Return
+G 228730 Cost
+G 228732 diff
+B 229468 E x e c u t i o n
+I 229468 Port_value
+I 229474 Port_value_avg
+I 229479 Port_value_min
+I 229484 Port_value_max
+I 229490 Cost
+I 229491 Dates
+I 229498 Dates_for_actual_return
+I 229504 date_end
+I 229505 Return_4
+I 229552 avg_ret
+I 229557 min_ret
+I 229562 max_ret
+B 229570 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 229573 diff_pos
+D 229584 diff_neg
+D 229595 CostDef
+D 229602 BudgetDef
+D 229607 ReturnDef
+D 229612 ReturnCond
+D 229617 LossDef
+D 229628 VarDevDef
+D 229639 CVarDef
+B 229645 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 229648 x
+E 229670 VaRDev
+E 229689 Loss
+E 229708 VaR
+E 229815 CVar
+E 229822 Exp_Return
+E 229830 Cost
+E 229838 diff
+B 229861 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 229872 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 229890 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 229923 diff_pos
+F 230653 diff_neg
+F 231385 CostDef
+F 231386 BudgetDef
+F 231387 ReturnDef
+F 231388 ReturnCond
+F 231390 LossDef
+F 231495 VarDevDef
+F 231602 CVarDef
+G 231604 x
+G 232334 VaRDev
+G 232439 Loss
+G 232546 VaR
+G 232547 CVar
+G 232548 Exp_Return
+G 232549 Cost
+G 232551 diff
+B 233287 E x e c u t i o n
+I 233287 Port_value
+I 233293 Port_value_avg
+I 233298 Port_value_min
+I 233303 Port_value_max
+I 233309 Cost
+I 233310 Dates
+I 233317 Dates_for_actual_return
+I 233323 date_end
+I 233324 Return_4
+I 233371 avg_ret
+I 233376 min_ret
+I 233381 max_ret
+B 233389 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 233392 diff_pos
+D 233403 diff_neg
+D 233414 CostDef
+D 233421 BudgetDef
+D 233426 ReturnDef
+D 233431 ReturnCond
+D 233436 LossDef
+D 233447 VarDevDef
+D 233458 CVarDef
+B 233464 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 233467 x
+E 233489 VaRDev
+E 233508 Loss
+E 233527 VaR
+E 233634 CVar
+E 233641 Exp_Return
+E 233649 Cost
+E 233657 diff
+B 233680 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 233691 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 233709 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 233742 diff_pos
+F 234472 diff_neg
+F 235204 CostDef
+F 235205 BudgetDef
+F 235206 ReturnDef
+F 235207 ReturnCond
+F 235209 LossDef
+F 235314 VarDevDef
+F 235421 CVarDef
+G 235423 x
+G 236153 VaRDev
+G 236258 Loss
+G 236365 VaR
+G 236366 CVar
+G 236367 Exp_Return
+G 236368 Cost
+G 236370 diff
+B 237106 E x e c u t i o n
+I 237106 Port_value
+I 237112 Port_value_avg
+I 237117 Port_value_min
+I 237122 Port_value_max
+I 237128 Cost
+I 237129 Dates
+I 237136 Dates_for_actual_return
+I 237142 date_end
+I 237143 Return_4
+I 237190 avg_ret
+I 237195 min_ret
+I 237200 max_ret
+B 237208 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 237211 diff_pos
+D 237222 diff_neg
+D 237233 CostDef
+D 237240 BudgetDef
+D 237245 ReturnDef
+D 237250 ReturnCond
+D 237255 LossDef
+D 237266 VarDevDef
+D 237277 CVarDef
+B 237283 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 237286 x
+E 237308 VaRDev
+E 237327 Loss
+E 237346 VaR
+E 237453 CVar
+E 237460 Exp_Return
+E 237468 Cost
+E 237476 diff
+B 237499 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 237510 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 237528 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 237561 diff_pos
+F 238291 diff_neg
+F 239023 CostDef
+F 239024 BudgetDef
+F 239025 ReturnDef
+F 239026 ReturnCond
+F 239028 LossDef
+F 239133 VarDevDef
+F 239240 CVarDef
+G 239242 x
+G 239972 VaRDev
+G 240077 Loss
+G 240184 VaR
+G 240185 CVar
+G 240186 Exp_Return
+G 240187 Cost
+G 240189 diff
+B 240925 E x e c u t i o n
+I 240925 Port_value
+I 240931 Port_value_avg
+I 240936 Port_value_min
+I 240941 Port_value_max
+I 240947 Cost
+I 240948 Dates
+I 240955 Dates_for_actual_return
+I 240961 date_end
+I 240962 Return_4
+I 241009 avg_ret
+I 241014 min_ret
+I 241019 max_ret
+B 241027 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 241030 diff_pos
+D 241041 diff_neg
+D 241052 CostDef
+D 241059 BudgetDef
+D 241064 ReturnDef
+D 241069 ReturnCond
+D 241074 LossDef
+D 241085 VarDevDef
+D 241096 CVarDef
+B 241102 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 241105 x
+E 241127 VaRDev
+E 241146 Loss
+E 241165 VaR
+E 241272 CVar
+E 241279 Exp_Return
+E 241287 Cost
+E 241295 diff
+B 241318 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 241329 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 241347 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 241380 diff_pos
+F 242110 diff_neg
+F 242842 CostDef
+F 242843 BudgetDef
+F 242844 ReturnDef
+F 242845 ReturnCond
+F 242847 LossDef
+F 242952 VarDevDef
+F 243059 CVarDef
+G 243061 x
+G 243791 VaRDev
+G 243896 Loss
+G 244003 VaR
+G 244004 CVar
+G 244005 Exp_Return
+G 244006 Cost
+G 244008 diff
+B 244744 E x e c u t i o n
+I 244744 Port_value
+I 244750 Port_value_avg
+I 244755 Port_value_min
+I 244760 Port_value_max
+I 244766 Cost
+I 244767 Dates
+I 244774 Dates_for_actual_return
+I 244780 date_end
+I 244781 Return_4
+I 244828 avg_ret
+I 244833 min_ret
+I 244838 max_ret
+B 244846 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 244849 diff_pos
+D 244860 diff_neg
+D 244871 CostDef
+D 244878 BudgetDef
+D 244883 ReturnDef
+D 244888 ReturnCond
+D 244893 LossDef
+D 244904 VarDevDef
+D 244915 CVarDef
+B 244921 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 244924 x
+E 244946 VaRDev
+E 244965 Loss
+E 244984 VaR
+E 245091 CVar
+E 245098 Exp_Return
+E 245106 Cost
+E 245114 diff
+B 245137 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 245148 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 245166 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 245199 diff_pos
+F 245929 diff_neg
+F 246661 CostDef
+F 246662 BudgetDef
+F 246663 ReturnDef
+F 246664 ReturnCond
+F 246666 LossDef
+F 246771 VarDevDef
+F 246878 CVarDef
+G 246880 x
+G 247610 VaRDev
+G 247715 Loss
+G 247822 VaR
+G 247823 CVar
+G 247824 Exp_Return
+G 247825 Cost
+G 247827 diff
+B 248563 E x e c u t i o n
+I 248563 Port_value
+I 248569 Port_value_avg
+I 248574 Port_value_min
+I 248579 Port_value_max
+I 248585 Cost
+I 248586 Dates
+I 248593 Dates_for_actual_return
+I 248599 date_end
+I 248600 Return_4
+I 248647 avg_ret
+I 248652 min_ret
+I 248657 max_ret
+B 248665 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 248668 diff_pos
+D 248679 diff_neg
+D 248690 CostDef
+D 248697 BudgetDef
+D 248702 ReturnDef
+D 248707 ReturnCond
+D 248712 LossDef
+D 248723 VarDevDef
+D 248734 CVarDef
+B 248740 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 248743 x
+E 248765 VaRDev
+E 248784 Loss
+E 248803 VaR
+E 248910 CVar
+E 248917 Exp_Return
+E 248925 Cost
+E 248933 diff
+B 248956 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 248967 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 248985 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 249018 diff_pos
+F 249748 diff_neg
+F 250480 CostDef
+F 250481 BudgetDef
+F 250482 ReturnDef
+F 250483 ReturnCond
+F 250485 LossDef
+F 250590 VarDevDef
+F 250697 CVarDef
+G 250699 x
+G 251429 VaRDev
+G 251534 Loss
+G 251641 VaR
+G 251642 CVar
+G 251643 Exp_Return
+G 251644 Cost
+G 251646 diff
+B 252382 E x e c u t i o n
+I 252382 Port_value
+I 252388 Port_value_avg
+I 252393 Port_value_min
+I 252398 Port_value_max
+I 252404 Cost
+I 252405 Dates
+I 252412 Dates_for_actual_return
+I 252418 date_end
+I 252419 Return_4
+I 252466 avg_ret
+I 252471 min_ret
+I 252476 max_ret
+B 252484 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 252487 diff_pos
+D 252498 diff_neg
+D 252509 CostDef
+D 252516 BudgetDef
+D 252521 ReturnDef
+D 252526 ReturnCond
+D 252531 LossDef
+D 252542 VarDevDef
+D 252553 CVarDef
+B 252559 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 252562 x
+E 252584 VaRDev
+E 252603 Loss
+E 252622 VaR
+E 252729 CVar
+E 252736 Exp_Return
+E 252744 Cost
+E 252752 diff
+B 252775 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 252786 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 252804 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 252837 diff_pos
+F 253567 diff_neg
+F 254299 CostDef
+F 254300 BudgetDef
+F 254301 ReturnDef
+F 254302 ReturnCond
+F 254304 LossDef
+F 254409 VarDevDef
+F 254516 CVarDef
+G 254518 x
+G 255248 VaRDev
+G 255353 Loss
+G 255460 VaR
+G 255461 CVar
+G 255462 Exp_Return
+G 255463 Cost
+G 255465 diff
+B 256201 E x e c u t i o n
+I 256201 Port_value
+I 256207 Port_value_avg
+I 256212 Port_value_min
+I 256217 Port_value_max
+I 256223 Cost
+I 256224 Dates
+I 256231 Dates_for_actual_return
+I 256237 date_end
+I 256238 Return_4
+I 256285 avg_ret
+I 256290 min_ret
+I 256295 max_ret
+B 256303 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 256306 diff_pos
+D 256317 diff_neg
+D 256328 CostDef
+D 256335 BudgetDef
+D 256340 ReturnDef
+D 256345 ReturnCond
+D 256350 LossDef
+D 256361 VarDevDef
+D 256372 CVarDef
+B 256378 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 256381 x
+E 256403 VaRDev
+E 256422 Loss
+E 256441 VaR
+E 256548 CVar
+E 256555 Exp_Return
+E 256563 Cost
+E 256571 diff
+B 256594 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 256605 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 256623 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 256656 diff_pos
+F 257386 diff_neg
+F 258118 CostDef
+F 258119 BudgetDef
+F 258120 ReturnDef
+F 258121 ReturnCond
+F 258123 LossDef
+F 258228 VarDevDef
+F 258335 CVarDef
+G 258337 x
+G 259067 VaRDev
+G 259172 Loss
+G 259279 VaR
+G 259280 CVar
+G 259281 Exp_Return
+G 259282 Cost
+G 259284 diff
+B 260020 E x e c u t i o n
+I 260020 Port_value
+I 260026 Port_value_avg
+I 260031 Port_value_min
+I 260036 Port_value_max
+I 260042 Cost
+I 260043 Dates
+I 260050 Dates_for_actual_return
+I 260056 date_end
+I 260057 Return_4
+I 260104 avg_ret
+I 260109 min_ret
+I 260114 max_ret
+B 260122 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 260125 diff_pos
+D 260136 diff_neg
+D 260147 CostDef
+D 260154 BudgetDef
+D 260159 ReturnDef
+D 260164 ReturnCond
+D 260169 LossDef
+D 260180 VarDevDef
+D 260191 CVarDef
+B 260197 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 260200 x
+E 260222 VaRDev
+E 260241 Loss
+E 260260 VaR
+E 260367 CVar
+E 260374 Exp_Return
+E 260382 Cost
+E 260390 diff
+B 260413 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 260424 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 260442 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 260475 diff_pos
+F 261205 diff_neg
+F 261937 CostDef
+F 261938 BudgetDef
+F 261939 ReturnDef
+F 261940 ReturnCond
+F 261942 LossDef
+F 262047 VarDevDef
+F 262154 CVarDef
+G 262156 x
+G 262886 VaRDev
+G 262991 Loss
+G 263098 VaR
+G 263099 CVar
+G 263100 Exp_Return
+G 263101 Cost
+G 263103 diff
+B 263839 E x e c u t i o n
+I 263839 Port_value
+I 263845 Port_value_avg
+I 263850 Port_value_min
+I 263855 Port_value_max
+I 263861 Cost
+I 263862 Dates
+I 263869 Dates_for_actual_return
+I 263875 date_end
+I 263876 Return_4
+I 263923 avg_ret
+I 263928 min_ret
+I 263933 max_ret
+B 263941 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 263944 diff_pos
+D 263955 diff_neg
+D 263966 CostDef
+D 263973 BudgetDef
+D 263978 ReturnDef
+D 263983 ReturnCond
+D 263988 LossDef
+D 263999 VarDevDef
+D 264010 CVarDef
+B 264016 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 264019 x
+E 264041 VaRDev
+E 264060 Loss
+E 264079 VaR
+E 264186 CVar
+E 264193 Exp_Return
+E 264201 Cost
+E 264209 diff
+B 264232 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 264243 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 264261 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 264294 diff_pos
+F 265024 diff_neg
+F 265756 CostDef
+F 265757 BudgetDef
+F 265758 ReturnDef
+F 265759 ReturnCond
+F 265761 LossDef
+F 265866 VarDevDef
+F 265973 CVarDef
+G 265975 x
+G 266705 VaRDev
+G 266810 Loss
+G 266917 VaR
+G 266918 CVar
+G 266919 Exp_Return
+G 266920 Cost
+G 266922 diff
+B 267658 E x e c u t i o n
+I 267658 Port_value
+I 267664 Port_value_avg
+I 267669 Port_value_min
+I 267674 Port_value_max
+I 267680 Cost
+I 267681 Dates
+I 267688 Dates_for_actual_return
+I 267694 date_end
+I 267695 Return_4
+I 267742 avg_ret
+I 267747 min_ret
+I 267752 max_ret
+B 267760 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 267763 diff_pos
+D 267774 diff_neg
+D 267785 CostDef
+D 267792 BudgetDef
+D 267797 ReturnDef
+D 267802 ReturnCond
+D 267807 LossDef
+D 267818 VarDevDef
+D 267829 CVarDef
+B 267835 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 267838 x
+E 267860 VaRDev
+E 267879 Loss
+E 267898 VaR
+E 268005 CVar
+E 268012 Exp_Return
+E 268020 Cost
+E 268028 diff
+B 268051 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 268062 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 268080 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 268113 diff_pos
+F 268843 diff_neg
+F 269575 CostDef
+F 269576 BudgetDef
+F 269577 ReturnDef
+F 269578 ReturnCond
+F 269580 LossDef
+F 269685 VarDevDef
+F 269792 CVarDef
+G 269794 x
+G 270524 VaRDev
+G 270629 Loss
+G 270736 VaR
+G 270737 CVar
+G 270738 Exp_Return
+G 270739 Cost
+G 270741 diff
+B 271477 E x e c u t i o n
+I 271477 Port_value
+I 271483 Port_value_avg
+I 271488 Port_value_min
+I 271493 Port_value_max
+I 271499 Cost
+I 271500 Dates
+I 271507 Dates_for_actual_return
+I 271513 date_end
+I 271514 Return_4
+I 271561 avg_ret
+I 271566 min_ret
+I 271571 max_ret
+B 271579 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 271582 diff_pos
+D 271593 diff_neg
+D 271604 CostDef
+D 271611 BudgetDef
+D 271616 ReturnDef
+D 271621 ReturnCond
+D 271626 LossDef
+D 271637 VarDevDef
+D 271648 CVarDef
+B 271654 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 271657 x
+E 271679 VaRDev
+E 271698 Loss
+E 271717 VaR
+E 271824 CVar
+E 271831 Exp_Return
+E 271839 Cost
+E 271847 diff
+B 271870 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 271881 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 271899 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 271932 diff_pos
+F 272662 diff_neg
+F 273394 CostDef
+F 273395 BudgetDef
+F 273396 ReturnDef
+F 273397 ReturnCond
+F 273399 LossDef
+F 273504 VarDevDef
+F 273611 CVarDef
+G 273613 x
+G 274343 VaRDev
+G 274448 Loss
+G 274555 VaR
+G 274556 CVar
+G 274557 Exp_Return
+G 274558 Cost
+G 274560 diff
+B 275296 E x e c u t i o n
+I 275296 Port_value
+I 275302 Port_value_avg
+I 275307 Port_value_min
+I 275312 Port_value_max
+I 275318 Cost
+I 275319 Dates
+I 275326 Dates_for_actual_return
+I 275332 date_end
+I 275333 Return_4
+I 275380 avg_ret
+I 275385 min_ret
+I 275390 max_ret
+B 275398 Equation Listing    SOLVE MinCVaR_Opg7 Using LP From line 270
+D 275401 diff_pos
+D 275412 diff_neg
+D 275423 CostDef
+D 275430 BudgetDef
+D 275435 ReturnDef
+D 275440 ReturnCond
+D 275445 LossDef
+D 275456 VarDevDef
+D 275467 CVarDef
+B 275473 Column Listing      SOLVE MinCVaR_Opg7 Using LP From line 270
+E 275476 x
+E 275498 VaRDev
+E 275517 Loss
+E 275536 VaR
+E 275643 CVar
+E 275650 Exp_Return
+E 275658 Cost
+E 275666 diff
+B 275689 Range Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 275700 Model Statistics    SOLVE MinCVaR_Opg7 Using LP From line 270
+B 275718 Solution Report     SOLVE MinCVaR_Opg7 Using LP From line 270
+F 275751 diff_pos
+F 276481 diff_neg
+F 277213 CostDef
+F 277214 BudgetDef
+F 277215 ReturnDef
+F 277216 ReturnCond
+F 277218 LossDef
+F 277323 VarDevDef
+F 277430 CVarDef
+G 277432 x
+G 278162 VaRDev
+G 278267 Loss
+G 278374 VaR
+G 278375 CVar
+G 278376 Exp_Return
+G 278377 Cost
+G 278379 diff
+B 279115 E x e c u t i o n
+I 279115 Port_value
+I 279121 Port_value_avg
+I 279126 Port_value_min
+I 279131 Port_value_max
+I 279137 Cost
